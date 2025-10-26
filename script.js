@@ -25,6 +25,14 @@ const games = [
         iframe: true
     },
     {
+        id: '2048-cupcakes-christmas',
+        title: '2048 Cupcakes Christmas',
+        description: '2048 Cupcakes Christmas game with Christmas theme, perfect for all ages',
+        icon: '🎄',
+        url: 'https://2048hub.com/2048cupcakes-christmas/', // Replace with actual game URL
+        iframe: true
+    },
+    {
         id: 'doge-2048',
         title: 'Doge 2048',
         description: 'Doge 2048 game with Doge meme tiles, perfect for all ages',
