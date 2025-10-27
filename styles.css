@@ -150,6 +150,12 @@ body::before {
     flex: 1;
     padding: 10px 0;
     overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+
+.game-menu:hover {
+    scrollbar-color: rgba(0, 0, 0, 0.2) rgba(0, 0, 0, 0.05);
 }
 
 .menu-title {
@@ -1233,14 +1239,24 @@ body::before {
 }
 
 .game-menu::-webkit-scrollbar-track {
-    background: rgba(0, 0, 0, 0.05);
+    background: transparent;
+    transition: background 0.3s ease;
 }
 
 .game-menu::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 2px;
+    background: transparent;
+    border-radius: 3px;
+    transition: background 0.3s ease;
 }
 
-.game-menu::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.3);
+.game-menu:hover::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.game-menu:hover::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.game-menu:hover::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.35);
 }
