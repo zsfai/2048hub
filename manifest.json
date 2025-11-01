@@ -12,22 +12,17 @@
   "categories": ["games", "entertainment", "puzzle"],
   "icons": [
     {
-      "src": "favicon.svg",
-      "sizes": "32x32",
+      "src": "meta/apple-touch-icon.png",
+      "sizes": "200x200",
       "type": "image/png",
       "purpose": "any maskable"
-    },
-    {
-      "src": "favicon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml"
     }
   ],
   "screenshots": [
     {
-      "src": "favicon.svg",
-      "sizes": "600x400",
-      "type": "image/svg+xml",
+      "src": "meta/apple-touch-icon.png",
+      "sizes": "200x200",
+      "type": "image/png",
       "form_factor": "wide",
       "label": "2048 Hub Screenshot"
     }
@@ -40,8 +35,8 @@
       "url": "/",
       "icons": [
         {
-          "src": "favicon.svg",
-          "sizes": "32x32"
+          "src": "meta/apple-touch-icon.png",
+          "sizes": "200x200"
         }
       ]
     }
