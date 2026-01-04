@@ -101,6 +101,12 @@ document.addEventListener('DOMContentLoaded', function() {
     renderGameList();
     setupEventListeners();
     setupKeyboardNavigation();
+    
+    // Check initial hash on page load (after DOM is ready)
+    // Use setTimeout to ensure all DOM elements are fully initialized
+    setTimeout(function() {
+        handleHashChange();
+    }, 100);
 });
 
 // Render game list in sidebar
@@ -278,9 +284,11 @@ function showGame(game) {
 }
 
 // Show welcome message
-function showWelcome() {
+function showWelcome(clearHash = true) {
     currentGame = null;
-    gameHeader.style.display = 'none';
+    if (gameHeader) {
+        gameHeader.style.display = 'none';
+    }
     
     // Show welcome message and guide content
     const welcomeMessage = document.querySelector('.welcome-message');
@@ -292,13 +300,15 @@ function showWelcome() {
     }
     
     // Remove any existing iframe content
-    const existingIframe = gameFrameContainer.querySelector('.game-iframe');
-    if (existingIframe) {
-        existingIframe.remove();
-    }
-    const existingLoading = gameFrameContainer.querySelector('.loading');
-    if (existingLoading) {
-        existingLoading.remove();
+    if (gameFrameContainer) {
+        const existingIframe = gameFrameContainer.querySelector('.game-iframe');
+        if (existingIframe) {
+            existingIframe.remove();
+        }
+        const existingLoading = gameFrameContainer.querySelector('.loading');
+        if (existingLoading) {
+            existingLoading.remove();
+        }
     }
     
     // Remove active state from all game items
@@ -326,27 +336,30 @@ function showWelcome() {
     // Setup quick game links again (in case content was recreated)
     setupQuickGameLinks();
     
-    // Clear URL hash
-    window.history.replaceState(null, null, window.location.pathname);
+    // Clear URL hash only if explicitly requested (e.g., when user clicks Home button)
+    if (clearHash) {
+        window.history.replaceState(null, null, window.location.pathname);
+    }
 }
 
 // Handle URL hash changes for direct game access
 function handleHashChange() {
     const hash = window.location.hash.substring(1);
     if (hash && games.find(g => g.id === hash)) {
+        // Game found, select it
         selectGame(hash);
+    } else if (hash) {
+        // If hash exists but game not found, show welcome without clearing hash
+        console.warn('Game not found for hash:', hash);
+        showWelcome(false);
     } else {
-        showWelcome();
+        // No hash, show welcome and clear any existing hash
+        showWelcome(true);
     }
 }
 
 // Listen for hash changes
 window.addEventListener('hashchange', handleHashChange);
-
-// Check initial hash on page load
-if (window.location.hash) {
-    handleHashChange();
-}
 
 // Add new game function (for future expansion)
 function addGame(gameData) {
