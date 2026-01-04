@@ -216,6 +216,19 @@ function showGame(game) {
     }
     
     if (game.iframe) {
+        // Hide sidebar immediately for better UX (especially on mobile)
+        const sidebar = document.querySelector('.sidebar');
+        const mainContent = document.querySelector('.main-content');
+        if (window.innerWidth <= 768) {
+            if (sidebar) {
+                sidebar.style.transform = 'translateY(100%)';
+                sidebar.style.transition = 'transform 0.3s ease';
+            }
+            if (mainContent) {
+                mainContent.style.paddingBottom = '0';
+            }
+        }
+        
         // Show loading animation
         const loading = document.createElement('div');
         loading.className = 'loading';
@@ -225,30 +238,72 @@ function showGame(game) {
         // Create iframe
         const iframe = document.createElement('iframe');
         iframe.className = 'game-iframe';
-        iframe.src = game.url;
         iframe.title = game.title;
         iframe.allow = 'fullscreen';
         
-        // iframe load event
-        iframe.onload = function() {
-            loading.remove();
-            
-            // Hide sidebar on mobile when game loads
-            const sidebar = document.querySelector('.sidebar');
-            const mainContent = document.querySelector('.main-content');
-            if (window.innerWidth <= 768) {
-                if (sidebar) {
-                    sidebar.style.transform = 'translateY(100%)';
-                    sidebar.style.transition = 'transform 0.3s ease';
+        // Function to hide loading
+        let loadingHidden = false;
+        let loadCheckInterval = null;
+        
+        function hideLoading() {
+            if (!loadingHidden && loading.parentNode) {
+                loadingHidden = true;
+                if (loadCheckInterval) {
+                    clearInterval(loadCheckInterval);
+                    loadCheckInterval = null;
                 }
-                if (mainContent) {
-                    mainContent.style.paddingBottom = '0';
+                loading.style.opacity = '0';
+                loading.style.transition = 'opacity 0.2s ease';
+                setTimeout(() => {
+                    if (loading.parentNode) {
+                        loading.remove();
+                    }
+                }, 200);
+            }
+        }
+        
+        // Set iframe src after setting up event handlers
+        // This ensures onload can fire properly
+        iframe.onload = function() {
+            // onload fires when iframe document is loaded
+            hideLoading();
+        };
+        
+        // Fallback: Check iframe periodically (for cases where onload might not fire immediately)
+        // This is especially useful for cross-origin iframes
+        let checkCount = 0;
+        const maxChecks = 30; // 3 seconds max wait
+        loadCheckInterval = setInterval(function() {
+            checkCount++;
+            
+            // Try to detect if iframe has loaded
+            try {
+                // For same-origin: check document readyState
+                if (iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
+                    hideLoading();
+                    return;
+                }
+            } catch (e) {
+                // Cross-origin: can't access, but onload should fire
+                // If onload hasn't fired after reasonable time, assume loaded
+                if (checkCount >= 15) { // 1.5 seconds
+                    hideLoading();
+                    return;
                 }
             }
-        };
+            
+            // Safety timeout: hide loading after max time
+            if (checkCount >= maxChecks) {
+                hideLoading();
+            }
+        }, 100);
         
         // iframe error handling
         iframe.onerror = function() {
+            if (loadCheckInterval) {
+                clearInterval(loadCheckInterval);
+                loadCheckInterval = null;
+            }
             loading.innerHTML = `
                 <div style="text-align: center; color: #666; padding: 40px;">
                     <div style="font-size: 3rem; margin-bottom: 20px;">⚠️</div>
@@ -264,6 +319,8 @@ function showGame(game) {
             `;
         };
         
+        // Set src after all handlers are set up
+        iframe.src = game.url;
         gameFrameContainer.appendChild(iframe);
     } else {
         // External link mode
