@@ -1,6 +1,14 @@
 // Game configuration data
 const games = [
     {
+        id: '2048-byd-cars',
+        title: '2048 BYD Cars',
+        description: '2048 Cars Game with BYD Cars theme, perfect for all ages',
+        icon: '🚗',
+        url: 'https://2048hub.com/byd-cars/', // Replace with actual game URL
+        iframe: true
+    },
+    {
         id: '2048-cupcakes',
         title: '2048 Cupcakes',
         description: 'Classic 2048 game with adorable cupcake theme, perfect for all ages',
