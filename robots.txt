@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://www.2048hub.com/sitemap.xml
+Sitemap: https://2048hub.com/sitemap.xml
