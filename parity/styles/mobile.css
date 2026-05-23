@@ -5,7 +5,3 @@
 #board {
   margin-top:5vh;
 }
-
-.fb-like *, #fb-root * {
-  display: none !important;
-}

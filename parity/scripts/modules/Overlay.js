@@ -9,7 +9,7 @@ var Overlay = (function() {
   // Handler for when the overlay button is pressed
   var pressButton = function() {
     if(active) {
-      button.addClass('active'); //TODO: implement this properly
+      button.addClass('active');
       mediator.publish('story_advance');
     }
   };
@@ -28,14 +28,8 @@ var Overlay = (function() {
       $('#overlay > h1').html(title);
       $('#overlay > #content').html(content);
       if(action) {
-        // There's a very special case here if the game has been completed
-        if(action == "%fb%") {
-//          $('#holder').html('<a href="#">let me do it again.</a>');
-        }
-        else {
-          button.show();
-          button.html(action);
-        }
+        button.show();
+        button.html(action);
       }
       else
         button.hide();
