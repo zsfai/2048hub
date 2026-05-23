@@ -120,6 +120,17 @@
       "category": "schulte",
       "difficulty": "medium",
       "tags": ["schulte", "mental", "training", "medium"]
+    },
+    {
+      "id": "flappy-2048",
+      "title": "Flappy 2048",
+      "description": "Flappy Bird meets 2048—fly through pipes while merging numbered tiles",
+      "icon": "🐦",
+      "url": "https://2048hub.com/flappy-2048/",
+      "iframe": true,
+      "category": "arcade",
+      "difficulty": "medium",
+      "tags": ["flappy", "arcade", "fun", "medium"]
     }
   ],
   "categories": [

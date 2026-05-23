@@ -79,6 +79,14 @@ const games = [
         icon: '⬡',
         url: 'https://2048hub.com/hex-2048/', // Replace with actual game URL
         iframe: true
+    },
+    {
+        id: 'flappy-2048',
+        title: 'Flappy 2048',
+        description: 'Flappy Bird meets 2048—fly through pipes while merging numbered tiles',
+        icon: '🐦',
+        url: 'https://2048hub.com/flappy-2048/',
+        iframe: true
     }
 ];
 
