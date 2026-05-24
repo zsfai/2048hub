@@ -57,6 +57,14 @@ const games = [
         iframe: true
     },
     {
+        id: 'flappy-2048',
+        title: 'Flappy 2048',
+        description: 'Flappy Bird meets 2048—fly through pipes while merging numbered tiles',
+        icon: '🐦',
+        url: 'https://2048hub.com/flappy-2048/',
+        iframe: true
+    },
+    {
         id: '2048-remastered',
         title: '2048 Remastered',
         description: '2048 Remastered game with 2048 theme, perfect for all ages',
@@ -78,14 +86,6 @@ const games = [
         description: 'Hexagonal grid 2048 variant with more strategic gameplay',
         icon: '⬡',
         url: 'https://2048hub.com/hex-2048/', // Replace with actual game URL
-        iframe: true
-    },
-    {
-        id: 'flappy-2048',
-        title: 'Flappy 2048',
-        description: 'Flappy Bird meets 2048—fly through pipes while merging numbered tiles',
-        icon: '🐦',
-        url: 'https://2048hub.com/flappy-2048/',
         iframe: true
     }
 ];
