@@ -62,7 +62,8 @@ const games = [
         description: 'Flappy Bird meets 2048—fly through pipes while merging numbered tiles',
         icon: '🐦',
         url: 'https://2048hub.com/flappy-2048/',
-        iframe: true
+        iframe: true,
+        isNew: true
     },
     {
         id: '2048-remastered',
@@ -127,7 +128,9 @@ function renderGameList() {
         gameItem.className = 'game-item';
         gameItem.dataset.gameId = game.id;
         
+        const newBadge = game.isNew ? '<span class="new-badge">NEW</span>' : '';
         gameItem.innerHTML = `
+            ${newBadge}
             <span class="game-icon">${game.icon}</span>
             <div class="game-info">
                 <div class="game-title">${game.title}</div>
