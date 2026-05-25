@@ -1,15 +1,15 @@
 {
   "games": [
     {
-      "id": "2048-byd-cars",
-      "title": "2048 BYD Cars",
-      "description": "2048 Cars Game with BYD Cars theme, perfect for all ages",
-      "icon": "🚗",
-      "url": "https://2048hub.com/byd-cars/",
+      "id": "game2048",
+      "title": "Classic 2048",
+      "description": "Original 2048 game, simple and easy to learn for beginners",
+      "icon": "🔢",
+      "url": "https://2048hub.com/classic-2048/",
       "iframe": true,
-      "category": "byd-cars",
+      "category": "original",
       "difficulty": "easy",
-      "tags": ["byd-cars", "cars", "fun", "easy"]
+      "tags": ["original", "simple", "beginner", "classic"]
     },
     {
       "id": "2048-cupcakes",
@@ -34,6 +34,17 @@
       "tags": ["taylor-swift", "music", "fun", "easy"]
     },
     {
+      "id": "2048-princess",
+      "title": "2048 Princess",
+      "description": "Merge tiles to reveal Disney princesses in a rose pink theme",
+      "icon": "👸",
+      "url": "https://2048hub.com/2048-princess/",
+      "iframe": true,
+      "category": "princess",
+      "difficulty": "easy",
+      "tags": ["princess", "disney", "cute", "easy"]
+    },
+    {
       "id": "hex2048",
       "title": "Hex2048",
       "description": "Hexagonal grid 2048 variant with more strategic gameplay",
@@ -43,17 +54,6 @@
       "category": "hexagonal",
       "difficulty": "hard",
       "tags": ["hexagonal", "challenging", "strategy", "advanced"]
-    },
-    {
-      "id": "game2048",
-      "title": "Classic 2048",
-      "description": "Original 2048 game, simple and easy to learn for beginners",
-      "icon": "🔢",
-      "url": "https://2048hub.com/classic-2048/",
-      "iframe": true,
-      "category": "original",
-      "difficulty": "easy",
-      "tags": ["original", "simple", "beginner", "classic"]
     },
     {
       "id": "doge-2048",
@@ -120,6 +120,17 @@
       "category": "schulte",
       "difficulty": "medium",
       "tags": ["schulte", "mental", "training", "medium"]
+    },
+    {
+      "id": "2048-byd-cars",
+      "title": "2048 BYD Cars",
+      "description": "2048 Cars Game with BYD Cars theme, perfect for all ages",
+      "icon": "🚗",
+      "url": "https://2048hub.com/byd-cars/",
+      "iframe": true,
+      "category": "byd-cars",
+      "difficulty": "easy",
+      "tags": ["byd-cars", "cars", "fun", "easy"]
     },
     {
       "id": "flappy-2048",

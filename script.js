@@ -1,19 +1,11 @@
 // Game configuration data
 const games = [
     {
-        id: '2048-byd-cars',
-        title: '2048 BYD Cars',
-        description: '2048 Cars Game with BYD Cars theme, perfect for all ages',
-        icon: '🚗',
-        url: 'https://2048hub.com/byd-cars/', // Replace with actual game URL
-        iframe: true
-    },
-    {
-        id: '2048-cupcakes',
-        title: '2048 Cupcakes',
-        description: 'Classic 2048 game with adorable cupcake theme, perfect for all ages',
-        icon: '🧁',
-        url: 'https://2048hub.com/2048-cupcakes/', // Replace with actual game URL
+        id: 'classic-2048',
+        title: 'Classic 2048',
+        description: 'Original 2048 game, simple and easy to learn for beginners',
+        icon: '🔢',
+        url: 'https://2048hub.com/classic-2048/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -25,11 +17,11 @@ const games = [
         iframe: true
     },
     {
-        id: 'classic-2048',
-        title: 'Classic 2048',
-        description: 'Original 2048 game, simple and easy to learn for beginners',
-        icon: '🔢',
-        url: 'https://2048hub.com/classic-2048/', // Replace with actual game URL
+        id: '2048-cupcakes',
+        title: '2048 Cupcakes',
+        description: 'Classic 2048 game with adorable cupcake theme, perfect for all ages',
+        icon: '🧁',
+        url: 'https://2048hub.com/2048-cupcakes/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -41,11 +33,20 @@ const games = [
         iframe: true
     },
     {
-        id: 'doge-2048',
-        title: 'Doge 2048',
-        description: 'Doge 2048 game with Doge meme tiles, perfect for all ages',
-        icon: '🐶',
-        url: 'https://2048hub.com/doge-2048/', // Replace with actual game URL
+        id: '2048-princess',
+        title: '2048 Princess',
+        description: 'Merge tiles to reveal Disney princesses in a rose pink theme',
+        icon: '👸',
+        url: 'https://2048hub.com/2048-princess/',
+        iframe: true,
+        isNew: true
+    },
+    {
+        id: 'couch-2048',
+        title: 'Couch 2048',
+        description: 'Couch 2048 game with couch theme, perfect for all ages',
+        icon: '🛋️',
+        url: 'https://2048hub.com/couch-2048/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -54,6 +55,14 @@ const games = [
         description: 'Card 2048 game with card numbers, perfect for all ages',
         icon: '🃏',
         url: 'https://2048hub.com/card-2048/', // Replace with actual game URL
+        iframe: true
+    },
+    {
+        id: '2048-byd-cars',
+        title: '2048 BYD Cars',
+        description: '2048 Cars Game with BYD Cars theme, perfect for all ages',
+        icon: '🚗',
+        url: 'https://2048hub.com/byd-cars/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -66,19 +75,19 @@ const games = [
         isNew: true
     },
     {
+        id: 'doge-2048',
+        title: 'Doge 2048',
+        description: 'Doge 2048 game with Doge meme tiles, perfect for all ages',
+        icon: '🐶',
+        url: 'https://2048hub.com/doge-2048/', // Replace with actual game URL
+        iframe: true
+    },
+    {
         id: '2048-remastered',
         title: '2048 Remastered',
         description: '2048 Remastered game with 2048 theme, perfect for all ages',
         icon: '🎮',
         url: 'https://2048hub.com/2048-remastered/', // Replace with actual game URL
-        iframe: true
-    },
-    {
-        id: 'couch-2048',
-        title: 'Couch 2048',
-        description: 'Couch 2048 game with couch theme, perfect for all ages',
-        icon: '🛋️',
-        url: 'https://2048hub.com/couch-2048/', // Replace with actual game URL
         iframe: true
     },
     {
