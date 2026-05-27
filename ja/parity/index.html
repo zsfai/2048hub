@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+  <link rel="alternate" hreflang="en" href="https://2048hub.com/parity/">
+  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/parity/">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>Parity - 数字パズル | 2048 Hub</title>
+    <meta name="description" content="Play Parity online for free. An addicting numbers puzzle game—flip tiles black and white to reach the target number on each level." />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://2048hub.com/ja/parity/">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://2048hub.com/ja/parity/" />
+    <meta property="og:title" content="Parity - 数字パズル | 2048 Hub" />
+    <meta property="og:description" content="Play Parity online for free. An addicting numbers puzzle game with 100 challenging levels." />
+    <meta property="og:site_name" content="2048 Hub" />
+    <meta property="og:image" content="https://2048hub.com/ja/parity/images/screenshot.png" />
+    <script src="scripts/production.min.js"></script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="styles/mobile.css" rel="stylesheet" type="text/css" media="screen and (max-device-width:800px)" />
+  </head>
+  <body>
+    <div id="container">
+      <p id="title" class="light poiret center">parity</p>
+      <div id="box">
+        <div id="overlay">
+          <h1></h1>
+          <div id="content"></div>
+          <div id="holder">
+            <button> </button>
+          </div>
+        </div>
+        <div id="swipeArea"></div>
+        <div class="dSelected" id="selector"></div>
+        <div id="introtutorial"></div>
+        <table id="board">
+          <tbody id="board_body">
+            <tr>
+              <td class="cell center" data-x="0" data-y="0">4</td>
+              <td class="cell center" data-x="1" data-y="0">4</td>
+              <td class="cell center" data-x="2" data-y="0">4</td>
+            </tr>
+            <tr>
+              <td class="cell center" data-x="0" data-y="1">4</td>
+              <td class="cell center" data-x="1" data-y="1">4</td>
+              <td class="cell center" data-x="2" data-y="1">4</td>
+            </tr>
+            <tr>
+              <td class="cell center" data-x="0" data-y="2">4</td>
+              <td class="cell center selected" data-x="1" data-y="2">4</td>
+              <td class="cell center" data-x="2" data-y="2">4</td>
+            </tr>
+            <tr>
+              <td colspan="2"><a id="level" href="#" class="light poiret left">レベル #</a></td>
+              <td colspan="2" class="right">
+                <a id="reset" href="#" class="poiret"><img src="images/reset.png" style="width:7vh;" /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="../../hub-bar.js" defer></script>
+  </body>
+</html>

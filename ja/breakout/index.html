@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>ブロック崩し - クラシックアーケード | 2048 Hub</title>
+  <meta name="description" content="ブロック崩しを無料でオンラインプレイ。ボールを反射させてブロックを壊し、レベルをクリアしよう。ダウンロード不要。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://2048hub.com/ja/breakout/">
+  <link rel="alternate" hreflang="en" href="https://2048hub.com/breakout/">
+  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/breakout/">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2048hub.com/ja/breakout/">
+  <meta property="og:title" content="ブロック崩し - クラシックアーケード | 2048 Hub">
+  <meta property="og:description" content="ブロック崩しを無料でオンラインプレイ。ブラウザで遊べるクラシックアーケード。">
+  <meta property="og:site_name" content="2048 Hub">
+  <meta property="og:image" content="https://2048hub.com/favicon.svg">
+  <link href="breakout.css" media="screen, print" rel="stylesheet" type="text/css" /> 
+</head> 
+<body> 
+  <div id="breakout">
+    <canvas id="canvas">
+      <div class='unsupported'>
+        お使いのブラウザは &lt;canvas&gt; に対応していないため、このゲームは実行できません
+      </div>
+    </canvas>
+    <div id="levels">
+      <img id="next" class="disabled" src="images/up.png"   title="次のレベル">
+      <img id="prev" class="disabled" src="images/down.png" title="前のレベル">
+      <span id="label">レベル:</span><span id="level"></span>
+    </div>
+    <div id="controls">
+      <input id="sound" type="checkbox" />
+      <label for="sound">サウンド</label>
+    </div>
+    <div id="instructions" style='display:none;'>
+      <div class='keyboard'>
+        <b>スペース</b>で開始<br>
+        <b>左右</b>でパドル移動<br>
+        <b>上下</b>でレベル変更
+      </div>
+      <div class='touch'>
+        <b>ここをタップ</b>で開始<br>
+        <b>ドラッグ</b>でパドル移動<br>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+  <script src="breakout.js"></script>
+  <script src="levels.js"></script>
+  <script>
+  Game.ready(function() {
+    var game = Game.start('canvas', Breakout);
+  });
+  </script>
+  <script src="../../hub-bar.js" defer></script>
+</body> 
+</html>

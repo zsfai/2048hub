@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <link rel="alternate" hreflang="en" href="https://2048hub.com/flappy-2048/">
+  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/flappy-2048/">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=0.5, width=610, height=1024" />
+  <title>Flappy 2048 | 2048 Hub</title>
+  <meta name="description" content="Play Flappy 2048 online for free. A mashup of Flappy Bird and 2048—fly through pipes while merging numbered tiles. No download required." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://2048hub.com/ja/flappy-2048/">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://2048hub.com/ja/flappy-2048/" />
+  <meta property="og:title" content="Flappy 2048 - Flappy Bird Meets 2048 | 2048 Hub" />
+  <meta property="og:description" content="Play Flappy 2048 online for free. A mashup of Flappy Bird and 2048—fly through pipes while merging numbered tiles." />
+  <meta property="og:site_name" content="2048 Hub" />
+  <meta property="og:image" content="https://2048hub.com/favicon.svg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Flappy 2048 - Flappy Bird Meets 2048 | 2048 Hub" />
+  <meta name="twitter:description" content="Play Flappy 2048 online for free. A mashup of Flappy Bird and 2048—fly through pipes while merging numbered tiles." />
+</head>
+<body>
+  <style type="text/css">
+    .cellol {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select:none;
+      user-select:none;
+    }
+  </style>
+
+  <div id="lgd" style="width: 300px; height: 64px; position: absolute;"></div>
+  <script type='text/javascript'>
+    var lgdiv = document.getElementById('lgd');
+    lgdiv.style.left = Math.floor((window.innerWidth - 300)/2)+'px';
+    lgdiv.style.top = Math.floor((window.innerHeight - 64)/2)+'px';
+    lgdiv.style.fontFamily = 'Verdana';
+    lgdiv.style.fontSize = '16px';
+    lgdiv.style.fontWeight = 'bold';
+    lgdiv.style.textAlign = 'center';
+    lgdiv.innerHTML = '読み込み中...';
+  </script>
+
+  <script type='text/javascript' src='flappy2048.js'></script> 
+</body>
+</html>

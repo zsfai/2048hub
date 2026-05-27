@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Hub - 無料で2048ゲームをオンラインプレイ</title>
+    <meta name="description" content="2048 Hubで人気の2048バリエーションを無料プレイ。カップケーキ版、ヘックス版、クラシック版など。ダウンロード不要、ブラウザですぐ遊べます。">
+    <meta name="author" content="2048 Hub">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://2048hub.com/ja/">
+    <link rel="alternate" hreflang="en" href="https://2048hub.com/">
+    <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/">
+    <link rel="alternate" hreflang="x-default" href="https://2048hub.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://2048hub.com/ja/">
+    <meta property="og:title" content="2048 Hub - 無料2048ゲームコレクション">
+    <meta property="og:description" content="人気の2048ゲームを無料でオンラインプレイ。ダウンロード不要。">
+    <meta property="og:image" content="https://2048hub.com/favicon.svg">
+    <meta property="og:site_name" content="2048 Hub">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://2048hub.com/ja/">
+    <meta property="twitter:title" content="2048 Hub - 無料2048ゲームコレクション">
+    <meta property="twitter:description" content="人気の2048ゲームを無料でオンラインプレイ。ダウンロード不要。">
+    <meta property="twitter:image" content="https://2048hub.com/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="mobile-header">
+            <a href="https://2048hub.com/ja/" class="mobile-logo-link">
+                <span class="logo-number">2048</span>
+                <span class="logo-text">Hub</span>
+            </a>
+            <nav class="lang-switch lang-switch--header" aria-label="言語">
+                <a href="https://2048hub.com/" class="lang-switch__option" hreflang="en" lang="en">
+                    <span class="lang-switch__flag" aria-hidden="true">🇺🇸</span>
+                    <span>English</span>
+                </a>
+                <a href="https://2048hub.com/ja/" class="lang-switch__option is-active" hreflang="ja" lang="ja" aria-current="page">
+                    <span class="lang-switch__flag" aria-hidden="true">🇯🇵</span>
+                    <span>日本語</span>
+                </a>
+            </nav>
+        </header>
+
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <a href="https://2048hub.com/ja/" class="sidebar-header" id="logoArea">
+                    <h1 class="logo">
+                        <span class="logo-number">2048</span>
+                        <span class="logo-text">Hub</span>
+                    </h1>
+                    <p class="tagline">2048ゲームをオンラインで</p>
+                </a>
+                <nav class="lang-switch lang-switch--sidebar" aria-label="言語">
+                    <a href="https://2048hub.com/" class="lang-switch__option" hreflang="en" lang="en">
+                        <span class="lang-switch__flag" aria-hidden="true">🇺🇸</span>
+                        <span>English</span>
+                    </a>
+                    <a href="https://2048hub.com/ja/" class="lang-switch__option is-active" hreflang="ja" lang="ja" aria-current="page">
+                        <span class="lang-switch__flag" aria-hidden="true">🇯🇵</span>
+                        <span>日本語</span>
+                    </a>
+                </nav>
+            </div>
+            
+            <nav class="game-menu">
+                <h3 class="menu-title">ゲームを選ぶ</h3>
+                <ul class="game-list" id="gameList">
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="game-container" id="gameContainer">
+                <div class="game-header" id="gameHeader" style="display: none;">
+                    <h2 id="currentGameTitle">ゲームを選択</h2>
+                    <button class="back-btn" id="backBtn">ホーム</button>
+                </div>
+                
+                <div class="game-frame-container" id="gameFrameContainer">
+                    <div class="welcome-message">
+                        <div class="welcome-icon">🎯</div>
+                        <h2>2048ゲームコレクション</h2>
+                        <p>お気に入りの2048を選んで、すぐにプレイ開始</p>
+                        <div class="features">
+                            <div class="feature">
+                                <span class="feature-icon">🎮</span>
+                                <span>すぐ遊べる</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">🔥</span>
+                                <span>豊富なバリエーション</span>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">📱</span>
+                                <span>マルチデバイス対応</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="guide-content" id="guideContent">
+                        <div class="guide-header">
+                            <h2>2048攻略ガイド</h2>
+                            <p>2048ゲームの基本とコツ</p>
+                        </div>
+                        
+                        <div class="faq-section">
+                            <div class="faq-item">
+                                <h3 class="faq-question">2048で勝つには？</h3>
+                                <div class="faq-answer">
+                                    <p>2048は戦略と練習が重要です。基本のコツ：</p>
+                                    <ul>
+                                        <li><strong>角に最高タイルを置く：</strong> 一つの角を基準にタイルを積み上げる。</li>
+                                        <li><strong>一方向を決める：</strong> 左・右・下など、メインの移動方向を固定する。</li>
+                                        <li><strong>連鎖を狙う：</strong> 一度の操作で複数回合体する手を考える。</li>
+                                        <li><strong>盤面を整える：</strong> タイルを散らさず、行と列を整理する。</li>
+                                        <li><strong>繰り返し練習：</strong> プレイするほどタイルの動きが読めるようになる。</li>
+                                    </ul>
+                                    <p>これらのテクニックで、2048タイル達成のチャンスが高まります！</p>
+                                </div>
+                            </div>
+                            
+                            <div class="faq-item">
+                                <h3 class="faq-question">2048の起源は？</h3>
+                                <div class="faq-answer">
+                                    <p>2048には、以前のパズルゲームにルーツがあります：</p>
+                                    <ul>
+                                        <li><strong>Gabriele Cirulli作：</strong> 2014年3月、イタリアの開発者が公開。</li>
+                                        <li><strong>Threes!に着想：</strong> モバイルゲーム「Threes!」が元になった。</li>
+                                        <li><strong>オープンソース：</strong> 誰でもバリエーションを作れる。</li>
+                                        <li><strong>世界的ヒット：</strong> 公開直後から数百万人がプレイ。</li>
+                                        <li><strong>教育にも：</strong> 算数や論理思考の教材としても使われる。</li>
+                                    </ul>
+                                    <p>今もウェブで最も人気の数字パズルのひとつです！</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="quick-game-links">
+                            <h3 class="quick-links-title">🎯 クイックアクセス</h3>
+                            <div class="game-links-grid">
+                                <a href="https://2048hub.com/ja/classic-2048/" class="game-link-item" data-game-id="classic-2048">
+                                    <span class="game-link-icon">🔢</span>
+                                    <div class="game-link-info">
+                                        <h4>クラシック 2048</h4>
+                                        <p>オリジナル版</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/byd-cars/" class="game-link-item" data-game-id="2048-byd-cars">
+                                    <span class="game-link-icon">🚗</span>
+                                    <div class="game-link-info">
+                                        <h4>2048 BYD カーズ</h4>
+                                        <p>車2048ゲーム</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/2048-cupcakes/" class="game-link-item" data-game-id="2048-cupcakes">
+                                    <span class="game-link-icon">🧁</span>
+                                    <div class="game-link-info">
+                                        <h4>2048 カップケーキ</h4>
+                                        <p>スイーツ2048</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/taylor-swift-2048/" class="game-link-item" data-game-id="taylor-swift-2048">
+                                    <span class="game-link-icon">🎤</span>
+                                    <div class="game-link-info">
+                                        <h4>Taylor Swift 2048</h4>
+                                        <p>音楽2048</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/2048-princess/" class="game-link-item" data-game-id="2048-princess">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">👸</span>
+                                    <div class="game-link-info">
+                                        <h4>2048 プリンセス</h4>
+                                        <p>プリンセステーマ</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/2048-minecraft/" class="game-link-item" data-game-id="2048-minecraft">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">🟩</span>
+                                    <div class="game-link-info">
+                                        <h4>2048 マインクラフト</h4>
+                                        <p>マイクラテーマ</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/2048cupcakes-christmas/" class="game-link-item" data-game-id="2048-cupcakes-christmas">
+                                    <span class="game-link-icon">🎄</span>
+                                    <div class="game-link-info">
+                                        <h4>2048 クリスマスカップケーキ</h4>
+                                        <p>クリスマステーマ</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/doge-2048/" class="game-link-item" data-game-id="doge-2048">
+                                    <span class="game-link-icon">🐶</span>
+                                    <div class="game-link-info">
+                                        <h4>Doge 2048</h4>
+                                        <p>ドージ2048</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/card-2048/" class="game-link-item" data-game-id="card-2048">  
+                                    <span class="game-link-icon">🃏</span>
+                                    <div class="game-link-info">
+                                        <h4>カード 2048</h4>
+                                        <p>カードパズル</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/2048-remastered/" class="game-link-item" data-game-id="2048-remastered">
+                                    <span class="game-link-icon">🎮</span>
+                                    <div class="game-link-info">
+                                        <h4>2048 リマスター</h4>
+                                        <p>高画質2048</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/couch-2048/" class="game-link-item" data-game-id="couch-2048">
+                                    <span class="game-link-icon">🛋️</span>
+                                    <div class="game-link-info">
+                                        <h4>カウチ 2048</h4>
+                                        <p>リラックス2048</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/hex-2048/" class="game-link-item" data-game-id="hex-2048">
+                                    <span class="game-link-icon">⬡</span>
+                                    <div class="game-link-info">
+                                        <h4>ヘックス 2048</h4>
+                                        <p>六角形グリッド</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/flappy-2048/" class="game-link-item" data-game-id="flappy-2048">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">🐦</span>
+                                    <div class="game-link-info">
+                                        <h4>Flappy 2048</h4>
+                                        <p>Flappy × 2048</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/schulte-grid/" class="game-link-item">
+                                    <span class="game-link-icon">🧠</span>
+                                    <div class="game-link-info">
+                                        <h4>シュルテ表</h4>
+                                        <p>注意力トレーニング</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/parity/" class="game-link-item">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">🔲</span>
+                                    <div class="game-link-info">
+                                        <h4>Parity</h4>
+                                        <p>白黒数字パズル</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/xx142-b2exe/" class="game-link-item">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">💻</span>
+                                    <div class="game-link-info">
+                                        <h4>xx142-b2.exe</h4>
+                                        <p>ハッキング風パズル</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/blackholesquare/" class="game-link-item">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">🕳️</span>
+                                    <div class="game-link-info">
+                                        <h4>ブラックホールスクエア</h4>
+                                        <p>宇宙パズル</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/breakout/" class="game-link-item">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">🧱</span>
+                                    <div class="game-link-info">
+                                        <h4>ブロック崩し</h4>
+                                        <p>クラシックアーケード</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/captaincallisto/" class="game-link-item">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">🚀</span>
+                                    <div class="game-link-info">
+                                        <h4>キャプテン・カリスト</h4>
+                                        <p>宇宙アドベンチャー</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/chromedino/" class="game-link-item">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">🦖</span>
+                                    <div class="game-link-info">
+                                        <h4>Chrome 恐竜</h4>
+                                        <p>エンドレスラン</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/geometrydash/" class="game-link-item">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">🔺</span>
+                                    <div class="game-link-info">
+                                        <h4>Geometry Dash</h4>
+                                        <p>リズムアクション</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/astro-math/" class="game-link-item">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">🚀</span>
+                                    <div class="game-link-info">
+                                        <h4>アストロマス</h4>
+                                        <p>算数×宇宙</p>
+                                    </div>
+                                </a>
+                                <a href="https://2048hub.com/ja/8-puzzle/" class="game-link-item">
+                                    <span class="new-badge">新着</span>
+                                    <span class="game-link-icon">🧩</span>
+                                    <div class="game-link-info">
+                                        <h4>8パズル</h4>
+                                        <p>スライドパズル</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="guide-footer">
+                            <p>コツを試してみましょう。 <strong>上のメニューからゲームを選んでプレイ！</strong></p>
+                        </div>
+
+                        <footer class="site-footer">
+                            <div class="footer-content">
+                                <div class="footer-info">
+                                    <p>&copy; 2048 Hub - All rights reserved.</p>
+                                    <p>無料パズルゲームをオンラインで</p>
+                                </div>
+                                <nav class="footer-lang" aria-label="言語">
+                                    <div class="lang-switch">
+                                        <a href="https://2048hub.com/" class="lang-switch__option" hreflang="en" lang="en">
+                                            <span class="lang-switch__flag" aria-hidden="true">🇺🇸</span>
+                                            <span>English</span>
+                                        </a>
+                                        <a href="https://2048hub.com/ja/" class="lang-switch__option is-active" hreflang="ja" lang="ja" aria-current="page">
+                                            <span class="lang-switch__flag" aria-hidden="true">🇯🇵</span>
+                                            <span>日本語</span>
+                                        </a>
+                                    </div>
+                                </nav>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
