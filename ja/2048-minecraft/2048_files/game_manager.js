@@ -13,7 +13,7 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.setup();
 }
 
-// Restart the game
+// リスタート the game
 GameManager.prototype.restart = function () {
   this.storageManager.clearGameState();
   this.actuator.continueGame(); // Clear the game won/lost message
@@ -187,7 +187,7 @@ GameManager.prototype.move = function (direction) {
     this.addRandomTile();
 
     if (!this.movesAvailable()) {
-      this.over = true; // Game over!
+      this.over = true; // ゲームオーバー！
     }
 
     this.actuate();
@@ -196,7 +196,7 @@ GameManager.prototype.move = function (direction) {
 
 // Get the vector representing the chosen direction
 GameManager.prototype.getVector = function (direction) {
-  // Vectors representing tile movement
+  // Vectors representing tile 移動
   var map = {
     0: { x: 0,  y: -1 }, // Up
     1: { x: 1,  y: 0 },  // Right

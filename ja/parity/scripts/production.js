@@ -522,7 +522,7 @@ var StateData = (function() {
   var load = function() {
    /*
     * The level can either be loaded from the anchor in the url or the last
-    * level from the cookie...so which do we choose? First we'll check to see if
+    * level from the cookie読み込み中読み込み中読み込み中読み込み中読み込み中...so which do we choose? First we'll check to see if
     * there's an anchor. If there's already a cookie with a level value, we have
     * to be sure that the level value in the cookie is *higher* than the one in
     * the hash, to be sure that the user isn't trying to cheat and visit unseen

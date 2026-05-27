@@ -1,31 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-<head>
+    <head>
   <link rel="alternate" hreflang="en" href="https://2048hub.com/hex-2048/">
   <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/hex-2048/">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ヘックス 2048 | 2048 Hub</title>
-  <meta name="description" content="六角形グリッドの2048。ブラウザで無料プレイ、ダウンロード不要。">
-  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://2048hub.com/ja/hex-2048/">
-  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/hex-2048/">
-  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/ja/hex-2048/">
-  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://2048hub.com/ja/ja/hex-2048/">
-  <meta property="og:title" content="ヘックス 2048 | 2048 Hub">
-  <meta property="og:description" content="六角形グリッドの2048">
-  <meta property="og:site_name" content="2048 Hub">
-  <meta property="og:image" content="https://2048hub.com/favicon.svg">
-</head>
-<body style="margin:0;font-family:system-ui,sans-serif;background:#f5f6fa;">
-  <main style="max-width:900px;margin:0 auto;padding:16px;">
-    <p><a href="../">← 2048 Hub 日本語トップ</a> · <a href="../../">English</a></p>
-    <h1>⬡ ヘックス 2048</h1>
-    <p>六角形グリッドの2048</p>
-    <iframe src="https://2048hub.com/ja/hex-2048/" title="ヘックス 2048" style="width:100%;height:min(80vh,700px);border:0;border-radius:12px;background:#fff;" allowfullscreen></iframe>
-  </main>
-  <script src="../../../hub-bar.js" data-hub-title="ヘックス 2048" data-hub-home="https://2048hub.com/ja/ja/" defer></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ヘックス 2048 - 無料パズル | 2048 Hub</title>
+        <link rel="shortcut icon" href="hex-2048.svg">
+        <meta name="description" content="六角形グリッドの2048を無料プレイ。戦略的にタイルを合体させよう。">
+        <meta name="keywords" content="2048, hex 2048, hexagonal 2048, number puzzle, puzzle game, merge game, strategy game, free game, online game, hexagonal puzzle, number sliding, brain game, logic game">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="ja">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="ヘックス 2048 - Hexagonal Number Puzzle Game">
+        <meta property="og:description" content="Slide numbered tiles on a hexagonal grid to merge identical numbers and reach 2048 or higher! Challenge your strategic thinking with this unique twist on the classic 2048 game.">
+        <meta property="og:url" content="https://2048hub.com/hex-2048">
+        <meta property="og:site_name" content="2048Hub">
+        <meta property="og:locale" content="ja_JP">
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="ヘックス 2048 - Hexagonal Number Puzzle Game">
+        <meta property="twitter:description" content="Slide numbered tiles on a hexagonal grid to merge identical numbers and reach 2048 or higher! Challenge your strategic thinking with this unique twist on the classic 2048 game.">
+        
+        <!-- Game specific meta tags -->
+        <meta name="game:type" content="puzzle">
+        <meta name="game:genre" content="strategy, puzzle, brain training">
+        <meta name="game:platform" content="web">
+        <meta name="game:difficulty" content="medium">
+        <meta name="game:age_rating" content="all">
+        
+        <!-- Structured Data for SEO -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoGame",
+          "name": "ヘックス 2048",
+          "description": "A hexagonal twist on the classic 2048 puzzle game. Slide numbered tiles on a hexagonal grid to merge identical numbers and reach 2048 or higher!",
+          "genre": ["Puzzle", "Strategy", "Brain Training"],
+          "gamePlatform": "Web Browser",
+          "operatingSystem": "Any",
+          "applicationCategory": "Game",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "2048Hub",
+            "email": "2048hub@2048hub.com"
+          },
+          "datePublished": "2025",
+          "inLanguage": "en",
+          "keywords": "2048, hex 2048, hexagonal puzzle, number game, strategy game, puzzle game, free online game"
+        }
+        </script>
+        
+        <link type="text/css" href="style.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="game-container">
+        <div class="game-title">
+          ヘックス 2048
+        </div>
+        <div class="game-title" style="font-size: 16px; margin-bottom: 10px; color: #b5b5a1">
+          数字を合体させて <span style="color: #f1a510">&nbsp;2048&nbsp;</span> や <span style="color: #6b7fef">&nbsp;32768</span>!
+        </div>
+        <div class="game-wrapper">
+          <div id="game-canvas" style="align-items: center"></div>
+          <button id="new-game-btn" class="new-game-button">新しいゲーム</button>
+        </div>
+        <div class="game-credit">
+          <p>Made by Jeff Hou</p>
+          <p style="font-size: 18px; color: #337744">jeffhou <span style="color: black">[at]</span> jeffhou <span style="color: black">[dot]</span> com</p>
+        </div>
+      </div>
+      <script src="phaser.js"></script>
+      <script src="game.js"></script>
+    <script src="../../../hub-bar.js" data-hub-title="ヘックス 2048 - 無料パズル" defer></script>
 </body>
 </html>

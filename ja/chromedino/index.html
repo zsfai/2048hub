@@ -10,7 +10,7 @@
   <link rel="canonical" href="https://2048hub.com/ja/chromedino/">
   <link rel="alternate" hreflang="en" href="https://2048hub.com/chromedino/">
   <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/chromedino/">
-  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <link rel="icon" type="image/svg+xml" href="../../../favicon.svg">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://2048hub.com/ja/chromedino/">
   <meta property="og:title" content="Chrome 恐竜 - エンドレスラン | 2048 Hub">
@@ -3227,7 +3227,7 @@ Runner.prototype = {
       this.pollGamepadButton(gamepad, 1, 40);  // Duck
     }
     if (gamepad.buttons.length >= 10) {
-      this.pollGamepadButton(gamepad, 9, 13);  // Restart
+      this.pollGamepadButton(gamepad, 9, 13);  // リスタート
     }
 
     this.previousGamepad = gamepad;
@@ -3865,7 +3865,7 @@ function GameOverPanel(
   this.altGameEndImgPos = opt_altGameEndImgPos;
   this.altGameModeActive = opt_altGameActive;
 
-  // Retry animation.
+  // もう一度 animation.
   this.frameTimeStamp = 0;
   this.animTimer = 0;
   this.currentFrame = 0;
@@ -3989,7 +3989,7 @@ GameOverPanel.prototype = {
   /**
    * Draw restart button.
    */
-  drawRestartButton() {
+  drawリスタートButton() {
     const dimensions = GameOverPanel.dimensions;
     let framePosX = GameOverPanel.animConfig.frames[this.currentFrame];
     let restartSourceWidth = dimensions.RESTART_WIDTH;
@@ -4031,7 +4031,7 @@ GameOverPanel.prototype = {
     }
 
     this.drawGameOverText(GameOverPanel.dimensions, false);
-    this.drawRestartButton();
+    this.drawリスタートButton();
     this.drawAltGameElements(opt_tRex);
     this.update();
   },
@@ -4047,18 +4047,18 @@ GameOverPanel.prototype = {
     this.animTimer += deltaTime;
     this.flashTimer += deltaTime;
 
-    // Restart Button
+    // リスタート Button
     if (this.currentFrame == 0 &&
         this.animTimer > GameOverPanel.LOGO_PAUSE_DURATION) {
       this.animTimer = 0;
       this.currentFrame++;
-      this.drawRestartButton();
+      this.drawリスタートButton();
     } else if (
         this.currentFrame > 0 &&
         this.currentFrame < GameOverPanel.animConfig.frames.length) {
       if (this.animTimer >= GameOverPanel.animConfig.msPerFrame) {
         this.currentFrame++;
-        this.drawRestartButton();
+        this.drawリスタートButton();
       }
     } else if (
         !this.altGameModeActive &&
@@ -6596,7 +6596,7 @@ class LoadTimeData {
    * Returns a formatted localized string where $1 to $9 are replaced by the
    * second to the tenth argument.
    * @param {string} id The ID of the string we want.
-   * @param {...(string|number)} var_args The extra values to include in the
+   * @param {読み込み中読み込み中読み込み中読み込み中読み込み中...(string|number)} var_args The extra values to include in the
    *     formatted output.
    * @return {string} The formatted string.
    */
@@ -6617,7 +6617,7 @@ class LoadTimeData {
    * $$.
    * @param {string} label The label to substitute through.
    *     This is not an resource ID.
-   * @param {...(string|number)} var_args The extra values to include in the
+   * @param {読み込み中読み込み中読み込み中読み込み中読み込み中...(string|number)} var_args The extra values to include in the
    *     formatted output.
    * @return {string} The formatted string.
    */
@@ -6635,7 +6635,7 @@ class LoadTimeData {
    * substitution was performed. Any standalone $ signs must be escaped as $$.
    * @param {string} label A localized string to substitute through.
    *     This is not an resource ID.
-   * @param {...(string|number)} var_args The extra values to include in the
+   * @param {読み込み中読み込み中読み込み中読み込み中読み込み中...(string|number)} var_args The extra values to include in the
    *     formatted output.
    * @return {!Array<!{value: string, arg: (null|string)}>} The formatted
    *     string pieces.
@@ -6746,4 +6746,4 @@ class LoadTimeData {
   // |loadTimeData| explicitly.
   window.loadTimeData = loadTimeData;
 
-  console.warn('crbug/1173575, non-JS module files deprecated.');</script><script jstcache="0">const pageData = {"dinoGameA11yAriaLabel":"","dinoGameA11yDescription":"Dino game. A pixelated dinosaur dodges cacti and pterodactyls as it runs across a desolate landscape. When you hear an audio cue, press space to jump over obstacles.","dinoGameA11yGameOver":"Game over, your score is $1.","dinoGameA11yHighScore":"Your highest score is $1.","dinoGameA11yJump":"Jump!","dinoGameA11ySpeedToggle":"Start slower","dinoGameA11yStartGame":"Game started.","errorCode":"","fontfamily":"'Segoe UI', Tahoma, sans-serif","fontsize":"75%","heading":{"hostName":"dino","msg":"Press space to play"},"iconClass":"icon-offline","language":"en","textdirection":"ltr","title":"chrome://dino/"};loadTimeData.data = pageData;var tp = document.getElementById('t');jstProcess(new JsEvalContext(pageData), tp);</script><script src="../../hub-bar.js" defer></script></body></html>
+  console.warn('crbug/1173575, non-JS module files deprecated.');</script><script jstcache="0">const pageData = {"dinoGameA11yAriaLabel":"","dinoGameA11yDescription":"Dino game. A pixelated dinosaur dodges cacti and pterodactyls as it runs across a desolate landscape. When you hear an audio cue, press space to jump over obstacles.","dinoGameA11yGameOver":"Game over, your score is $1.","dinoGameA11yHighScore":"Your highest score is $1.","dinoGameA11yJump":"Jump!","dinoGameA11ySpeedToggle":"Start slower","dinoGameA11yStartGame":"Game started.","errorCode":"","fontfamily":"'Segoe UI', Tahoma, sans-serif","fontsize":"75%","heading":{"hostName":"dino","msg":"Press space to play"},"iconClass":"icon-offline","language":"en","textdirection":"ltr","title":"chrome://dino/"};loadTimeData.data = pageData;var tp = document.getElementById('t');jstProcess(new JsEvalContext(pageData), tp);</script><script src="../../../hub-bar.js" defer></script></body></html>

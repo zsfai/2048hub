@@ -25,7 +25,7 @@ Breakout = {
       radius:  0.3,
       speed:   15,
       labels: {
-        3: { text: 'ready...', fill: '#D82800', stroke: 'black', font: 'bold 28pt arial' },
+        3: { text: 'ready読み込み中読み込み中読み込み中読み込み中読み込み中...', fill: '#D82800', stroke: 'black', font: 'bold 28pt arial' },
         2: { text: 'set..',    fill: '#FC9838', stroke: 'black', font: 'bold 28pt arial' },
         1: { text: 'go!',      fill: '#80D010', stroke: 'black', font: 'bold 28pt arial' }
       }

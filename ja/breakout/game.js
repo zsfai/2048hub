@@ -206,7 +206,7 @@ Game = {
       return Game.current = Object.construct(Game.Runner, id, game, cfg).game; // return the game instance, not the runner (caller can always get at the runner via game.runner)
   },
 
-  ua: function() { // should avoid user agent sniffing... but sometimes you just gotta do what you gotta do
+  ua: function() { // should avoid user agent sniffing読み込み中読み込み中読み込み中読み込み中読み込み中... but sometimes you just gotta do what you gotta do
     var ua  = navigator.userAgent.toLowerCase();
     var key =        ((ua.indexOf("opera")   > -1) ? "opera"   : null);
         key = key || ((ua.indexOf("firefox") > -1) ? "firefox" : null);

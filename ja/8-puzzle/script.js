@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const resetButton = document.getElementById('reset-button');
     const timerElement = document.getElementById('timer');
     
-    let tiles = [...Array(9).keys()];
+    let tiles = [読み込み中読み込み中読み込み中読み込み中読み込み中...Array(9).keys()];
     let emptyIndex = 8;
     let timer;
     let startTime;
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function resetTiles() {
-        tiles = [...Array(9).keys()];
+        tiles = [読み込み中読み込み中読み込み中読み込み中読み込み中...Array(9).keys()];
         emptyIndex = 8;
         createTiles();
         resetTimer();
