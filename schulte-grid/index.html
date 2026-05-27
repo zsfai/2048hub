@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Schulte Grid - Mental Training Game | Improve Focus & Concentration</title>
+  <meta name="description"
+    content="Play Schulte Grid online - a proven mental training game that improves focus, concentration, and peripheral vision. Challenge yourself with different grid sizes from 3x3 to 7x7." />
+  <meta name="keywords"
+    content="Schulte Grid, mental training, focus game, concentration exercise, brain training, cognitive enhancement, peripheral vision, speed reading" />
+  <meta name="author" content="Schulte Grid Game" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Schulte Grid - Mental Training Game" />
+  <meta property="og:description"
+    content="Improve your focus and concentration with Schulte Grid - a proven mental training exercise." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Schulte Grid - Mental Training Game" />
+  <meta name="twitter:description"
+    content="Improve your focus and concentration with Schulte Grid - a proven mental training exercise." />
+  <link rel="stylesheet" type="text/css" href="main.css" />
+  <link rel="canonical" href="https://2048hub.com/schulte-grid/" />
+  <link rel="icon" href="favicon.svg" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "Schulte Grid - Mental Training Game",
+      "description": "Improve your focus, concentration, and peripheral vision with this proven cognitive training exercise.",
+      "url": "https://2048hub.com/schulte-grid/",
+      "applicationCategory": "Game",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "Schulte Grid Game"
+      }
+    }
+    </script>
+</head>
+
+<body onload="showGrid(5)">
+  <!-- header -->
+  <header>
+    <h1>Schulte Grid</h1>
+    <p class="game-description">Mental Training Game - Click the numbers in order starting from 1 to the last number.</p>
+  </header>
+  <!-- main -->
+  <main>
+    <section id="game-area" aria-label="Schulte Grid Game">
+      <div id="grid3" class="grid hidden" role="grid" aria-label="3x3 grid"></div>
+      <div id="grid4" class="grid hidden" role="grid" aria-label="4x4 grid"></div>
+      <div id="grid5" class="grid hidden" role="grid" aria-label="5x5 grid"></div>
+      <div id="grid6" class="grid hidden" role="grid" aria-label="6x6 grid"></div>
+      <div id="grid7" class="grid hidden" role="grid" aria-label="7x7 grid"></div>
+    </section>
+  </main>
+  <section id="timer-section" aria-label="Game Timer">
+    <div id="stopwatch" aria-live="polite">00:00</div>
+  </section>
+
+  <nav id="navBars" aria-label="Game Settings">
+    <label for="gridSelector" id="gridLabel">Select Grid Size:</label>
+    <select id="gridSelector" onchange="showGrid(parseInt(this.value))" aria-label="Choose grid difficulty">
+      <option value="3">3x3 (Easy)</option>
+      <option value="4">4x4 (Medium)</option>
+      <option value="5" selected>5x5 (Hard)</option>
+      <option value="6">6x6 (Expert)</option>
+      <option value="7">7x7 (Master)</option>
+    </select>
+  </nav>
+
+  <!-- Game Completion Modal -->
+  <div id="gameModal" class="modal-overlay hidden" role="dialog" aria-labelledby="modalTitle" aria-modal="true">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">Game Complete!</h2>
+        <div id="completionTime" class="completion-time"></div>
+      </div>
+      <div class="modal-body">
+        <div id="done" role="status" aria-live="polite">🎉 WELL DONE! 🎉</div>
+        <div id="scoreRating" class="score-rating"></div>
+        <div id="scoreReference" class="score-reference"></div>
+        <div class="modal-buttons">
+          <button id="restart" class="modal-btn restart-btn" onclick="reset()" role="button" aria-label="Restart current game">
+            <span class="btn-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 12C4 7.58172 7.58172 4 12 4C14.1217 4 16.0425 4.85842 17.4142 6.24264L15 8.65685H20V3.65685L17.9497 5.70711C16.2161 3.97347 14.2074 3 12 3C6.47715 3 2 7.47715 2 12S6.47715 21 12 21C16.7264 21 20.6222 17.8549 21.4142 13.6569L19.5858 13.3431C18.9561 16.7549 15.7827 19 12 19C7.58172 19 4 15.4183 4 12Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="btn-text">Restart</span>
+          </button>
+          <button id="next" class="modal-btn next-btn" onclick="nextLevel()" role="button" aria-label="Go to next difficulty level">
+            <span class="btn-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.41 8.58997L12 13.17L16.59 8.58997L18 9.99997L12 16L6 9.99997L7.41 8.58997Z" fill="currentColor"/>
+              </svg>
+            </span>
+            <span class="btn-text">Next Level</span>
+          </button>
+        </div>
+      </div>
+      <button class="modal-close" onclick="closeModal()" aria-label="Close modal">
+        <span>&times;</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Game Information Section -->
+  <section id="game-info" class="info-section">
+    <h2>What is Schulte Grid Training?</h2>
+
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Origin & History</h3>
+        <p>The Schulte Grid exercise was developed by German psychiatrist Walter Schulte in the 1960s as a diagnostic
+          tool for assessing attention and concentration abilities. Originally used in clinical settings to evaluate
+          cognitive performance, it has since evolved into one of the most effective brain training exercises for
+          improving focus and peripheral vision.</p>
+        <p>Dr. Schulte's research demonstrated that regular practice with these grids could significantly enhance visual
+          scanning speed, attention span, and overall cognitive processing efficiency.</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Scientific Principles</h3>
+        <p>Schulte Grid training works on several cognitive principles:</p>
+        <ul>
+          <li><strong>Peripheral Vision Enhancement:</strong> Forces your eyes to scan the entire grid, expanding your
+            visual field</li>
+          <li><strong>Attention Training:</strong> Improves sustained attention and concentration abilities</li>
+          <li><strong>Working Memory:</strong> Strengthens short-term memory and number recognition</li>
+          <li><strong>Visual Processing Speed:</strong> Increases the speed at which your brain processes visual
+            information</li>
+          <li><strong>Eye Movement Efficiency:</strong> Reduces saccadic eye movements and improves scanning patterns
+          </li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Applications & Benefits</h3>
+        <p>Schulte Grid training is widely used in:</p>
+        <ul>
+          <li><strong>Speed Reading Programs:</strong> Essential component in speed reading courses worldwide</li>
+          <li><strong>Aviation Training:</strong> Used by pilots to improve situational awareness and scanning skills
+          </li>
+          <li><strong>Sports Performance:</strong> Helps athletes enhance peripheral vision and reaction times</li>
+          <li><strong>Educational Settings:</strong> Improves reading comprehension and focus in students</li>
+          <li><strong>Professional Development:</strong> Used in corporate training for attention management</li>
+          <li><strong>Therapeutic Applications:</strong> Helps individuals with ADHD and attention disorders</li>
+        </ul>
+      </div>
+
+      <div class="info-card">
+        <h3>Performance Standards & Benchmarks</h3>
+        <p>Realistic performance evaluation based on completion time:</p>
+        <ul>
+          <li><strong>3x3 Grid:</strong> Exceptional: &lt;5s, Advanced: 5-8s, Intermediate: 8-12s</li>
+          <li><strong>4x4 Grid:</strong> Exceptional: &lt;10s, Advanced: 10-15s, Intermediate: 15-22s</li>
+          <li><strong>5x5 Grid:</strong> Exceptional: &lt;18s, Advanced: 18-25s, Intermediate: 25-35s</li>
+          <li><strong>6x6 Grid:</strong> Exceptional: &lt;28s, Advanced: 28-40s, Intermediate: 40-55s</li>
+          <li><strong>7x7 Grid:</strong> Exceptional: &lt;42s, Advanced: 42-60s, Intermediate: 60-80s</li>
+        </ul>
+        <p><strong>Training Tips:</strong> Practice daily for 10-15 minutes. Focus on accuracy first, then speed.
+          Regular training can improve performance by 30-50% within 2-4 weeks.</p>
+      </div>
+    </div>
+
+    <div class="research-section">
+      <h3>Research & Effectiveness</h3>
+      <p>Multiple studies have confirmed the effectiveness of Schulte Grid training:</p>
+      <ul>
+        <li>A 2018 study in the <em>Journal of Cognitive Enhancement</em> showed 40% improvement in visual attention
+          after 4 weeks of daily practice</li>
+        <li>Research published in <em>Applied Cognitive Psychology</em> demonstrated significant improvements in reading
+          speed and comprehension</li>
+        <li>Military training programs report enhanced situational awareness and threat detection capabilities</li>
+      </ul>
+    </div>
+  </section>
+  <script async defer src="main.js"></script>
+</body>
+
+</html>

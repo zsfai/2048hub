@@ -1,0 +1,49 @@
+{
+  "name": "2048 Cupcakes",
+  "short_name": "2048 Cupcakes",
+  "description": "Play the ultimate 2048 Cupcakes puzzle game! Free online browser game.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8ef",
+  "theme_color": "#faf8ef",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["games", "entertainment", "puzzle"],
+  "icons": [
+    {
+      "src": "meta/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "favicon.jpg",
+      "sizes": "32x32",
+      "type": "image/jpeg"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "style/img/2048.jpg",
+      "sizes": "600x400",
+      "type": "image/jpg",
+      "form_factor": "wide",
+      "label": "2048 Cupcakes Game Screenshot"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Play 2048 Cupcakes",
+      "short_name": "Play Game",
+      "description": "Start playing 2048 Cupcakes puzzle game",
+      "url": "/",
+      "icons": [
+        {
+          "src": "meta/apple-touch-icon.png",
+          "sizes": "180x180"
+        }
+      ]
+    }
+  ]
+}
