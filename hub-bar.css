@@ -1,12 +1,16 @@
 html.hub-bar-active {
-    overflow: hidden;
-    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    min-height: 100%;
 }
 
 html.hub-bar-active body {
-    overflow: hidden;
-    height: 100vh;
-    max-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: auto;
+    min-height: 100vh;
+    max-height: none;
 }
 
 .hub-bar {

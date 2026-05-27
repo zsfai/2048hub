@@ -45,6 +45,17 @@
       "tags": ["princess", "disney", "cute", "easy"]
     },
     {
+      "id": "2048-minecraft",
+      "title": "2048 Minecraft",
+      "description": "Combine Minecraft blocks in this themed 2048 game to reach 2048",
+      "icon": "🟩",
+      "url": "https://2048hub.com/2048-minecraft/",
+      "iframe": true,
+      "category": "minecraft",
+      "difficulty": "easy",
+      "tags": ["minecraft", "blocks", "fun", "easy"]
+    },
+    {
       "id": "hex2048",
       "title": "Hex2048",
       "description": "Hexagonal grid 2048 variant with more strategic gameplay",

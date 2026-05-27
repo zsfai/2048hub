@@ -42,6 +42,15 @@ const games = [
         isNew: true
     },
     {
+        id: '2048-minecraft',
+        title: '2048 Minecraft',
+        description: 'Combine Minecraft blocks in this themed 2048 game to reach 2048',
+        icon: '🟩',
+        url: 'https://2048hub.com/2048-minecraft/',
+        iframe: true,
+        isNew: true
+    },
+    {
         id: 'couch-2048',
         title: 'Couch 2048',
         description: 'Couch 2048 game with couch theme, perfect for all ages',
