@@ -42,6 +42,15 @@ const games = [
         isNew: true
     },
     {
+        id: '2048-cats',
+        title: '2048 Cats',
+        description: 'Merge cats by nobility from alley kitten to Royal Cat',
+        icon: '🐱',
+        url: 'https://2048hub.com/2048-cats/',
+        iframe: true,
+        isNew: true
+    },
+    {
         id: '2048-minecraft',
         title: '2048 Minecraft',
         description: 'Combine Minecraft blocks in this themed 2048 game to reach 2048',

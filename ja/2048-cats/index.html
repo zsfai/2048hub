@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="alternate" hreflang="en" href="https://2048hub.com/2048-cats/">
+  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-cats/">
+  <link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-cats/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2048 キャッツ | 2048 Hub</title>
+  <meta name="description" content="2048 キャッツを無料でオンラインプレイ。尊い猫を合体させて王室の猫を目指そう。ダウンロード不要。">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://2048hub.com/ja/2048-cats/">
+  <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2048hub.com/ja/2048-cats/">
+  <meta property="og:title" content="2048 キャッツ | 2048 Hub">
+  <meta property="og:description" content="2048 キャッツを無料でプレイ。尊い猫を合体させて王室の猫を目指そう。">
+  <meta property="og:site_name" content="2048 Hub">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:image" content="https://2048hub.com/2048-cats/style/2048.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2048 キャッツ | 2048 Hub">
+  <meta name="twitter:description" content="2048 キャッツを無料でプレイ。尊い猫を合体させて王室の猫を目指そう。">
+  <meta name="twitter:image" content="https://2048hub.com/2048-cats/style/2048.jpg">
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048 キャッツ</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">尊い猫を合体させて<strong>王室の猫</strong>を目指そう！</p>
+      <a class="restart-button">新しいゲーム</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">続ける</a>
+          <a class="retry-button">もう一度</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+
+    <p class="game-explanation">
+      <strong class="important">遊び方：</strong> <strong>矢印キー</strong>でタイルを動かします。同じランクの猫が触れると<strong>合体</strong>します！
+    </p>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+  <script src="../../hub-bar.js" data-hub-title="2048 キャッツ" defer></script>
+</body>
+</html>

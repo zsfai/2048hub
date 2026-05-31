@@ -42,6 +42,15 @@ const games = [
         isNew: true
     },
     {
+        id: '2048-cats',
+        title: '2048 キャッツ',
+        description: '尊い猫を合体させて王室の猫を目指す2048',
+        icon: '🐱',
+        url: 'https://2048hub.com/ja/2048-cats/',
+        iframe: true,
+        isNew: true
+    },
+    {
         id: '2048-minecraft',
         title: '2048 マインクラフト',
         description: 'マインクラフトブロックを合体させて2048を目指す',

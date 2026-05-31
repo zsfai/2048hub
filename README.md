@@ -38,7 +38,7 @@
 
 ---
 
-## 游戏目录（共 23 款）
+## 游戏目录（共 24 款）
 
 下表列出仓库中全部游戏，含**在线试玩链接**（英语版 / 日语版）。本地仓库路径见「目录」列。
 
@@ -53,6 +53,7 @@
 | 2048 Cupcakes | [英语版](https://2048hub.com/2048-cupcakes/) · [日语版](https://2048hub.com/ja/2048-cupcakes/) | `2048-cupcakes/` | 纸杯蛋糕主题 |
 | 2048 Cupcakes Christmas | [英语版](https://2048hub.com/2048cupcakes-christmas/) · [日语版](https://2048hub.com/ja/2048cupcakes-christmas/) | `2048cupcakes-christmas/` | 圣诞纸杯蛋糕主题 |
 | 2048 Princess | [英语版](https://2048hub.com/2048-princess/) · [日语版](https://2048hub.com/ja/2048-princess/) | `2048-princess/` | 迪士尼公主主题 |
+| 2048 Cats | [英语版](https://2048hub.com/2048-cats/) · [日语版](https://2048hub.com/ja/2048-cats/) | `2048-cats/` | 按尊贵程度合体升级的猫主题 |
 | 2048 Minecraft | [英语版](https://2048hub.com/2048-minecraft/) · [日语版](https://2048hub.com/ja/2048-minecraft/) | `2048-minecraft/` | 我的世界方块主题 |
 | Couch 2048 | [英语版](https://2048hub.com/couch-2048/) · [日语版](https://2048hub.com/ja/couch-2048/) | `couch-2048/` | 拖拽式 2048 |
 | Card 2048 | [英语版](https://2048hub.com/card-2048/) · [日语版](https://2048hub.com/ja/card-2048/) | `card-2048/` | 扑克牌数字主题（Construct） |
@@ -91,7 +92,7 @@
 
 ## 首页 iframe 列表说明
 
-`script.js` / `ja/script.js` 中的 `games` 数组决定**侧边栏可 iframe 加载**的游戏（当前为 14 款 2048 类）。其余游戏在首页「Quick Game Access」区域以直链方式进入，同样可独立访问。
+`script.js` / `ja/script.js` 中的 `games` 数组决定**侧边栏可 iframe 加载**的游戏（当前为 15 款 2048 类）。其余游戏在首页「Quick Game Access」区域以直链方式进入，同样可独立访问。
 
 若需将新游戏加入侧边栏 iframe 列表，在 `script.js` 中追加条目，例如：
 
