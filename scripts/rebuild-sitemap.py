@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Regenerate sitemap.xml with en/ja/es/fr hreflang for hub and all games."""
+"""Regenerate sitemap.xml with en/ja/es/fr/it hreflang for hub and all games."""
 from __future__ import annotations
 
 from pathlib import Path
 
+from hub_lang import SITE, game_hreflang_urls
+
 ROOT = Path(__file__).resolve().parents[1]
-SITE = "https://2048hub.com"
-LASTMOD_HUB = "2026-05-28T00:00:00+00:00"
-LASTMOD_GAME = "2026-05-28T00:00:00+00:00"
+LASTMOD = "2026-05-28T00:00:00+00:00"
 
 
 def game_slugs() -> list[str]:
@@ -19,21 +19,22 @@ def game_slugs() -> list[str]:
     )
 
 
-def hreflang(en: str, ja: str, es: str, fr: str) -> str:
+def hreflang(urls: dict[str, str]) -> str:
     return (
-        f'        <xhtml:link rel="alternate" hreflang="en" href="{en}"/>\n'
-        f'        <xhtml:link rel="alternate" hreflang="ja" href="{ja}"/>\n'
-        f'        <xhtml:link rel="alternate" hreflang="es" href="{es}"/>\n'
-        f'        <xhtml:link rel="alternate" hreflang="fr" href="{fr}"/>\n'
-        f'        <xhtml:link rel="alternate" hreflang="x-default" href="{en}"/>'
+        f'        <xhtml:link rel="alternate" hreflang="en" href="{urls["en"]}"/>\n'
+        f'        <xhtml:link rel="alternate" hreflang="ja" href="{urls["ja"]}"/>\n'
+        f'        <xhtml:link rel="alternate" hreflang="es" href="{urls["es"]}"/>\n'
+        f'        <xhtml:link rel="alternate" hreflang="fr" href="{urls["fr"]}"/>\n'
+        f'        <xhtml:link rel="alternate" hreflang="it" href="{urls["it"]}"/>\n'
+        f'        <xhtml:link rel="alternate" hreflang="x-default" href="{urls["en"]}"/>'
     )
 
 
-def entry(loc: str, en: str, ja: str, es: str, fr: str, priority: str, changefreq: str, lastmod: str) -> str:
+def entry(loc: str, urls: dict[str, str], priority: str, changefreq: str) -> str:
     return f"""    <url>
         <loc>{loc}</loc>
-{hreflang(en, ja, es, fr)}
-        <lastmod>{lastmod}</lastmod>
+{hreflang(urls)}
+        <lastmod>{LASTMOD}</lastmod>
         <changefreq>{changefreq}</changefreq>
         <priority>{priority}</priority>
     </url>"""
@@ -41,34 +42,36 @@ def entry(loc: str, en: str, ja: str, es: str, fr: str, priority: str, changefre
 
 def main() -> None:
     slugs = game_slugs()
-    hubs = [
-        (f"{SITE}/", "1.0", "weekly", LASTMOD_HUB),
-        (f"{SITE}/ja/", "0.95", "weekly", LASTMOD_HUB),
-        (f"{SITE}/es/", "0.95", "weekly", LASTMOD_HUB),
-        (f"{SITE}/fr/", "0.95", "weekly", LASTMOD_HUB),
-    ]
-    en_h, ja_h, es_h, fr_h = f"{SITE}/", f"{SITE}/ja/", f"{SITE}/es/", f"{SITE}/fr/"
-
+    hub_urls = {
+        "en": f"{SITE}/",
+        "ja": f"{SITE}/ja/",
+        "es": f"{SITE}/es/",
+        "fr": f"{SITE}/fr/",
+        "it": f"{SITE}/it/",
+    }
     parts = [
         '<?xml version="1.0" encoding="UTF-8"?>',
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"',
         '        xmlns:xhtml="http://www.w3.org/1999/xhtml">',
     ]
-    for loc, pri, freq, lm in hubs:
-        parts.append(entry(loc, en_h, ja_h, es_h, fr_h, pri, freq, lm))
+    for loc, pri, freq in [
+        (hub_urls["en"], "1.0", "weekly"),
+        (hub_urls["ja"], "0.95", "weekly"),
+        (hub_urls["es"], "0.95", "weekly"),
+        (hub_urls["fr"], "0.95", "weekly"),
+        (hub_urls["it"], "0.95", "weekly"),
+    ]:
+        parts.append(entry(loc, hub_urls, pri, freq))
 
     for slug in slugs:
-        en = f"{SITE}/{slug}/"
-        ja = f"{SITE}/ja/{slug}/"
-        es = f"{SITE}/es/{slug}/"
-        fr = f"{SITE}/fr/{slug}/"
-        for loc in (en, ja, es, fr):
-            parts.append(entry(loc, en, ja, es, fr, "0.9", "monthly", LASTMOD_GAME))
+        urls = game_hreflang_urls(slug)
+        for loc in urls.values():
+            parts.append(entry(loc, urls, "0.9", "monthly"))
 
     parts.append("</urlset>")
-    out = ROOT / "sitemap.xml"
-    out.write_text("\n".join(parts) + "\n", encoding="utf-8")
-    print(f"wrote {len(hubs) + len(slugs) * 4} urls to sitemap.xml")
+    (ROOT / "sitemap.xml").write_text("\n".join(parts) + "\n", encoding="utf-8")
+    n = 5 + len(slugs) * 5
+    print(f"wrote {n} urls to sitemap.xml")
 
 
 if __name__ == "__main__":

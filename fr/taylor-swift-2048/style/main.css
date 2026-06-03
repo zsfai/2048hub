@@ -110,7 +110,7 @@ h1.title small {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Score"; }
+  content: "Points"; }
 
 .best-container:after {
   content: "Meilleur"; }

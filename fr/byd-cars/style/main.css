@@ -173,7 +173,7 @@ h1.title {
 .score-container:after {
   content: "Car"; }
 .score-points:after {
-  content: "Score"; }
+  content: "Points"; }
 
 .best-container:after {
   content: "Best Car"; }

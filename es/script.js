@@ -11,7 +11,7 @@ const games = [
     {
         id: 'taylor-swift-2048',
         title: 'Taylor Swift 2048',
-        description: 'Taylor Swift 2048 game with Taylor Swift theme, perfect for all ages',
+        description: '2048 temático de Taylor Swift, para todas las edades',
         icon: '🎤',
         url: 'https://2048hub.com/es/taylor-swift-2048/', // Replace with actual game URL
         iframe: true

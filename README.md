@@ -8,6 +8,7 @@
 - **日文站**：[2048hub.com/ja](https://2048hub.com/ja/)
 - **西语站**：[2048hub.com/es](https://2048hub.com/es/)
 - **法语站**：[2048hub.com/fr](https://2048hub.com/fr/)
+- **意大利语站**：[2048hub.com/it](https://2048hub.com/it/)
 
 ---
 
@@ -15,7 +16,7 @@
 
 - 首页侧边栏通过 iframe 嵌入游玩（`script.js` 中配置的游戏）
 - 各游戏独立目录，可单独访问（利于 SEO 与分享）
-- 英文 / 日文 / 西语 / 法语：`ja/`、`es/`、`fr/` 为各语言静态副本（非运行时 i18n）
+- 英文 / 日文 / 西语 / 法语 / 意大利语：`ja/`、`es/`、`fr/`、`it/` 为各语言静态副本（非运行时 i18n）
 - 各游戏页可挂载 `hub-bar.js` 返回 Hub 导航
 
 ---
@@ -28,17 +29,18 @@
 ├── script.js           # 首页游戏列表与 iframe 逻辑
 ├── styles.css
 ├── hub-bar.js          # 游戏内顶部 Hub 导航条
-├── sitemap.xml         # 站点地图（en/ja/es/fr hreflang）
+├── sitemap.xml         # 站点地图（en/ja/es/fr/it hreflang）
 ├── ja/                 # 日文 Hub 与各游戏日文版
 ├── es/                 # 西语 Hub 与各游戏西语版
 ├── fr/                 # 法语 Hub 与各游戏法语版
+├── it/                 # 意大利语 Hub 与各游戏意语版
 │   ├── index.html
 │   ├── script.js
 │   └── {game-slug}/    # 与根目录同 slug 的本地化副本
 ├── scripts/
 │   ├── sync-ja-games.py    # 同步并翻译到 ja/
-│   ├── sync-locales.py     # 同步并翻译到 es/、fr/
-│   └── build-hub-locales.py  # 生成 es/、fr/ Hub 首页
+│   ├── sync-locales.py     # 同步并翻译到 es/、fr/、it/
+│   └── build-hub-locales.py  # 生成 es/、fr/、it/ Hub 首页
 └── {game-slug}/        # 各游戏英文资源目录
 ```
 
@@ -48,7 +50,7 @@
 
 下表列出仓库中全部游戏，含**在线试玩链接**（英 / 日 / 西 / 法）。本地仓库路径见「目录」列。
 
-| Hub 首页 | [英语版](https://2048hub.com/) · [日语版](https://2048hub.com/ja/) · [西语版](https://2048hub.com/es/) · [法语版](https://2048hub.com/fr/) | — | 游戏合集入口 |
+| Hub 首页 | [英语版](https://2048hub.com/) · [日语版](https://2048hub.com/ja/) · [西语版](https://2048hub.com/es/) · [法语版](https://2048hub.com/fr/) · [意语版](https://2048hub.com/it/) | — | 游戏合集入口 |
 
 ### 2048 及主题变体
 
@@ -140,14 +142,15 @@ python scripts/sync-ja-games.py
 python scripts/sync-ja-games.py --copy   # 从英文目录重新复制后再翻译
 ```
 
-**西语 / 法语**（`es/`、`fr/`）：
+**西语 / 法语 / 意大利语**（`es/`、`fr/`、`it/`）：
 
 ```bash
 python scripts/sync-locales.py
 python scripts/sync-locales.py --copy    # 首次或需全量覆盖时
-python scripts/build-hub-locales.py      # 重建 es/、fr/ Hub 首页与 script.js
-python scripts/rebuild-sitemap.py        # 重建四语言 sitemap
-python scripts/patch-hreflang-en-ja.py   # 为 en/ja 游戏页补全 es/fr hreflang
+python scripts/sync-locales.py --copy --only=it   # 仅同步意大利语
+python scripts/build-hub-locales.py      # 重建 es/、fr/、it/ Hub 与五语言导航
+python scripts/rebuild-sitemap.py        # 重建五语言 sitemap
+python scripts/patch-hreflang-en-ja.py   # 为各语言游戏页补全 hreflang
 ```
 
 ---

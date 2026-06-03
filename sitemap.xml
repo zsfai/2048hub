@@ -7,6 +7,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
@@ -18,6 +19,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
@@ -29,6 +31,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
@@ -40,6 +43,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>weekly</changefreq>
@@ -51,6 +67,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-cats/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-cats/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -62,6 +79,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-cats/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-cats/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -73,6 +91,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-cats/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-cats/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -84,6 +103,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-cats/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-cats/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-cats/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/2048-cats/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/2048-cats/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-cats/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-cats/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-cats/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-cats/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-cats/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -95,6 +127,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-cupcakes/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-cupcakes/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -106,6 +139,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-cupcakes/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-cupcakes/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -117,6 +151,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-cupcakes/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-cupcakes/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -128,6 +163,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-cupcakes/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-cupcakes/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-cupcakes/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/2048-cupcakes/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/2048-cupcakes/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-cupcakes/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-cupcakes/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-cupcakes/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-cupcakes/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-cupcakes/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -139,6 +187,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-minecraft/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-minecraft/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -150,6 +199,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-minecraft/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-minecraft/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -161,6 +211,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-minecraft/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-minecraft/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -172,6 +223,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-minecraft/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-minecraft/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-minecraft/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/2048-minecraft/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/2048-minecraft/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-minecraft/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-minecraft/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-minecraft/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-minecraft/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-minecraft/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -183,6 +247,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-princess/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-princess/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -194,6 +259,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-princess/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-princess/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -205,6 +271,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-princess/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-princess/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -216,6 +283,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-princess/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-princess/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-princess/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/2048-princess/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/2048-princess/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-princess/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-princess/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-princess/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-princess/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-princess/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -227,6 +307,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-remastered/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-remastered/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -238,6 +319,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-remastered/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-remastered/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -249,6 +331,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-remastered/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-remastered/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -260,6 +343,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-remastered/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-remastered/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-remastered/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/2048-remastered/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/2048-remastered/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-remastered/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-remastered/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-remastered/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-remastered/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-remastered/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -271,6 +367,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048cupcakes-christmas/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048cupcakes-christmas/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -282,6 +379,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048cupcakes-christmas/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048cupcakes-christmas/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -293,6 +391,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048cupcakes-christmas/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048cupcakes-christmas/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -304,6 +403,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048cupcakes-christmas/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048cupcakes-christmas/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048cupcakes-christmas/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/2048cupcakes-christmas/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/2048cupcakes-christmas/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048cupcakes-christmas/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048cupcakes-christmas/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048cupcakes-christmas/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048cupcakes-christmas/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048cupcakes-christmas/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -315,6 +427,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/8-puzzle/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/8-puzzle/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -326,6 +439,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/8-puzzle/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/8-puzzle/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -337,6 +451,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/8-puzzle/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/8-puzzle/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -348,6 +463,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/8-puzzle/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/8-puzzle/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/8-puzzle/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/8-puzzle/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/8-puzzle/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/8-puzzle/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/8-puzzle/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/8-puzzle/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/8-puzzle/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/8-puzzle/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -359,6 +487,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/astro-math/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/astro-math/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -370,6 +499,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/astro-math/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/astro-math/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -381,6 +511,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/astro-math/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/astro-math/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -392,6 +523,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/astro-math/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/astro-math/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/astro-math/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/astro-math/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/astro-math/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/astro-math/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/astro-math/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/astro-math/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/astro-math/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/astro-math/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -403,6 +547,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/blackholesquare/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/blackholesquare/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -414,6 +559,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/blackholesquare/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/blackholesquare/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -425,6 +571,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/blackholesquare/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/blackholesquare/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -436,6 +583,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/blackholesquare/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/blackholesquare/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/blackholesquare/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/blackholesquare/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/blackholesquare/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/blackholesquare/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/blackholesquare/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/blackholesquare/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/blackholesquare/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/blackholesquare/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -447,6 +607,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/breakout/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/breakout/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/breakout/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/breakout/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/breakout/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -458,6 +619,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/breakout/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/breakout/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/breakout/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/breakout/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/breakout/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -469,6 +631,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/breakout/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/breakout/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/breakout/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/breakout/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/breakout/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -480,6 +643,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/breakout/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/breakout/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/breakout/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/breakout/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/breakout/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/breakout/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/breakout/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/breakout/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/breakout/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/breakout/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/breakout/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/breakout/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -491,6 +667,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/byd-cars/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/byd-cars/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -502,6 +679,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/byd-cars/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/byd-cars/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -513,6 +691,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/byd-cars/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/byd-cars/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -524,6 +703,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/byd-cars/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/byd-cars/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/byd-cars/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/byd-cars/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/byd-cars/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/byd-cars/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/byd-cars/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/byd-cars/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/byd-cars/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/byd-cars/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -535,6 +727,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/captaincallisto/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/captaincallisto/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -546,6 +739,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/captaincallisto/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/captaincallisto/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -557,6 +751,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/captaincallisto/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/captaincallisto/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -568,6 +763,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/captaincallisto/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/captaincallisto/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/captaincallisto/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/captaincallisto/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/captaincallisto/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/captaincallisto/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/captaincallisto/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/captaincallisto/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/captaincallisto/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/captaincallisto/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -579,6 +787,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/card-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/card-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -590,6 +799,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/card-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/card-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -601,6 +811,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/card-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/card-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -612,6 +823,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/card-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/card-2048/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/card-2048/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/card-2048/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/card-2048/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/card-2048/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/card-2048/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/card-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/card-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/card-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -623,6 +847,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/chromedino/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/chromedino/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -634,6 +859,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/chromedino/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/chromedino/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -645,6 +871,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/chromedino/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/chromedino/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -656,6 +883,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/chromedino/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/chromedino/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/chromedino/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/chromedino/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/chromedino/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/chromedino/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/chromedino/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/chromedino/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/chromedino/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/chromedino/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -667,6 +907,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/classic-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/classic-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -678,6 +919,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/classic-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/classic-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -689,6 +931,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/classic-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/classic-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -700,6 +943,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/classic-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/classic-2048/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/classic-2048/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/classic-2048/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/classic-2048/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/classic-2048/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/classic-2048/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/classic-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/classic-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/classic-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -711,6 +967,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/couch-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/couch-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -722,6 +979,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/couch-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/couch-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -733,6 +991,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/couch-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/couch-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -744,6 +1003,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/couch-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/couch-2048/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/couch-2048/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/couch-2048/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/couch-2048/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/couch-2048/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/couch-2048/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/couch-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/couch-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/couch-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -755,6 +1027,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/doge-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/doge-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -766,6 +1039,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/doge-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/doge-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -777,6 +1051,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/doge-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/doge-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -788,6 +1063,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/doge-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/doge-2048/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/doge-2048/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/doge-2048/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/doge-2048/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/doge-2048/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/doge-2048/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/doge-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/doge-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/doge-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -799,6 +1087,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/flappy-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/flappy-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -810,6 +1099,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/flappy-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/flappy-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -821,6 +1111,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/flappy-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/flappy-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -832,6 +1123,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/flappy-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/flappy-2048/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/flappy-2048/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/flappy-2048/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/flappy-2048/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/flappy-2048/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/flappy-2048/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/flappy-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/flappy-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/flappy-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -843,6 +1147,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/geometrydash/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/geometrydash/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -854,6 +1159,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/geometrydash/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/geometrydash/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -865,6 +1171,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/geometrydash/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/geometrydash/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -876,6 +1183,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/geometrydash/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/geometrydash/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/geometrydash/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/geometrydash/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/geometrydash/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/geometrydash/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/geometrydash/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/geometrydash/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/geometrydash/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/geometrydash/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -887,6 +1207,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/hex-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/hex-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -898,6 +1219,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/hex-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/hex-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -909,6 +1231,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/hex-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/hex-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -920,6 +1243,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/hex-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/hex-2048/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/hex-2048/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/hex-2048/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/hex-2048/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/hex-2048/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/hex-2048/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/hex-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/hex-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/hex-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -931,6 +1267,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/parity/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/parity/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/parity/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/parity/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/parity/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -942,6 +1279,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/parity/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/parity/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/parity/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/parity/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/parity/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -953,6 +1291,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/parity/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/parity/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/parity/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/parity/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/parity/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -964,6 +1303,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/parity/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/parity/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/parity/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/parity/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/parity/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/parity/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/parity/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/parity/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/parity/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/parity/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/parity/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/parity/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -975,6 +1327,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/schulte-grid/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/schulte-grid/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -986,6 +1339,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/schulte-grid/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/schulte-grid/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -997,6 +1351,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/schulte-grid/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/schulte-grid/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -1008,6 +1363,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/schulte-grid/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/schulte-grid/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/schulte-grid/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/schulte-grid/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/schulte-grid/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/schulte-grid/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/schulte-grid/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/schulte-grid/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/schulte-grid/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/schulte-grid/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -1019,6 +1387,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/taylor-swift-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/taylor-swift-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -1030,6 +1399,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/taylor-swift-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/taylor-swift-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -1041,6 +1411,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/taylor-swift-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/taylor-swift-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -1052,6 +1423,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/taylor-swift-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/taylor-swift-2048/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/taylor-swift-2048/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/taylor-swift-2048/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/taylor-swift-2048/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/taylor-swift-2048/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/taylor-swift-2048/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/taylor-swift-2048/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/taylor-swift-2048/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/taylor-swift-2048/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -1063,6 +1447,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/xx142-b2exe/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/xx142-b2exe/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -1074,6 +1459,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/xx142-b2exe/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/xx142-b2exe/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -1085,6 +1471,7 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/xx142-b2exe/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/xx142-b2exe/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>
@@ -1096,6 +1483,19 @@
         <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/xx142-b2exe/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/xx142-b2exe/"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/xx142-b2exe/"/>
+        <lastmod>2026-05-28T00:00:00+00:00</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://2048hub.com/it/xx142-b2exe/</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://2048hub.com/xx142-b2exe/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/xx142-b2exe/"/>
+        <xhtml:link rel="alternate" hreflang="es" href="https://2048hub.com/es/xx142-b2exe/"/>
+        <xhtml:link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/xx142-b2exe/"/>
+        <xhtml:link rel="alternate" hreflang="it" href="https://2048hub.com/it/xx142-b2exe/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://2048hub.com/xx142-b2exe/"/>
         <lastmod>2026-05-28T00:00:00+00:00</lastmod>
         <changefreq>monthly</changefreq>

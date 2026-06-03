@@ -1,0 +1,44 @@
+{
+  "name": "2048 Hub - Play 2048 Games Online",
+  "short_name": "2048 Hub",
+  "description": "Play the best 2048 games online for free! 2048 Hub features 2048 Cupcakes, Hex2048, and classic 2048 variants. No download required - play instantly in your browser.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf8ef",
+  "theme_color": "#8b5cf6",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["games", "entertainment", "puzzle"],
+  "icons": [
+    {
+      "src": "meta/apple-touch-icon.png",
+      "sizes": "200x200",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "meta/apple-touch-icon.png",
+      "sizes": "200x200",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "2048 Hub Screenshot"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Play 2048 Hub",
+      "short_name": "Play Game",
+      "description": "Start playing 2048 Hub games",
+      "url": "/",
+      "icons": [
+        {
+          "src": "meta/apple-touch-icon.png",
+          "sizes": "200x200"
+        }
+      ]
+    }
+  ]
+}

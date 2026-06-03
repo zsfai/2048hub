@@ -1,0 +1,30 @@
+{
+    "name": "Couch 2048 - Fun Puzzle Game",
+    "short_name": "Couch 2048",
+    "description": "Play Couch 2048, an exciting puzzle game where you drag and stack numbered pieces to reach 2048. Free to play, no download required!",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "landscape",
+    "theme_color": "#8B4513",
+    "background_color": "#F5F5DC",
+    "categories": ["games", "entertainment"],
+    "lang": "en",
+    "scope": "/",
+    "icons": [
+        {
+            "src": "favicon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml",
+            "purpose": "any maskable"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "screenshot1.png",
+            "sizes": "1280x720",
+            "type": "image/png",
+            "form_factor": "wide",
+            "label": "Couch 2048 Game Screenshot"
+        }
+    ]
+}

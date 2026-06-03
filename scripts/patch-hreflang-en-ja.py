@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
-"""Ensure en/ja game index.html have complete en/ja/es/fr hreflang (no duplicates)."""
+"""Ensure game index.html have complete en/ja/es/fr/it hreflang (no duplicates)."""
 from __future__ import annotations
 
 import re
+import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-SITE = "https://2048hub.com"
+from hub_lang import HREFLANG_GAME, game_hreflang_urls
 
-HREFLANG = """  <link rel="alternate" hreflang="en" href="{en}">
-  <link rel="alternate" hreflang="ja" href="{ja}">
-  <link rel="alternate" hreflang="es" href="{es}">
-  <link rel="alternate" hreflang="fr" href="{fr}">
-  <link rel="alternate" hreflang="x-default" href="{en}">"""
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def game_slugs() -> list[str]:
@@ -26,15 +22,12 @@ def game_slugs() -> list[str]:
 
 def patch_file(path: Path, slug: str) -> bool:
     text = path.read_text(encoding="utf-8")
-    en = f"{SITE}/{slug}/"
-    ja = f"{SITE}/ja/{slug}/"
-    es = f"{SITE}/es/{slug}/"
-    fr = f"{SITE}/fr/{slug}/"
-    links = HREFLANG.format(en=en, ja=ja, es=es, fr=fr)
+    urls = game_hreflang_urls(slug)
+    links = HREFLANG_GAME.format(**urls)
     stripped = re.sub(r'\s*<link rel="alternate" hreflang="[^"]*"[^>]*>\s*', "\n", text)
-    if stripped == text and links.strip() in text:
-        return False
     if "<head>" not in stripped:
+        return False
+    if links.strip() in stripped and 'hreflang="it"' in stripped:
         return False
     stripped = stripped.replace("<head>", f"<head>\n{links}", 1)
     path.write_text(stripped, encoding="utf-8")
@@ -42,9 +35,10 @@ def patch_file(path: Path, slug: str) -> bool:
 
 
 def main() -> None:
+    bases = [ROOT, ROOT / "ja", ROOT / "es", ROOT / "fr", ROOT / "it"]
     n = 0
     for slug in game_slugs():
-        for base in (ROOT, ROOT / "ja"):
+        for base in bases:
             p = base / slug / "index.html"
             if p.is_file() and patch_file(p, slug):
                 n += 1

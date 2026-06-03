@@ -11,7 +11,7 @@ const games = [
     {
         id: 'taylor-swift-2048',
         title: 'Taylor Swift 2048',
-        description: 'Taylor Swift 2048 game with Taylor Swift theme, perfect for all ages',
+        description: '2048 thème Taylor Swift, pour tous les âges',
         icon: '🎤',
         url: 'https://2048hub.com/fr/taylor-swift-2048/', // Replace with actual game URL
         iframe: true
@@ -19,7 +19,7 @@ const games = [
     {
         id: '2048-cupcakes',
         title: '2048 Cupcakes',
-        description: 'Classic 2048 game with adorable cupcake theme, perfect for all ages',
+        description: '2048 cupcakes adorables',
         icon: '🧁',
         url: 'https://2048hub.com/fr/2048-cupcakes/', // Replace with actual game URL
         iframe: true
@@ -44,7 +44,7 @@ const games = [
     {
         id: '2048-cats',
         title: '2048 Cats',
-        description: 'Chats par noblesse jusqu au Chat Royal',
+        description: 'Chats par noblesse jusqu\'au Chat Royal',
         icon: '🐱',
         url: 'https://2048hub.com/fr/2048-cats/',
         iframe: true,

@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <link rel="alternate" hreflang="en" href="https://2048hub.com/taylor-swift-2048/">
+  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/taylor-swift-2048/">
+  <link rel="alternate" hreflang="es" href="https://2048hub.com/es/taylor-swift-2048/">
+  <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/taylor-swift-2048/">
+  <link rel="alternate" hreflang="it" href="https://2048hub.com/it/taylor-swift-2048/">
+  <link rel="alternate" hreflang="x-default" href="https://2048hub.com/taylor-swift-2048/">
+  <meta charset="utf-8">
+  <title>Taylor Swift 2048 - Puzzle gratis | 2048 Hub</title>
+  <meta name="description" content="2048 a tema Taylor Swift. Gioca gratis online.">
+  <meta name="author" content="Taylor Swift 2048 Game">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta property="og:title" content="Taylor Swift 2048 - Puzzle gratis | 2048 Hub">
+  <meta property="og:description"
+    content="Combine Taylor Swift tiles in this addictive 2048 puzzle game! Features iconic Taylor Swift looks from all her eras. Play free online now!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2048hub.com/it/taylor-swift-2048/">
+  <meta property="og:image" content="https://2048hub.com/taylor-swift-2048/style/taylor-swift.jpg">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="400">
+  <meta property="og:site_name" content="Taylor Swift 2048">
+  <meta property="og:locale" content="it_IT">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Taylor Swift 2048 - Puzzle gratis | 2048 Hub">
+  <meta name="twitter:description"
+    content="Combine Taylor Swift tiles in this addictive 2048 puzzle game! Play free online now!">
+  <meta name="twitter:image" content="https://2048hub.com/taylor-swift-2048/style/taylor-swift.jpg">
+  <link rel="canonical" href="https://2048hub.com/it/taylor-swift-2048/">
+  <link rel="preload" href="style/main.css" as="style">
+  <link rel="preload" href="style/taylor-swift.jpg" as="image">
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.jpg">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png"
+    media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"
+    media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport"
+    content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Taylor Swift 2048 Game",
+    "description": "A puzzle game where players combine tiles featuring Taylor Swift's iconic looks to reach the 2048 tile. Play free online with no download required.",
+    "genre": "Puzzle Game",
+    "gamePlatform": "Web Browser",
+    "operatingSystem": "Any",
+    "applicationCategory": "Game",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "inLanguage": "en",
+    "isAccessibleForFree": true,
+    "gameItem": [
+      {
+        "@type": "Thing",
+        "name": "Taylor Swift Tiles",
+        "description": "Game tiles featuring Taylor Swift's iconic looks from different eras"
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <img src="style/taylor-swift.jpg" alt="Taylor Swift 2048 Background Image" class="background-image">
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">Taylor Swift <small>2048</small></h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">Join the Taylors!</p>
+      <a class="restart-button">Nuova partita</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Continua</a>
+          <a class="retry-button">Riprova</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+      <div class="tile-container">
+      </div>
+    </div>
+    <section class="game-explanation" aria-label="Istruzioni di gioco">
+      <h2>Come giocare a Taylor Swift 2048</h2>
+      <p>
+        <strong class="important">Game Rules:</strong> Use your <strong>arrow keys</strong> to move the Taylor Swift
+        tiles. When two tiles with the same Taylor Swift era image touch, they <strong>merge into one!</strong>
+        Combine tiles to reach the ultimate 2048 tile featuring Taylor Swift's most iconic look. Challenge yourself to
+        get the highest score possible!
+      </p>
+      <p>
+        <strong>Taylor Swift Eras Featured:</strong> From her country beginnings to pop superstardom, each tile
+        represents a different era of Taylor Swift's career.
+        Can you combine them all to reach the legendary 2048 tile?
+      </p>
+    </section>
+    <div class="era-description">
+      <h2>Taylor Swift Eras</h2>
+      <div class="eras-container" id="erasContainer">
+        <div class="era-description-item">
+        <img src="style/1.jpg" alt="Young Taylor Swift with curly blonde hair wearing The Little Mermaid shirt">
+        <h3>Debut Era - The Beginning</h3>
+        <p>Meet the young Taylor Swift with her signature curly blonde hair and wide-eyed wonder! This adorable snapshot
+          captures the innocence and early spark of the future superstar, wearing her beloved 'The Little Mermaid' shirt
+          and ready to embark on her incredible musical journey. This is where the magic began - the pure, authentic
+          country sound that would capture hearts worldwide.</p>
+      </div>
+      <div class="era-description-item">
+        <img src="style/2.jpg"
+          alt="Taylor Swift from her Fearless era, with iconic long curly blonde hair and blue eyes, against a whimsical floral background">
+        <h3>Fearless Era - Enchanting Stardom</h3>
+        <p>Step into the enchanting world of Taylor Swift's Fearless era! This captivating image showcases Taylor with
+          her signature cascade of golden, curly hair and piercing blue eyes, embodying the youthful dreams and romantic
+          storytelling that defined this Grammy-winning period. Against a backdrop of whimsical butterflies and lush
+          foliage, she radiates a confident yet dreamy aura, ready to conquer the world with her heartfelt anthems.</p>
+      </div>
+      <div class="era-description-item">
+        <img src="style/3.jpg"
+          alt="Taylor Swift in sepia-toned portrait with windswept blonde hair, eyes closed in serene contemplation">
+        <h3>Speak Now Era - Ethereal Dreams</h3>
+        <p>Dive into the dreamy, introspective world of Taylor Swift's Speak Now era! This stunning sepia-toned portrait
+          captures Taylor in a moment of pure serenity, with her windswept blonde hair flowing dramatically and her eyes
+          gently closed in peaceful contemplation. The romantic, vintage aesthetic perfectly embodies the emotional
+          depth and storytelling mastery that defined this transformative period, where Taylor truly found her voice as
+          both a songwriter and storyteller.</p>
+      </div>
+      
+      <!-- Toggle button after first 3 eras -->
+      <div class="toggle-button-container">
+        <button class="toggle-eras" onclick="toggleEras()" aria-label="Toggle all Taylor Swift eras">
+          <span id="toggle-text">Show More Eras</span>
+          <span class="toggle-icon">▼</span>
+        </button>
+      </div>
+      <div class="era-description-item">
+        <img src="style/4.jpg"
+          alt="Taylor Swift Speak Now album cover with dramatic purple tulle dress and intense blue eyes">
+        <h3>Speak Now Era - Purple Dreams</h3>
+        <p>Behold the iconic Speak Now album cover that defined an era! This stunning portrait captures Taylor in a
+          dramatic, ethereal pose, looking over her shoulder with confident, mysterious eyes. Draped in voluminous
+          purple tulle that flows like clouds around her, she embodies the perfect blend of romantic storytelling and
+          powerful self-expression. The dark purple gradient background and soft dramatic lighting create an
+          unforgettable image that represents Taylor's artistic evolution and her mastery of emotional storytelling.</p>
+      </div>
+      <div class="era-description-item">
+        <img src="style/5.jpg"
+          alt="Taylor Swift Red era portrait in vintage car with velvet newsboy cap and red lipstick">
+        <h3>Red Era - Autumn Melancholy</h3>
+        <p>Experience the introspective beauty of Taylor Swift's Red era! This evocative portrait captures Taylor seated
+          in a vintage convertible, wearing a rich burnt orange velvet newsboy cap and striking red lipstick. Her
+          thoughtful, melancholic gaze and the soft waves of blonde hair peeking from under her cap perfectly embody the
+          emotional depth of this transformative period. The autumn backdrop with bare trees and her elegant trench coat
+          create a quintessential Red era aesthetic that defined Taylor's artistic evolution into more mature, complex
+          storytelling.</p>
+      </div>
+      <div class="era-description-item">
+        <img src="style/6.jpg"
+          alt="Taylor Swift 1989 album cover with windswept hair, red lipstick, and seagulls in blue sky">
+        <h3>1989 Era - Pop Perfection</h3>
+        <p>Celebrate the iconic 1989 era that redefined pop music! This vibrant album cover captures Taylor with her
+          signature windswept hair and bright red lipstick, looking over her shoulder with a radiant, joyful smile. Set
+          against a clear blue sky with soaring seagulls, the image perfectly embodies the freedom, happiness, and pure
+          pop aesthetic that defined this groundbreaking period. The vintage filter and handwritten "1989" typography
+          create an unforgettable visual that represents Taylor's complete transformation into a pop superstar.</p>
+      </div>
+      <div class="era-description-item">
+        <img src="style/7.jpg"
+          alt="Taylor Swift Reputation album cover with split black and white portrait and newspaper clippings">
+        <h3>Reputation Era - Dark Rebirth</h3>
+        <p>Witness the bold transformation of Taylor Swift's Reputation era! This striking black and white album cover
+          features a split portrait that perfectly captures the duality of this groundbreaking period. On one side,
+          Taylor appears natural and vulnerable, while the other side shows her defiantly staring through a collage of
+          newspaper clippings bearing her name. The edgy, rebellious aesthetic with studded choker and dark lips
+          symbolizes her powerful response to media scrutiny and her complete artistic reinvention into a darker, more
+          confident persona.</p>
+      </div>
+      <div class="era-description-item">
+        <img src="style/8.jpg" alt="Taylor Swift Lover era portrait with pastel colors and romantic aesthetic">
+        <h3>Lover Era - Pastel Dreams</h3>
+        <p>Enter the dreamy, romantic world of Taylor Swift's Lover era! This enchanting portrait captures Taylor in a
+          soft, ethereal aesthetic with pastel colors and dreamy lighting. The romantic, whimsical atmosphere perfectly
+          embodies the themes of love, happiness, and self-acceptance that defined this beautiful period. The gentle,
+          artistic styling represents Taylor's return to vulnerability and her celebration of love in all its forms,
+          marking a new chapter of artistic expression and personal growth.</p>
+      </div>
+      <div class="era-description-item">
+        <img src="style/9.jpg"
+          alt="Taylor Swift in a misty, black and white forest, evoking the folklore/evermore aesthetic">
+        <h3>folklore/evermore Era - Enchanted Woods</h3>
+        <p>Step into the enchanting, introspective world of Taylor Swift's folklore and evermore eras! This evocative
+          black and white image captures Taylor in a dense, misty forest, embodying the raw, poetic storytelling and
+          indie-folk sound that defined these critically acclaimed albums. Dressed in a long, dark coat, she stands
+          amidst towering trees and ethereal fog, her contemplative gaze inviting listeners into a realm of hidden
+          narratives and profound emotional depth. This era represents a journey through forgotten tales and whispered
+          secrets, all set against the backdrop of a mysterious, beautiful wilderness.</p>
+      </div>
+      <div class="era-description-item">
+        <img src="style/10.jpg"
+          alt="Taylor Swift evermore era with long blonde braid and rustic plaid coat in winter forest">
+        <h3>evermore Era - Winter Solitude</h3>
+        <p>Embrace the contemplative beauty of Taylor Swift's evermore era! This serene image captures Taylor from
+          behind, showcasing her intricate waist-length blonde braid and rustic plaid coat in earthy tones of brown,
+          orange, and black. Set against a backdrop of bare trees and overcast sky, the winter forest setting perfectly
+          embodies the introspective, melancholic storytelling that defined this sister album to folklore. The
+          high-angle perspective and muted color palette create an atmosphere of quiet reflection and natural beauty,
+          inviting listeners into a world of poetic narratives and emotional depth.</p>
+      </div>
+      <div class="era-description-item">
+        <img src="style/11.jpg"
+          alt="Taylor Swift Midnights album cover with blue eyeshadow, red lipstick, and lighting a match">
+        <h3>Midnights Era - Introspective Glow</h3>
+        <p>Step into the intimate, introspective world of Taylor Swift's Midnights era! This iconic album cover captures
+          Taylor in a moment of quiet contemplation, her eyes adorned with shimmering blue eyeshadow and a tear-like
+          glitter, while her lips are painted a striking red. She holds a lit match close to her face, casting a warm,
+          dramatic glow that illuminates her thoughtful expression and disheveled bangs. The image perfectly
+          encapsulates the album's themes of late-night thoughts, vulnerability, and the raw honesty of her songwriting,
+          inviting listeners into her deepest reflections.</p>
+      </div>
+      <div class="era-description-item">
+        <img src="style/12.jpg"
+          alt="Taylor Swift The Tortured Poets Department album cover in sepia tones, lying on bed with closed eyes">
+        <h3>The Tortured Poets Department Era - Vulnerable Intimacy</h3>
+        <p>Enter the deeply personal world of Taylor Swift's The Tortured Poets Department era! This intimate,
+          sepia-toned album cover captures Taylor lying serenely on a bed, her eyes closed in contemplative repose. The
+          soft, natural lighting creates gentle shadows across her form, while her hair fans out on the pillow beneath
+          her. The vulnerable, introspective mood perfectly embodies the raw emotional honesty and poetic storytelling
+          that defines this deeply personal album. This image invites listeners into Taylor's most intimate thoughts and
+          feelings, representing a new chapter of artistic vulnerability and creative expression.</p>
+      </div>
+      </div>
+  </div>
+  <hr>
+  <footer class="footer">
+    <p class="description">
+      <strong>Taylor Swift 2048 Game</strong> - Play the Taylor Swift twist on the classic 2048 puzzle game with
+      beautiful Taylor Swift tiles.
+      Join the Taylors, merge tiles, and reach the ultimate sweet victory!
+      <em>Completely free to play with no ads or hidden costs.</em>
+    </p>
+    <p class="copyright">
+      © 2024 <a href="https://2048hub.com" target="_blank" rel="noopener">2048hub.com</a> - All rights reserved.
+    </p>
+  </footer>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+  
+  <script>
+    let isExpanded = false;
+    
+    // Toggle eras functionality
+    function toggleEras() {
+      const container = document.getElementById('erasContainer');
+      const toggleText = document.getElementById('toggle-text');
+      const toggleIcon = document.querySelector('.toggle-icon');
+      const eraItems = container.querySelectorAll('.era-description-item');
+      
+      if (!isExpanded) {
+        // Show all eras
+        container.style.display = 'block';
+        eraItems.forEach((item) => {
+          item.style.display = 'block';
+        });
+        toggleText.textContent = 'Hide All Eras';
+        toggleIcon.textContent = '▲';
+        container.style.animation = 'fadeIn 0.3s ease-in';
+        isExpanded = true;
+      } else {
+        // Hide additional eras (keep first 3 visible)
+        const eraItems = container.querySelectorAll('.era-description-item');
+        eraItems.forEach((item, index) => {
+          if (index < 3) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+        toggleText.textContent = 'Show More Eras';
+        toggleIcon.textContent = '▼';
+        isExpanded = false;
+      }
+    }
+    
+    // Initialize with first 3 eras visible
+    document.addEventListener('DOMContentLoaded', function() {
+      const container = document.getElementById('erasContainer');
+      const eraItems = container.querySelectorAll('.era-description-item');
+      
+      // Show first 3 eras by default
+      eraItems.forEach((item, index) => {
+        if (index < 3) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+      
+      // Show container initially with first 3 eras
+      container.style.display = 'block';
+    });
+  </script>
+<script src="../../hub-bar.js" data-hub-title="Taylor Swift 2048 - Puzzle gratis" defer></script>
+</body>
+
+</html>

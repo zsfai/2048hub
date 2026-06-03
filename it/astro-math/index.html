@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+  <link rel="alternate" hreflang="en" href="https://2048hub.com/astro-math/">
+  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/astro-math/">
+  <link rel="alternate" hreflang="es" href="https://2048hub.com/es/astro-math/">
+  <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/astro-math/">
+  <link rel="alternate" hreflang="it" href="https://2048hub.com/it/astro-math/">
+  <link rel="alternate" hreflang="x-default" href="https://2048hub.com/astro-math/">
+  <meta property="og:locale" content="it_IT">
+
+
+
+
+
+<link rel="canonical" href="https://2048hub.com/it/astro-math/">
+  <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Puzzle matematico spaziale gratis. Distruggi gli asteroidi.">
+    <meta name="keywords" content="math game, math puzzle game, number game, arithmetic game, algebra game, mental math game, math challenge, math brain game, educational math game, math adventure, space math, asteroid math, math problem solving, math skills, math practice" />
+    <meta name="author" content="AstroMath Team" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Astro Math - Matematica spaziale | 2048 Hub" />
+    <meta property="og:description" content="Puzzle matematico spaziale gratis. Distruggi gli asteroidi." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://2048hub.com/it/astro-math/" />
+    <meta property="og:image" content="./assets/images/asteroid.png" />
+    <meta property="og:site_name" content="AstroMath" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Astro Math - Matematica spaziale | 2048 Hub" />
+    <meta name="twitter:description" content="Puzzle matematico spaziale gratis. Distruggi gli asteroidi." />
+    <meta name="twitter:image" content="./assets/images/asteroid.png" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#1a1a2e" />
+    <meta name="msapplication-TileColor" content="#1a1a2e" />
+    <meta name="application-name" content="AstroMath" />
+    
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
+    <title>Astro Math - Matematica spaziale | 2048 Hub</title>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "AstroMath",
+      "description": "The ultimate math game experience! Challenge your arithmetic, algebra, and mental math skills in this thrilling space adventure. Perfect for math game enthusiasts and number puzzle lovers!",
+      "genre": ["Educational", "Puzzle", "Arcade"],
+      "gamePlatform": "Web Browser",
+      "operatingSystem": "Any",
+      "applicationCategory": "Educational Game",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "AstroMath Team"
+      },
+      "keywords": "math game, math puzzle game, number game, arithmetic game, algebra game, mental math game, math challenge, math brain game",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "educationalUse": "instruction",
+      "educationalLevel": "beginner to intermediate",
+      "learningResourceType": "game",
+      "teaches": ["mathematics", "arithmetic", "problem solving", "mental math", "algebra"]
+    }
+    </script>
+  </head>
+  <body class="blur">
+    <!--Loading Gif-->
+    <div class="loader">
+      <img src="./assets/gifs/loading.gif" alt="AstroMath game loading animation - Space math adventure loading screen" />
+    </div>
+    <!-- theme music -->
+    <audio class="audio__theme" src="./assets/music/themeMusic.mp3"></audio>
+    <!-- header -->
+    <header class="header">
+      <div class="header__icon">
+        <i class="fas fa-cog header__settings-icon"></i>
+      </div>
+      <div class="header__text">
+        <h1 class="header__title">AstroMath</h1>
+      </div>
+      <div class="header__icon">
+        <i class="fas fa-question-circle header__info-icon"></i>
+      </div>
+    </header>
+    <!-- main -->
+    <main class="main">
+      <div class="main__options">
+        <!-- sounds -->
+        <audio
+          class="audio__hover"
+          src="./assets/music/selection/hover2.mp3"
+        ></audio>
+        <audio
+          class="audio__click"
+          src="./assets/music/selection/click.mp3"
+        ></audio>
+        <!-- options -->
+        <div class="main__options__cnt">
+          <img
+            src="./assets/images/Fire.svg"
+            class="none main__fire"
+            data-tag="resume"
+            alt="Fire icon for resume game option in AstroMath space math game"
+          />
+          <h2 data-value="resume" class="main__option main__resume">
+            <a href="./astro-math.html" class="main__resume--link">Resume</a>
+          </h2>
+        </div>
+        <div class="main__options__cnt">
+          <img
+            src="./assets/images/Fire.svg"
+            class="none main__fire"
+            data-tag="newgame"
+            alt="Fire icon for new game option in AstroMath space math adventure"
+          />
+          <h2 data-value="newgame" class="main__option main__newgame">
+            <a href="./astro-math.html" class="main__newgame--link">Nuova partita</a>
+          </h2>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <a href="#" class="footer__modes">Modes</a>
+      <a href="./astro-math-levels.html" class="footer__level">
+        Current Level: <span class="footer__currentlevel">10</span>
+      </a>
+      <a href="#" class="footer__credit" style="display: none;">Credits</a>
+    </footer>
+    <!-- init pop up -->
+    <section class="popup popup__active">
+      <h2 class="popup__title">
+        Welcome <span class="popup__username"></span>
+      </h2>
+      <p class="popup__description">
+        The Ultimate <span class="primary-color">Math Game</span> for Number Lovers!
+        <br>Destroy <span class="primary-color">Asteroids</span> by Solving
+        <span class="primary-color">Math Puzzles</span> and Save
+        <span class="primary-color">The Earth</span>
+      </p>
+      <p class="popup__subtitle">
+        Challenge your arithmetic, algebra, and mental math skills! Perfect for math game enthusiasts who love number puzzles and brain challenges!
+      </p>
+      <div class="popup__buttons">
+        <button class="popup__button">Play</button>
+        <button class="popup__button popup__button--change-user">
+          Change User
+        </button>
+      </div>
+    </section>
+    <!-- video -->
+    <section class="video none">
+      <button class="skip">Skip</button>
+      <video>
+        <source src="./assets/intro-video.mp4" type="video/mp4" />
+      </video>
+    </section>
+    <!-- settings -->
+    <section class="settings none">
+      <div class="settings__item">
+        <h2 class="settings__title settings__sound">Sound:</h2>
+        <img
+          class="settings__sound--icon settings__action"
+          src="./assets/images/soundon.svg"
+          alt="sound-toggle"
+        />
+      </div>
+      <div class="settings__item">
+        <h2 class="settings__title">Username:</h2>
+        <div class="settings__name-holder">
+          <img
+            src="./assets/images/edit.svg"
+            alt="edit-username"
+            class="settings__edit--icon"
+          />
+          <input
+            class="settings__input settings__input--username"
+            value=""
+            readonly
+          />
+          <p class="settings__input--length-cnt none">
+            <span class="settings__input--length">15</span> Characters left
+          </p>
+        </div>
+      </div>
+      <p class="info__ls">
+        <span class="primary-color">*</span>Sound gets Loaded in your speaker
+        once you click <span class="primary-color">Play Button</span>.
+      </p>
+      <p class="orange info__ls">
+        <span class="primary-color">*</span>For best experience use chrome
+        related browsers.
+      </p>
+    </section>
+    <!-- info -->
+    <section class="info none">
+      <div class="info__stars">
+        <h2 class="info__star-heading">Star Calculation</h2>
+        <div class="info__star-details">
+          <div class="info__star-item-100">
+            <img src="./assets/images/3.png" alt="three-golden-stars" />
+            <p>-> 100%</p>
+          </div>
+          <div class="info__star-item-75">
+            <img src="./assets/images/2.png" alt="two-golden-stars" />
+            <p>-> 76% - 99%</p>
+          </div>
+          <div class="info__star-item-50">
+            <img src="./assets/images/1.png" alt="one-golden-star" />
+            <p>-> 50% - 75%</p>
+          </div>
+        </div>
+      </div>
+      <p class="info__levels">
+        Click <span class="info__level-text">Current Level</span> to see all
+        levels
+      </p>
+      <p class="info__ls">
+        We use <span class="primary-color"> local storage</span>, so please
+        ensure it works correctly
+      </p>
+      <a href="./howto.html"><p class="info__howto">How To Play?</p></a>
+    </section>
+    <!-- modes -->
+    <section class="modes none">
+      <div class="main__options">
+        <audio
+          class="audio__hover"
+          src="./assets/music/selection/hover2.mp3"
+        ></audio>
+        <audio
+          class="audio__click"
+          src="./assets/music/selection/click.mp3"
+        ></audio>
+        <div class="main__options__cnt">
+          <img
+            src="./assets/images/Fire.svg"
+            class="none main__fire"
+            data-tag="survival"
+            alt="fire"
+          />
+          <h2
+            data-value="survival"
+            data-cnt="Requires Level 5"
+            class="main__option main__survival"
+          >
+            <a href="./survival.html" class="main__survival--link">Survival</a>
+          </h2>
+        </div>
+        <div class="main__options__cnt">
+          <img
+            src="./assets/images/Fire.svg"
+            class="none main__fire"
+            data-tag="bonus"
+            alt="fire"
+          />
+          <h2
+            data-value="bonus"
+            data-cnt="Requires Level 10"
+            class="main__option main__bonus"
+          >
+            <a href="./bonus.html" class="main__bonus--link">Bonus</a>
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!--font awesome-->
+    <script
+      src="./js/a6cc4a65f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--js-link-->
+    <script type="module" src="./js/home.js"></script>
+  <script src="../../hub-bar.js" data-hub-title="Astro Math - Matematica spaziale" defer></script>
+</body>
+</html>
