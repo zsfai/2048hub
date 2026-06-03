@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+  <link rel="alternate" hreflang="en" href="https://2048hub.com/hex-2048/">
+  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/hex-2048/">
+  <link rel="alternate" hreflang="es" href="https://2048hub.com/es/hex-2048/">
+  <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/hex-2048/">
+  <link rel="alternate" hreflang="x-default" href="https://2048hub.com/hex-2048/">
+  <link rel="canonical" href="https://2048hub.com/fr/hex-2048/">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hex 2048 - Puzzle gratuit | 2048 Hub</title>
+        <link rel="shortcut icon" href="hex-2048.svg">
+        <meta name="description" content="2048 sur grille hexagonale. Jeu stratégique gratuit.">
+        <meta name="keywords" content="2048, hex 2048, hexagonal 2048, number puzzle, puzzle game, merge game, strategy game, free game, online game, hexagonal puzzle, number sliding, brain game, logic game">
+        <meta name="robots" content="index, follow">
+        <meta name="language" content="en">
+        
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Hex 2048 - Puzzle gratuit | 2048 Hub">
+        <meta property="og:description" content="2048 sur grille hexagonale. Jeu stratégique gratuit.">
+        <meta property="og:url" content="https://2048hub.com/fr/hex-2048/">
+        <meta property="og:site_name" content="2048Hub">
+        <meta property="og:locale" content="fr_FR">
+        
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:title" content="Hex 2048 - Hexagonal Number Puzzle Game">
+        <meta property="twitter:description" content="Slide numbered tiles on a hexagonal grid to merge identical numbers and reach 2048 or higher! Challenge your strategic thinking with this unique twist on the classic 2048 game.">
+        
+        <!-- Game specific meta tags -->
+        <meta name="game:type" content="puzzle">
+        <meta name="game:genre" content="strategy, puzzle, brain training">
+        <meta name="game:platform" content="web">
+        <meta name="game:difficulty" content="medium">
+        <meta name="game:age_rating" content="all">
+        
+        <!-- Structured Data for SEO -->
+        <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "VideoGame",
+          "name": "Hex 2048",
+          "description": "A hexagonal twist on the classic 2048 puzzle game. Slide numbered tiles on a hexagonal grid to merge identical numbers and reach 2048 or higher!",
+          "genre": ["Puzzle", "Strategy", "Brain Training"],
+          "gamePlatform": "Web Browser",
+          "operatingSystem": "Any",
+          "applicationCategory": "Game",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "author": {
+            "@type": "Person",
+            "name": "2048Hub",
+            "email": "2048hub@2048hub.com"
+          },
+          "datePublished": "2025",
+          "inLanguage": "en",
+          "keywords": "2048, hex 2048, hexagonal puzzle, number game, strategy game, puzzle game, free online game"
+        }
+        </script>
+        
+        <link type="text/css" href="style.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="game-container">
+        <div class="game-title">
+          Hex 2048
+        </div>
+        <div class="game-title" style="font-size: 16px; margin-bottom: 10px; color: #b5b5a1">
+          Fusionnez les nombres et atteignez <span style="color: #f1a510">&nbsp;2048&nbsp;</span> ou même <span style="color: #6b7fef">&nbsp;32768</span>!
+        </div>
+        <div class="game-wrapper">
+          <div id="game-canvas" style="align-items: center"></div>
+          <button id="new-game-btn" class="new-game-button">Nouvelle partie</button>
+        </div>
+        <div class="game-credit">
+          <p>Made by Jeff Hou</p>
+          <p style="font-size: 18px; color: #337744">jeffhou <span style="color: black">[at]</span> jeffhou <span style="color: black">[dot]</span> com</p>
+        </div>
+      </div>
+      <script src="phaser.js"></script>
+      <script src="game.js"></script>
+    <script src="../../hub-bar.js" data-hub-title="Hex 2048 - Puzzle gratuit" defer></script>
+</body>
+</html>

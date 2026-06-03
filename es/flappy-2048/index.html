@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta property="og:locale" content="es_ES">
+  <link rel="alternate" hreflang="en" href="https://2048hub.com/flappy-2048/">
+  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/flappy-2048/">
+  <link rel="alternate" hreflang="es" href="https://2048hub.com/es/flappy-2048/">
+  <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/flappy-2048/">
+  <link rel="alternate" hreflang="x-default" href="https://2048hub.com/flappy-2048/">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=0.5, width=610, height=1024" />
+  <title>Flappy 2048 - Puzzle gratis | 2048 Hub</title>
+  <meta name="description" content="Flappy Bird y 2048 juntos. Vuela y combina fichas.">
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://2048hub.com/es/flappy-2048/" />
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://2048hub.com/es/flappy-2048/" />
+  <meta property="og:title" content="Flappy 2048 - Puzzle gratis | 2048 Hub" />
+  <meta property="og:description" content="Flappy Bird y 2048 juntos. Vuela y combina fichas." />
+  <meta property="og:site_name" content="2048 Hub" />
+  <meta property="og:image" content="https://2048hub.com/favicon.svg" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Flappy 2048 - Puzzle gratis | 2048 Hub" />
+  <meta name="twitter:description" content="Flappy Bird y 2048 juntos. Vuela y combina fichas." />
+</head>
+<body>
+  <style type="text/css">
+    .cellol {
+      -moz-user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select:none;
+      user-select:none;
+    }
+  </style>
+
+  <div id="lgd" style="width: 300px; height: 64px; position: absolute;"></div>
+  <script type='text/javascript'>
+    var lgdiv = document.getElementById('lgd');
+    lgdiv.style.left = Math.floor((window.innerWidth - 300)/2)+'px';
+    lgdiv.style.top = Math.floor((window.innerHeight - 64)/2)+'px';
+    lgdiv.style.fontFamily = 'Verdana';
+    lgdiv.style.fontSize = '16px';
+    lgdiv.style.fontWeight = 'bold';
+    lgdiv.style.textAlign = 'center';
+    lgdiv.innerHTML = 'Loading...';
+  </script>
+
+  <script type='text/javascript' src='flappy2048.js'></script> 
+<script src="../../hub-bar.js" data-hub-title="Flappy 2048 - Puzzle gratis" defer></script>
+</body>
+</html>

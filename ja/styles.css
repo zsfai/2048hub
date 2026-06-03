@@ -204,6 +204,16 @@ body::before {
     display: none;
 }
 
+.lang-switch--quad .lang-switch__option {
+    padding: 8px 10px;
+    font-size: 0.72rem;
+    gap: 4px;
+}
+
+.lang-switch--quad {
+    max-width: 100%;
+}
+
 .footer-lang {
     margin-top: 14px;
     display: flex;

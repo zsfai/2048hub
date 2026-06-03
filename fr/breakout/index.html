@@ -1,0 +1,64 @@
+<!DOCTYPE html> 
+<html lang="fr">
+<head>
+  <meta property="og:locale" content="fr_FR">
+  <link rel="alternate" hreflang="en" href="https://2048hub.com/breakout/">
+  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/breakout/">
+  <link rel="alternate" hreflang="es" href="https://2048hub.com/es/breakout/">
+  <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/breakout/">
+  <link rel="alternate" hreflang="x-default" href="https://2048hub.com/breakout/">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Breakout - Arcade classique | 2048 Hub</title>
+  <meta name="description" content="Breakout gratuit : cassez les briques.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://2048hub.com/fr/breakout/">
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2048hub.com/fr/breakout/">
+  <meta property="og:title" content="Breakout - Arcade classique | 2048 Hub">
+  <meta property="og:description" content="Breakout gratuit : cassez les briques.">
+  <meta property="og:site_name" content="2048 Hub">
+  <meta property="og:image" content="https://2048hub.com/favicon.svg">
+  <link href="breakout.css" media="screen, print" rel="stylesheet" type="text/css" /> 
+</head> 
+<body> 
+  <div id="breakout">
+    <canvas id="canvas">
+      <div class='unsupported'>
+        Sorry, this example cannot be run because your browser does not support the &lt;canvas&gt; element
+      </div>
+    </canvas>
+    <div id="levels">
+      <img id="next" class="disabled" src="images/up.png"   title="next level">
+      <img id="prev" class="disabled" src="images/down.png" title="previous level">
+      <span id="label">level:</span><span id="level"></span>
+    </div>
+    <div id="controls">
+      <input id='sound' type='checkbox' />
+      <label for='sound'>sound</label>
+    </div>
+    <div id="instructions" style='display:none;'>
+      <div class='keyboard'>
+        <b>space</b> to start<br>
+        <b>left/right</b> to move paddle<br>
+        <b>up/down</b> to change level
+      </div>
+      <div class='touch'>
+        <b>touch here</b> to start<br>
+        <b>drag</b> paddle to move<br>
+      </div>
+    </div>
+  </div>
+
+  <script src="game.js"></script>
+  <script src="breakout.js"></script>
+  <script src="levels.js"></script>
+  <script>
+  Game.ready(function() {
+    var game = Game.start('canvas', Breakout);
+  });
+  </script>
+  <script src="../hub-bar.js" defer></script>
+</body> 
+</html>

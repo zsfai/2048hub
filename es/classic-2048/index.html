@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="alternate" hreflang="en" href="https://2048hub.com/classic-2048/">
+  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/classic-2048/">
+  <link rel="alternate" hreflang="es" href="https://2048hub.com/es/classic-2048/">
+  <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/classic-2048/">
+  <link rel="alternate" hreflang="x-default" href="https://2048hub.com/classic-2048/">
+  <meta charset="utf-8">
+  <title>2048 Clásico - Puzzle gratis | 2048 Hub</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.svg">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Juega al 2048 clásico gratis en línea. Combina números hasta la ficha 2048. Sin descargas.">
+  <meta name="keywords" content="2048, puzzle game, number game, online game, free game, no ads, ad-free, immersive game, distraction-free, brain training, strategy game, tile game, 2048hub, clean game">
+  <meta name="author" content="2048Hub">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="en">
+  <meta name="revisit-after" content="7 days">
+  
+  <!-- Open Graph Meta Tags -->
+  <meta property="og:title" content="2048 Clásico - Puzzle gratis | 2048 Hub">
+  <meta property="og:description" content="Juega al 2048 clásico gratis en línea. Combina números hasta la ficha 2048. Sin descargas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://2048hub.com/es/classic-2048/">
+  <meta property="og:site_name" content="2048Hub">
+  <meta property="og:locale" content="es_ES">
+  
+  <!-- Twitter Card Meta Tags -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2048 Clásico - Puzzle gratis | 2048 Hub">
+  <meta name="twitter:description" content="Juega al 2048 clásico gratis en línea. Combina números hasta la ficha 2048. Sin descargas.">
+  
+  <!-- Additional SEO -->
+  <link rel="canonical" href="https://2048hub.com/es/classic-2048/">
+  <meta name="theme-color" content="#f5f0e6">
+  <meta name="msapplication-TileColor" content="#f5f0e6">
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "2048 Ad-Free Immersive Puzzle Game",
+    "description": "Play 2048 online for free with no ads! Pure, immersive puzzle game experience. No distractions, just focus on reaching 2048 and beyond.",
+    "url": "https://2048hub.com",
+    "applicationCategory": "Game",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "2048Hub"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "2048Hub"
+    },
+    "genre": "Puzzle Game",
+    "gamePlatform": "Web Browser"
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="heading">
+      <h1 class="title">2048</h1>
+      <div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+      </div>
+    </div>
+
+    <div class="above-game">
+      <p class="game-intro">¡Combina números y llega a la <strong>ficha 2048</strong>!</p>
+      <a class="restart-button">Nueva partida</a>
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">Seguir</a>
+          <a class="retry-button">Reintentar</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+    <section class="game-explanation">
+      <h2>Pure 2048 Experience - No Ads, No Distractions</h2>
+      <p>
+        <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same number touch, they <strong>merge into one!</strong>
+      </p>
+      <p>
+        <strong>Goal:</strong> Reach the <strong>2048 tile</strong> and beyond! This addictive number puzzle game challenges your strategic thinking and keeps you coming back for more.
+      </p>
+      <p>
+        <strong>Why choose 2048Hub:</strong> Enjoy a <strong>completely ad-free</strong> and <strong>immersive gaming experience</strong>. No pop-ups, no banners, no interruptions - just pure focus on the game you love. Perfect for those who want to concentrate and achieve their highest score without any distractions.
+      </p>
+    </section>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+<script src="../../hub-bar.js" data-hub-title="2048 Clásico - Puzzle gratis" defer></script>
+</body>
+</html>

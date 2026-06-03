@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta property="og:locale" content="es_ES">
+  <link rel="alternate" hreflang="en" href="https://2048hub.com/couch-2048/">
+  <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/couch-2048/">
+  <link rel="alternate" hreflang="es" href="https://2048hub.com/es/couch-2048/">
+  <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/couch-2048/">
+  <link rel="alternate" hreflang="x-default" href="https://2048hub.com/couch-2048/">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title>Couch 2048 - Puzzle gratis | 2048 Hub</title>
+    <meta name="description" content="Couch 2048: arrastra piezas y combínalas hasta el 2048.">
+    <meta name="author" content="Couch 2048">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#8B4513">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://2048hub.com/es/couch-2048/">
+    <meta property="og:title" content="Couch 2048 - Puzzle gratis | 2048 Hub">
+    <meta property="og:description" content="Couch 2048: arrastra piezas y combínalas hasta el 2048.">
+    <meta property="og:image" content="">
+    <meta property="og:site_name" content="Couch 2048">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Couch 2048 - Fun Puzzle Game">
+    <meta property="twitter:description" content="Play Couch 2048, an exciting puzzle game where you drag and stack numbered pieces to reach 2048. Free to play, no download required!">
+    <meta property="twitter:image" content="">
+    <meta name="application-name" content="Couch 2048">
+    <meta name="apple-mobile-web-app-title" content="Couch 2048">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="couch.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="canonical" href="https://2048hub.com/es/couch-2048/">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Couch 2048",
+        "description": "An exciting puzzle game where you drag and stack numbered pieces to reach 2048. Free to play, no download required!",
+        "url": "",
+        "applicationCategory": "Game",
+        "operatingSystem": "Web Browser",
+        "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+        },
+        "genre": "Puzzle Game",
+        "gamePlatform": "Web Browser"
+    }
+    </script>
+</head>
+
+<body>
+    <main id="container" role="main">
+        <canvas id="backcanvas" aria-hidden="true"></canvas>
+        <canvas id="canvas" aria-label="Game board"></canvas>
+        
+        <section id="load" aria-live="polite" aria-label="Loading screen">
+            <h1>Loading</h1>
+        </section>
+        
+        <section id="home" aria-label="Game home screen">
+            <header>
+                <h1>Couch 2048</h1>
+            </header>
+            <article>
+                <h2>How to play:</h2>
+                <ul>
+                    <li>⭐️ Drag pieces around</li>
+                    <li>⭐️ Stack those with the same number</li>
+                    <li>⭐️ Get to 2048 to win the game</li>
+                    <li>⭐️ REVEL IN GLORY <small>(optional but recommended)</small></li>
+                </ul>
+            </article>
+            <button id="start" type="button" aria-describedby="game-instructions">NEW GAME</button>
+            <aside id="menu" aria-label="Game settings">
+                <h3>Settings</h3>
+                <fieldset>
+                    <legend>Audio and Quality Settings</legend>
+                    <label for="m">
+                        <input type="checkbox" class="opt" id="m" checked>
+                        Music
+                    </label>
+                    <label for="s">
+                        <input type="checkbox" class="opt" id="s" checked>
+                        Sound FX
+                    </label>
+                    <label for="q">
+                        <input type="checkbox" class="opt" id="q" checked>
+                        High Quality
+                    </label>
+                </fieldset>
+            </aside>
+        </section>
+        
+        <section id="end" style="display:none" aria-live="polite" aria-label="Victory screen">
+            <header>
+                <h1>You win</h1>
+            </header>
+            <article>
+                <p><strong>Let's party!</strong></p>
+                <p><small>Success is commemorated; failure merely remembered</small></p>
+            </article>
+            <button id="reset" type="button">PLAY AGAIN</button>
+        </section>
+    </main>
+    
+    <script src="sound.js"></script>
+    <script src="couch.js"></script>
+<script src="../../hub-bar.js" data-hub-title="Couch 2048 - Puzzle gratis" defer></script>
+</body>
+
+</html>
