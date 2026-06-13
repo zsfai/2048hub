@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "ssh-deploy": {
+            "command": "python",
+            "args": ["scripts/ssh-deploy-mcp.py"],
+            "env": {
+                "SSH_DEPLOY_CFG": ".ssh-deploy.json"
+            }
+        }
+    }
+}

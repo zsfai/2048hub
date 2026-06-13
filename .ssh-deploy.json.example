@@ -1,0 +1,7 @@
+{
+    "default_host": "your-server-ip-or-hostname",
+    "user": "deploy",
+    "port": 22,
+    "key_file": "/home/user/.ssh/id_rsa",
+    "password": "(or set password if not using key)"
+}
