@@ -136,6 +136,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     renderGameList();
     setupEventListeners();
+    setupSidebarCollapse();
     setupKeyboardNavigation();
     
     // Check initial hash on page load (after DOM is ready)
@@ -178,6 +179,34 @@ function setupEventListeners() {
     
     // Setup quick game links
     setupQuickGameLinks();
+}
+
+function setupSidebarCollapse() {
+    var btn = document.getElementById('sidebarCollapseBtn');
+    var app = document.querySelector('.app-container');
+    if (!btn || !app) return;
+
+    if (localStorage.getItem('hubSidebarCollapsed') === '1') {
+        app.classList.add('sidebar-collapsed');
+    }
+    syncSidebarCollapseUI(btn, app);
+
+    btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        app.classList.toggle('sidebar-collapsed');
+        localStorage.setItem('hubSidebarCollapsed', app.classList.contains('sidebar-collapsed') ? '1' : '0');
+        syncSidebarCollapseUI(btn, app);
+    });
+}
+
+function syncSidebarCollapseUI(btn, app) {
+    var collapsed = app.classList.contains('sidebar-collapsed');
+    var expandLabel = btn.getAttribute('data-label-expand') || 'Expand game menu';
+    var collapseLabel = btn.getAttribute('data-label-collapse') || 'Collapse game menu';
+
+    btn.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    btn.setAttribute('aria-label', collapsed ? expandLabel : collapseLabel);
+    btn.title = collapsed ? expandLabel : collapseLabel;
 }
 
 // Setup quick game links event listeners
@@ -254,13 +283,11 @@ function showGame(game) {
     }
     
     if (game.iframe) {
-        // Hide sidebar immediately for better UX (especially on mobile)
-        const sidebar = document.querySelector('.sidebar');
-        const mainContent = document.querySelector('.main-content');
+        var sidebar = document.querySelector('.sidebar');
+        var mainContent = document.querySelector('.main-content');
         if (window.innerWidth <= 768) {
             if (sidebar) {
-                sidebar.style.transform = 'translateY(100%)';
-                sidebar.style.transition = 'transform 0.3s ease';
+                sidebar.classList.add('sidebar-game-hidden');
             }
             if (mainContent) {
                 mainContent.style.paddingBottom = '0';
@@ -412,15 +439,17 @@ function showWelcome(clearHash = true) {
     });
     
     // Show sidebar on mobile when returning to home
-    const sidebar = document.querySelector('.sidebar');
-    const mainContent = document.querySelector('.main-content');
+    var sidebar = document.querySelector('.sidebar');
+    var mainContent = document.querySelector('.main-content');
     if (window.innerWidth <= 768) {
         if (sidebar) {
-            sidebar.style.transform = 'translateY(0)';
-            sidebar.style.transition = 'transform 0.3s ease';
+            sidebar.classList.remove('sidebar-game-hidden');
         }
         if (mainContent) {
-            if (window.innerWidth <= 480) {
+            var app = document.querySelector('.app-container');
+            if (app && app.classList.contains('sidebar-collapsed')) {
+                mainContent.style.paddingBottom = '52px';
+            } else if (window.innerWidth <= 480) {
                 mainContent.style.paddingBottom = '85px';
             } else {
                 mainContent.style.paddingBottom = '90px';
