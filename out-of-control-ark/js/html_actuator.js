@@ -29,6 +29,9 @@ function HTMLActuator() {
   this.rewardXpEl         = document.querySelector(".reward-xp");
   this.nextChapterBtn     = document.querySelector(".next-chapter-button");
 
+  this.shareUrl            = "https://2048hub.com/out-of-control-ark/";
+  this.gameName            = "Out of Control Ark";
+
   this.score = 0;
   this.storageManager = new LocalStorageManager();
   this.rewardSystem = null;
@@ -395,16 +398,22 @@ HTMLActuator.prototype.showGameOver = function (metadata) {
   this.updatePlayerProgress(this.rewardSystem.getLevelProgress());
 };
 
-HTMLActuator.prototype.buildShareText = function (maxPurify, title, score) {
+HTMLActuator.prototype.buildShareMessage = function (maxPurify, title, score) {
+  var game = this.gameName;
+
   if (maxPurify >= 128) {
-    return "I defused a " + maxPurify + " bomb on Out of Control Ark at 2048Hub, earned the title \"" + title + "\", but the ark still fell. Can you last longer?";
+    return "I defused a " + maxPurify + " bomb in " + game + ", earned \"" + title + "\", but the ark still fell. Can you beat my run?";
   }
 
   if (maxPurify >= 64) {
-    return "I defused a " + maxPurify + " traitor bomb and scored " + score + " on Out of Control Ark - but the ark sank anyway. Beat my run?";
+    return "I defused a " + maxPurify + " traitor bomb and scored " + score + " in " + game + ", but the ark sank anyway. Beat my run?";
   }
 
-  return "I scored " + score + " on Out of Control Ark before the traitors took over. Think you can build a better ark?";
+  return "I scored " + score + " in " + game + " before the traitors took over. Think you can build a better ark?";
+};
+
+HTMLActuator.prototype.buildShareText = function (maxPurify, title, score) {
+  return this.buildShareMessage(maxPurify, title, score) + "\n" + this.shareUrl;
 };
 
 HTMLActuator.prototype.renderShareCard = function (metadata) {
@@ -428,7 +437,7 @@ HTMLActuator.prototype.renderShareCard = function (metadata) {
 
   ctx.fillStyle = "#ff6b4a";
   ctx.font = "bold 28px Orbitron, sans-serif";
-  ctx.fillText("Out of Control Ark", 30, 55);
+  ctx.fillText(this.gameName, 30, 55);
 
   ctx.fillStyle = "#c8d6e5";
   ctx.font="16px Rajdhani, sans-serif";
@@ -447,12 +456,30 @@ HTMLActuator.prototype.renderShareCard = function (metadata) {
 
   ctx.fillStyle = "rgba(200,214,229,0.6)";
   ctx.font = "13px Rajdhani, sans-serif";
-  var text = this.buildShareText(maxPurify, title, metadata.score);
+  var text = this.buildShareMessage(maxPurify, title, metadata.score);
   this.wrapText(ctx, text, 30, 195, w - 60, 20);
 
   ctx.fillStyle = "rgba(255,107,74,0.5)";
   ctx.font = "12px Orbitron, sans-serif";
   ctx.fillText("2048hub.com/out-of-control-ark", 30, h - 25);
+};
+
+HTMLActuator.prototype.getSharePayload = function () {
+  var textEl = document.querySelector(".share-text");
+  var fullText = textEl ? textEl.textContent.trim() : "";
+  var url = this.shareUrl;
+  var message = fullText;
+
+  if (message.endsWith(url)) {
+    message = message.slice(0, message.length - url.length).trim();
+  }
+
+  return {
+    title: "2048 Out of Control Ark",
+    message: message,
+    url: url,
+    fullText: message ? message + "\n" + url : url
+  };
 };
 
 HTMLActuator.prototype.wrapText = function (ctx, text, x, y, maxWidth, lineHeight) {

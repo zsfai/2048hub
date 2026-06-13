@@ -40,15 +40,32 @@ window.requestAnimationFrame(function () {
     var canvas = document.querySelector("#share-canvas");
     if (!canvas) return;
 
+    var payload = game.actuator.getSharePayload();
+
     canvas.toBlob(function (blob) {
-      if (navigator.share && blob) {
-        var file = new File([blob], "ark-score.png", { type: "image/png" });
-        navigator.share({
-          title: "Out of Control Ark",
-          text: document.querySelector(".share-text").textContent,
-          files: [file]
-        }).catch(function () {});
-      } else {
+      if (navigator.share) {
+        var shareData = {
+          title: payload.title,
+          text: payload.message,
+          url: payload.url
+        };
+
+        if (blob && navigator.canShare && navigator.canShare({ files: [new File([blob], "ark-score.png", { type: "image/png" })] })) {
+          shareData.files = [new File([blob], "ark-score.png", { type: "image/png" })];
+        }
+
+        navigator.share(shareData).catch(function () {
+          if (blob) {
+            var link = document.createElement("a");
+            link.download = "ark-score.png";
+            link.href = canvas.toDataURL("image/png");
+            link.click();
+          }
+        });
+        return;
+      }
+
+      if (blob) {
         var link = document.createElement("a");
         link.download = "ark-score.png";
         link.href = canvas.toDataURL("image/png");
@@ -59,7 +76,7 @@ window.requestAnimationFrame(function () {
 
   document.querySelector(".copy-button").addEventListener("click", function () {
     var btn = this;
-    var text = document.querySelector(".share-text").textContent;
+    var text = game.actuator.getSharePayload().fullText;
     if (navigator.clipboard) {
       navigator.clipboard.writeText(text).then(function () {
         var original = btn.textContent;
