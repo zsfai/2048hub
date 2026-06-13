@@ -70,7 +70,7 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
           self.queueReward({
             icon: "⬆️",
             title: "Rank up!",
-            desc: "Lv." + evt.level + " · " + evt.title,
+            desc: "Lv." + evt.level + " | " + evt.title,
             xp: ""
           });
         } else if (evt.type === "missionComplete") {
@@ -266,7 +266,7 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 HTMLActuator.prototype.updatePurifyLevel = function (level) {
   if (!this.purifyContainer) return;
   var valueEl = this.purifyContainer.querySelector(".score-value") || this.purifyContainer;
-  valueEl.textContent = level || "—";
+  valueEl.textContent = level || "-";
 };
 
 HTMLActuator.prototype.updateBackground = function (traitorCount) {
@@ -298,7 +298,7 @@ HTMLActuator.prototype.showCombo = function (combo, perfect) {
   el.className = "combo-popup" + (perfect ? " perfect" : "");
   el.textContent = perfect && combo <= 1 ?
     "Perfect defuse!" :
-    "Combo x" + combo + (perfect ? " · Perfect!" : "");
+    "Combo x" + combo + (perfect ? " | Perfect!" : "");
 
   this.comboLayer.appendChild(el);
 
@@ -334,8 +334,7 @@ HTMLActuator.prototype.showGameOver = function (metadata) {
     starsEl.innerHTML = "";
     for (var i = 0; i < 3; i++) {
       var star = document.createElement("span");
-      star.className = "result-star" + (rewards.stars[i] ? " earned" : "");
-      star.textContent = rewards.stars[i] ? "★" : "☆";
+      star.className = "result-star star-slot" + (rewards.stars[i] ? " earned" : "");
       starsEl.appendChild(star);
     }
   }
@@ -343,7 +342,7 @@ HTMLActuator.prototype.showGameOver = function (metadata) {
   var xpEl = this.messageContainer.querySelector(".game-over-xp");
   if (xpEl && rewards) {
     xpEl.textContent = "Earned " + rewards.xpGained + " XP this run" +
-      (rewards.starCount > 0 ? " · " + rewards.starCount + " star(s)" : " · No stars");
+      (rewards.starCount > 0 ? " | " + rewards.starCount + " star(s)" : " | No stars");
   }
 
   this.messageContainer.querySelector(".game-over-score").textContent =
@@ -351,7 +350,7 @@ HTMLActuator.prototype.showGameOver = function (metadata) {
   this.messageContainer.querySelector(".game-over-purify").textContent =
     "Top defuse level: " + (maxPurify || "none");
   this.messageContainer.querySelector(".game-over-rank").textContent =
-    "Captain · " + (metadata.playerProgress ? metadata.playerProgress.title : title);
+    "Captain | " + (metadata.playerProgress ? metadata.playerProgress.title : title);
   this.messageContainer.querySelector(".share-text").textContent = shareText;
 
   if (this.nextChapterBtn) {
@@ -367,7 +366,7 @@ HTMLActuator.prototype.showGameOver = function (metadata) {
         self.showRewardModal({
           icon: item.achievement.icon,
           title: "Achievement unlocked!",
-          desc: item.achievement.name + " · " + item.achievement.desc,
+          desc: item.achievement.name + " | " + item.achievement.desc,
           xp: "+" + item.xp + " XP"
         });
       }, 800 + index * 1200);
@@ -381,7 +380,7 @@ HTMLActuator.prototype.showGameOver = function (metadata) {
         self.showRewardModal({
           icon: "⬆️",
           title: "Rank up!",
-          desc: "Lv." + evt.level + " · " + evt.title,
+          desc: "Lv." + evt.level + " | " + evt.title,
           xp: ""
         });
       }, 400 + index * 1000);
@@ -402,7 +401,7 @@ HTMLActuator.prototype.buildShareText = function (maxPurify, title, score) {
   }
 
   if (maxPurify >= 64) {
-    return "I defused a " + maxPurify + " traitor bomb and scored " + score + " on Out of Control Ark — but the ark sank anyway. Beat my run?";
+    return "I defused a " + maxPurify + " traitor bomb and scored " + score + " on Out of Control Ark - but the ark sank anyway. Beat my run?";
   }
 
   return "I scored " + score + " on Out of Control Ark before the traitors took over. Think you can build a better ark?";
@@ -433,7 +432,7 @@ HTMLActuator.prototype.renderShareCard = function (metadata) {
 
   ctx.fillStyle = "#c8d6e5";
   ctx.font="16px Rajdhani, sans-serif";
-  ctx.fillText("Ark lost · Final score " + metadata.score, 30, 90);
+  ctx.fillText("Ark lost | Final score " + metadata.score, 30, 90);
 
   ctx.fillStyle = "#ff4757";
   ctx.font = "bold 22px Orbitron, sans-serif";
@@ -441,7 +440,7 @@ HTMLActuator.prototype.renderShareCard = function (metadata) {
     ctx.fillText("Top defuse " + maxPurify, 30, 130);
     ctx.fillStyle = "#ffa502";
     ctx.font = "18px Rajdhani, sans-serif";
-    ctx.fillText("Title · " + title, 30, 160);
+    ctx.fillText("Title | " + title, 30, 160);
   } else {
     ctx.fillText("No defuses completed", 30, 130);
   }
@@ -483,7 +482,7 @@ HTMLActuator.prototype.renderLeaderboard = function () {
   if (!board.entries.length) {
     var empty = document.createElement("li");
     empty.className = "leaderboard-empty";
-    empty.textContent = "No entries yet — be the first captain!";
+    empty.textContent = "No entries yet - be the first captain!";
     this.leaderboardList.appendChild(empty);
     return;
   }
@@ -494,7 +493,7 @@ HTMLActuator.prototype.renderLeaderboard = function () {
     li.innerHTML =
       "<span class=\"rank\">#" + (index + 1) + "</span>" +
       "<span class=\"name\">" + entry.name + "</span>" +
-      "<span class=\"purify\">Defuse " + (entry.maxPurify || "—") + "</span>" +
+      "<span class=\"purify\">Defuse " + (entry.maxPurify || "-") + "</span>" +
       "<span class=\"score\">" + entry.score + " pts</span>" +
       (entry.maxPurify >= 128 ? "<span class=\"badge\">" + entryTitle + "</span>" : "");
     this.leaderboardList.appendChild(li);
@@ -553,15 +552,15 @@ HTMLActuator.prototype.updateMissionPanel = function (chapter, mission) {
   if (!chapter || !mission) return;
 
   if (this.chapterTitleEl) {
-    this.chapterTitleEl.textContent = "Chapter " + chapter.id + " · " + chapter.name;
+    this.chapterTitleEl.textContent = "Chapter " + chapter.id + " | " + chapter.name;
   }
 
   if (this.chapterStarsEl) {
     var best = this.rewardSystem.getProfile().chapterStars[String(chapter.id)] || 0;
     this.chapterStarsEl.innerHTML =
-      '<span class="star-slot' + (best >= 1 ? " earned" : "") + '">' + (best >= 1 ? "★" : "☆") + "</span>" +
-      '<span class="star-slot' + (best >= 2 ? " earned" : "") + '">' + (best >= 2 ? "★" : "☆") + "</span>" +
-      '<span class="star-slot' + (best >= 3 ? " earned" : "") + '">' + (best >= 3 ? "★" : "☆") + "</span>";
+      '<span class="star-slot' + (best >= 1 ? " earned" : "") + '"></span>' +
+      '<span class="star-slot' + (best >= 2 ? " earned" : "") + '"></span>' +
+      '<span class="star-slot' + (best >= 3 ? " earned" : "") + '"></span>';
   }
 
   if (this.missionTextEl) {
@@ -577,12 +576,19 @@ HTMLActuator.prototype.updateMissionPanel = function (chapter, mission) {
   }
 };
 
-HTMLActuator.prototype.repeatStars = function (earned) {
-  var s = "";
+HTMLActuator.prototype.renderStarMarks = function (earned) {
+  var html = "";
   var i;
-  for (i = 0; i < earned; i++) s += "★";
-  for (i = earned; i < 3; i++) s += "☆";
-  return s;
+
+  for (i = 0; i < 3; i++) {
+    html += '<span class="star-mark' + (i < earned ? " earned" : "") + '"></span>';
+  }
+
+  return html;
+};
+
+HTMLActuator.prototype.repeatStars = function (earned) {
+  return this.renderStarMarks(earned);
 };
 
 HTMLActuator.prototype.renderChapterMap = function () {

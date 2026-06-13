@@ -62,7 +62,7 @@ var RewardSystem = (function () {
         {
           type: "hull",
           value: Math.max(20, 40 - Math.floor(idx / 3) * 3),
-          label: "Hull ≥ " + Math.max(20, 40 - Math.floor(idx / 3) * 3)
+          label: "Hull >= " + Math.max(20, 40 - Math.floor(idx / 3) * 3)
         }
       ],
       clearXP: Math.floor(80 + idx * 30)

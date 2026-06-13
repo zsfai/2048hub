@@ -19,7 +19,7 @@ window.fakeStorage = {
 };
 
 function LocalStorageManager() {
-  this.prefix           = "ark2048_";
+  this.prefix           = "ark2048en_";
   this.bestScoreKey     = this.prefix + "bestScore";
   this.gameStateKey     = this.prefix + "gameState";
   this.maxPurifyKey     = this.prefix + "maxPurify";

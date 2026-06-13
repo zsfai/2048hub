@@ -58,9 +58,16 @@ window.requestAnimationFrame(function () {
   });
 
   document.querySelector(".copy-button").addEventListener("click", function () {
+    var btn = this;
     var text = document.querySelector(".share-text").textContent;
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(text);
+      navigator.clipboard.writeText(text).then(function () {
+        var original = btn.textContent;
+        btn.textContent = "Copied!";
+        setTimeout(function () {
+          btn.textContent = original;
+        }, 1500);
+      });
     }
   });
 });
