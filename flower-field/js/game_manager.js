@@ -229,19 +229,20 @@ GameManager.prototype.handleMilestone = function (value) {
     date: new Date().toISOString()
   };
 
-  if (this.storageManager.addNotebookEntry(entry)) {
+  var isNewFlower = this.storageManager.addNotebookEntry(entry);
+
+  if (isNewFlower) {
     this.sessionNewNotebook += 1;
     var drops = this.storageManager.getWishDrops() + 1;
     this.storageManager.setWishDrops(drops);
     this.actuator.updateWishDrops(drops);
-  }
+    this.storageManager.unlockGardenFlower(value);
+    this.actuator.renderGarden(this.storageManager.getGarden());
+    this.actuator.renderNotebook(this.storageManager.getNotebook());
 
-  this.storageManager.unlockGardenFlower(value);
-  this.actuator.renderGarden(this.storageManager.getGarden());
-  this.actuator.renderNotebook(this.storageManager.getNotebook());
-
-  if (this.pendingMilestones.indexOf(value) === -1) {
-    this.pendingMilestones.push(value);
+    if (this.pendingMilestones.indexOf(value) === -1) {
+      this.pendingMilestones.push(value);
+    }
   }
 };
 
