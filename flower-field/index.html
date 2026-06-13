@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<head>
+  <meta charset="utf-8">
+  <meta name="google" content="notranslate">
+  <title>2048 Flower Field - Grow a Healing Garden | 2048Hub</title>
+  <meta name="description" content="A gentle 2048 variant: merge seeds into blooms, collect flower messages, and grow your own calming garden. Free in your browser.">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="2048 Flower Field">
+  <meta property="og:description" content="Merge tiles into flowers, collect gentle messages, and grow your own garden. A calming 2048 experience.">
+  <meta property="og:url" content="https://2048hub.com/flower-field/">
+  <meta property="og:site_name" content="2048Hub">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="2048 Flower Field">
+  <meta name="twitter:description" content="Merge tiles into flowers, collect gentle messages, and grow your own garden.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="theme-color" content="#f5f0e6">
+  <link rel="canonical" href="https://2048hub.com/flower-field/">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "2048 Flower Field",
+    "alternateName": "Flower Field",
+    "description": "A calming 2048-style browser game where you merge seeds into flowers and collect gentle flower messages.",
+    "url": "https://2048hub.com/flower-field/",
+    "genre": ["Puzzle", "Casual"],
+    "gamePlatform": "Web Browser",
+    "applicationCategory": "Game",
+    "inLanguage": "en",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "2048Hub"
+    }
+  }
+  </script>
+  <link rel="shortcut icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="style/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="garden-bg" aria-hidden="true"></div>
+  <div class="paper-texture" aria-hidden="true"></div>
+
+  <div class="container">
+    <header class="site-header">
+      <p class="eyebrow">2048HUB | GROW &amp; HEAL</p>
+      <h1 class="title">2048 Flower Field</h1>
+      <p class="tagline">Merge seeds into blooms. Every flower is a note written for you.</p>
+    </header>
+
+    <div class="layout-grid">
+      <aside class="panel panel-left">
+        <h2 class="panel-heading">My Garden</h2>
+        <p class="panel-intro">Flower messages you've collected. They stay here, like pressed petals.</p>
+        <ul class="notebook-list"></ul>
+        <p class="notebook-empty">No notes yet. Grow your first bloom to begin.</p>
+        <button type="button" class="text-btn garden-panel-btn">Open full notebook</button>
+      </aside>
+
+      <main class="game-column">
+        <div class="stats-row">
+          <div class="stat-box">
+            <span class="stat-label">Growth</span>
+            <div class="score-container">0</div>
+          </div>
+          <div class="stat-box">
+            <span class="stat-label">Best growth</span>
+            <div class="best-container">0</div>
+          </div>
+          <button type="button" class="wish-drop-btn" title="Plant a seed on any tile">
+            <span class="wish-drop-icon">💧</span>
+            <span class="wish-drop-label">Wish drop</span>
+            <span class="wish-drop-count">0</span>
+          </button>
+        </div>
+
+        <div class="above-game">
+          <p class="game-intro">Slide to merge. Reach <strong>32</strong> for your first bloom.</p>
+          <a class="restart-button">New garden</a>
+        </div>
+
+        <div class="game-container">
+          <div class="game-message">
+            <p class="summary-text"></p>
+            <div class="lower">
+              <a class="keep-playing-button">Keep tending</a>
+              <a class="retry-button">Plant again</a>
+              <button type="button" class="share-btn">Share your field</button>
+            </div>
+            <canvas class="share-canvas" width="480" height="220" aria-hidden="true"></canvas>
+          </div>
+
+          <div class="grid-container">
+            <div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div>
+            <div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div>
+            <div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div>
+            <div class="grid-row"><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div><div class="grid-cell"></div></div>
+          </div>
+
+          <div class="tile-container"></div>
+        </div>
+      </main>
+
+      <aside class="panel panel-right">
+        <h2 class="panel-heading">How to play</h2>
+        <ul class="how-list">
+          <li>Use arrow keys or swipe to slide tiles.</li>
+          <li>Merge matching stages — seed to sprout to bloom.</li>
+          <li>At <strong>32+</strong>, a bloom opens with a gentle message.</li>
+          <li>Earn <strong>wish drops</strong> for new blooms; tap one, then a tile to plant a seed.</li>
+        </ul>
+        <div class="stage-legend">
+          <p class="legend-title">Growth stages</p>
+          <div class="legend-row"><span>🌱</span> Seed <em>2</em></div>
+          <div class="legend-row"><span>🌿</span> Sprout <em>4</em></div>
+          <div class="legend-row"><span>🌷</span> Bud <em>8</em></div>
+          <div class="legend-row"><span>🌸</span> Opening <em>16</em></div>
+          <div class="legend-row"><span>🌼</span> First Bloom <em>32</em></div>
+          <div class="legend-row"><span>☀️</span> Wishing Bloom <em>2048</em></div>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <div class="flower-modal" role="dialog" aria-modal="true" aria-labelledby="flower-modal-title">
+    <div class="flower-modal-card">
+      <div class="flower-modal-bloom"></div>
+      <p class="flower-modal-emoji" aria-hidden="true">🌼</p>
+      <h2 id="flower-modal-title" class="flower-modal-title">First Bloom</h2>
+      <p class="flower-modal-text">Look — keep going, and the flower opens.</p>
+      <button type="button" class="flower-modal-keep">Keep this note</button>
+    </div>
+  </div>
+
+  <div class="garden-panel" role="dialog" aria-modal="true" aria-labelledby="garden-panel-title">
+    <div class="garden-panel-inner">
+      <button type="button" class="garden-panel-close" aria-label="Close">&times;</button>
+      <h2 id="garden-panel-title" class="panel-heading">Flower Language Notebook</h2>
+      <p class="panel-intro">Every milestone bloom leaves a whisper here.</p>
+      <ul class="notebook-list notebook-list-full"></ul>
+      <p class="notebook-empty notebook-empty-full">Your notebook is empty. Grow a bloom to fill these pages.</p>
+    </div>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/flower_config.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/sound_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
