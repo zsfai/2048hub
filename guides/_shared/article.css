@@ -1,0 +1,307 @@
+/* Shared styles for 2048Hub guides */
+:root {
+  --bg: #faf8ef;
+  --bg-card: #fff;
+  --text: #3c3a32;
+  --text-muted: #6b665c;
+  --text-light: #8a8478;
+  --accent: #8f7a66;
+  --accent-hover: #776e65;
+  --accent-soft: #eee4da;
+  --border: rgba(120, 110, 101, 0.14);
+  --tile-warm: #edc22e;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Microsoft YaHei", sans-serif;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+.site-nav {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 20px 20px 0;
+}
+
+.site-nav a {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.92rem;
+}
+
+.site-nav a:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+}
+
+article {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 20px 64px;
+}
+
+.article-header {
+  margin-bottom: 32px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid var(--border);
+}
+
+.eyebrow {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0 0 12px;
+}
+
+h1 {
+  font-size: clamp(1.75rem, 5vw, 2.35rem);
+  line-height: 1.25;
+  margin: 0 0 16px;
+  color: var(--text);
+  font-weight: 700;
+}
+
+.deck {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  margin: 0 0 20px;
+}
+
+.meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  font-size: 0.88rem;
+  color: var(--text-light);
+}
+
+.prose-section {
+  margin: 32px 0;
+}
+
+.prose-section h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.prose-section ul {
+  margin: 12px 0 0;
+  padding-left: 22px;
+}
+
+.prose-section li {
+  margin-bottom: 8px;
+  color: var(--text-muted);
+}
+
+.variant-label {
+  display: inline-block;
+  margin-bottom: 10px;
+  padding: 2px 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+  background: var(--accent-soft);
+  border-radius: 3px;
+}
+
+.game-card h2 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.game-card h2 a:hover {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.game-card .detail {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.game-card .detail strong {
+  color: var(--text);
+}
+
+.link-index {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
+}
+
+.link-index h2 {
+  margin-top: 0;
+  font-size: 1.15rem;
+}
+
+.link-index ol {
+  margin: 12px 0 0;
+  padding-left: 22px;
+}
+
+.link-index li {
+  margin-bottom: 6px;
+}
+
+.article-footer {
+  margin-top: 32px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.share-hint {
+  margin-top: 28px;
+  padding: 14px 16px;
+  background: var(--accent-soft);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.share-hint strong {
+  color: var(--text);
+}
+
+h2 {
+  font-size: 1.35rem;
+  margin: 36px 0 12px;
+  color: var(--text);
+}
+
+h2 .num {
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  margin-right: 6px;
+}
+
+p { margin: 0 0 16px; }
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+.game-card {
+  margin: 24px 0;
+  padding: 20px 22px 18px;
+  background: var(--bg-card);
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.game-card h2 {
+  margin: 0 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.game-icon {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.tagline {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0 0 10px;
+}
+
+.game-card p:last-of-type { margin-bottom: 0; }
+
+.play-link {
+  display: inline-block;
+  margin-top: 14px;
+  padding: 8px 16px;
+  background: var(--accent);
+  color: #fff !important;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.play-link:hover {
+  background: var(--accent-hover);
+  color: #fff !important;
+}
+
+.pick-section {
+  margin-top: 40px;
+  padding: 22px 24px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.pick-section ul {
+  margin: 12px 0 0;
+  padding-left: 22px;
+}
+
+.pick-section li { margin-bottom: 8px; }
+
+.faq {
+  margin-top: 40px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.faq-item h3 {
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+  color: var(--text);
+}
+
+.faq-item p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+.footer-cta {
+  margin-top: 48px;
+  text-align: center;
+  padding: 28px 20px;
+  background: var(--accent-soft);
+  border-radius: 6px;
+}
+
+.footer-cta p {
+  margin: 0 0 16px;
+  font-size: 1.05rem;
+  color: var(--text-muted);
+}
+
+.footer-cta a {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  article { padding: 16px 16px 48px; }
+  .game-card { padding: 16px; }
+}

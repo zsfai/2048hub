@@ -144,6 +144,7 @@ document.addEventListener('DOMContentLoaded', function() {
     guideContent = document.getElementById('guideContent');
     
     renderGameList();
+    renderHubGuides(document.getElementById('guideArticlesList'));
     setupEventListeners();
     setupSidebarCollapse();
     setupKeyboardNavigation();
