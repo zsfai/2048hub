@@ -9,6 +9,15 @@ const games = [
         iframe: true
     },
     {
+        id: 'flower-field',
+        title: '2048 花野',
+        description: 'タネを合体させ、花言葉を集めながら癒しの庭を育てる',
+        icon: '🌼',
+        url: 'https://2048hub.com/ja/flower-field/',
+        iframe: true,
+        isNew: true
+    },
+    {
         id: 'taylor-swift-2048',
         title: 'Taylor Swift 2048',
         description: 'Taylor Swiftテーマの2048',

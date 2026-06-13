@@ -9,6 +9,15 @@ const games = [
         iframe: true
     },
     {
+        id: 'flower-field',
+        title: '2048 Flower Field',
+        description: 'Merge seeds into blooms and collect gentle flower messages',
+        icon: '🌼',
+        url: 'https://2048hub.com/flower-field/',
+        iframe: true,
+        isNew: true
+    },
+    {
         id: 'taylor-swift-2048',
         title: 'Taylor Swift 2048',
         description: 'Taylor Swift 2048 game with Taylor Swift theme, perfect for all ages',
