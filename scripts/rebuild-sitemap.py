@@ -7,7 +7,17 @@ from pathlib import Path
 from hub_lang import SITE, game_hreflang_urls
 
 ROOT = Path(__file__).resolve().parents[1]
-LASTMOD = "2026-05-28T00:00:00+00:00"
+LASTMOD = "2026-07-04T00:00:00+00:00"
+
+# English-only pages (no ja/es/fr/it mirror yet)
+EXTRA_EN_PAGES = [
+    "out-of-control-ark",
+]
+
+GUIDE_PAGES = [
+    "guides/how-to-beat-2048",
+    "guides/10-2048-variants-2026",
+]
 
 
 def game_slugs() -> list[str]:
@@ -40,6 +50,14 @@ def entry(loc: str, urls: dict[str, str], priority: str, changefreq: str) -> str
     </url>"""
 
 
+def en_only_entry(path: str, priority: str, changefreq: str) -> str:
+    loc = f"{SITE}/{path}/" if not path.endswith("/") else f"{SITE}/{path}"
+    if not loc.endswith("/"):
+        loc += "/"
+    urls = {lang: loc for lang in ("en", "ja", "es", "fr", "it")}
+    return entry(loc, urls, priority, changefreq)
+
+
 def main() -> None:
     slugs = game_slugs()
     hub_urls = {
@@ -68,9 +86,17 @@ def main() -> None:
         for loc in urls.values():
             parts.append(entry(loc, urls, "0.9", "monthly"))
 
+    for slug in EXTRA_EN_PAGES:
+        if (ROOT / slug / "index.html").is_file():
+            parts.append(en_only_entry(slug, "0.85", "monthly"))
+
+    for path in GUIDE_PAGES:
+        if (ROOT / path / "index.html").is_file():
+            parts.append(en_only_entry(path, "0.7", "monthly"))
+
     parts.append("</urlset>")
     (ROOT / "sitemap.xml").write_text("\n".join(parts) + "\n", encoding="utf-8")
-    n = 5 + len(slugs) * 5
+    n = len([p for p in parts if p.lstrip().startswith("<url>")])
     print(f"wrote {n} urls to sitemap.xml")
 
 
