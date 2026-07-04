@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ja">
+    <head>
+        <link rel="alternate" hreflang="en" href="https://2048hub.com/pacman-3d/">
+        <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/pacman-3d/">
+        <link rel="alternate" hreflang="es" href="https://2048hub.com/es/pacman-3d/">
+        <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/pacman-3d/">
+        <link rel="alternate" hreflang="it" href="https://2048hub.com/it/pacman-3d/">
+        <link rel="alternate" hreflang="x-default" href="https://2048hub.com/pacman-3d/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Pacman 3D - 無料3Dパックマンオンラインゲーム | 2048 Hub</title>
+        <meta name="description" content="Pacman 3Dを無料でオンラインプレイ。3D迷路でドットを食べ、ゴーストを避けてクリア。WASDまたは方向キー。ダウンロード不要。">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://2048hub.com/ja/pacman-3d/">
+        <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+        <meta property="og:locale" content="ja_JP">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://2048hub.com/ja/pacman-3d/">
+        <meta property="og:title" content="Pacman 3D - 無料3Dパックマンオンラインゲーム | 2048 Hub">
+        <meta property="og:description" content="Pacman 3Dを無料でオンラインプレイ。3D迷路でドットを食べ、ゴーストを避けるブラウザアーケード。">
+        <meta property="og:site_name" content="2048 Hub">
+        <meta property="og:image" content="https://2048hub.com/pacman-3d/pacman.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Pacman 3D - 無料オンラインゲーム">
+        <meta name="twitter:description" content="ブラウザでPacman 3Dをプレイ。ドットを食べ、ゴーストを避けて迷路を攻略。">
+        <meta name="twitter:image" content="https://2048hub.com/pacman-3d/pacman.png">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            "name": "Pacman 3D",
+            "alternateName": ["パックマン3D", "3D Pacman"],
+            "description": "無料ブラウザゲーム：3Dパックマン迷路を進み、ドットとパワーエサを集め、ゴーストから逃げる。",
+            "url": "https://2048hub.com/ja/pacman-3d/",
+            "image": "https://2048hub.com/pacman-3d/pacman.png",
+            "genre": ["Arcade", "Action"],
+            "gamePlatform": "Web Browser",
+            "applicationCategory": "Game",
+            "inLanguage": "ja",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "author": {
+                "@type": "Organization",
+                "name": "2048 Hub"
+            }
+        }
+        </script>
+        <base href="../../pacman-3d/">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="lives"></div>
+
+        <button id="help-button" onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'block';">ヘルプ</button>
+
+        <div id="help-dialog" class="dialog">
+            <h2>操作方法</h2>
+
+            <p>WASDまたは方向キー：W/↑で前進、S/↓で後退、A/←で左折、D/→で右折。</p>
+
+            <p>すべてのドットを集めると再スタートしますが、パックマンとゴーストは少しずつ速くなります！</p>
+
+            <button onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'none';">閉じる</button>
+        </div>
+
+        <script src="three.js"></script>
+        <script src="helvetiker_regular.typeface.js"></script>
+        <script src="game.js"></script>
+        <script src="/hub-bar.js" defer></script>
+    </body>
+</html>

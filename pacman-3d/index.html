@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Pacman 3D - Free 3D Pac-Man Game Online | 2048 Hub</title>
+        <meta name="description" content="Play Pacman 3D online for free. Explore a 3D maze, eat dots, dodge ghosts, and clear levels in your browser. WASD or arrow keys. No download.">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://2048hub.com/pacman-3d/">
+        <link rel="alternate" hreflang="en" href="https://2048hub.com/pacman-3d/">
+        <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/pacman-3d/">
+        <link rel="alternate" hreflang="es" href="https://2048hub.com/es/pacman-3d/">
+        <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/pacman-3d/">
+        <link rel="alternate" hreflang="it" href="https://2048hub.com/it/pacman-3d/">
+        <link rel="alternate" hreflang="x-default" href="https://2048hub.com/pacman-3d/">
+        <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://2048hub.com/pacman-3d/">
+        <meta property="og:title" content="Pacman 3D - Free 3D Pac-Man Game Online | 2048 Hub">
+        <meta property="og:description" content="Play Pacman 3D online for free. 3D maze arcade action with ghosts, dots, and power pellets in your browser.">
+        <meta property="og:site_name" content="2048 Hub">
+        <meta property="og:image" content="https://2048hub.com/pacman-3d/pacman.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Pacman 3D - Free Online Game">
+        <meta name="twitter:description" content="Play Pacman 3D in your browser. Eat dots, avoid ghosts, and beat the maze.">
+        <meta name="twitter:image" content="https://2048hub.com/pacman-3d/pacman.png">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            "name": "Pacman 3D",
+            "alternateName": ["Pac-Man 3D", "3D Pacman"],
+            "description": "Free browser game: navigate a 3D Pac-Man maze, collect dots and power pellets, and outrun ghosts.",
+            "url": "https://2048hub.com/pacman-3d/",
+            "image": "https://2048hub.com/pacman-3d/pacman.png",
+            "genre": ["Arcade", "Action"],
+            "gamePlatform": "Web Browser",
+            "applicationCategory": "Game",
+            "inLanguage": "en",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "author": {
+                "@type": "Organization",
+                "name": "2048 Hub"
+            }
+        }
+        </script>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="lives"></div>
+
+        <button id="help-button" onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'block';">HELP</button>
+
+        <div id="help-dialog" class="dialog">
+            <h2>CONTROLS</h2>
+
+            <p>WASD or Arrow keys: W/↑ and S/↓ to move forward/backward; A/← and D/→ to turn left/right.</p>
+
+            <p>After you collect all of the dots, the game will start over but pacman and the ghosts will get a little bit faster!</p>
+
+            <button onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'none';">Close</button>
+        </div>
+
+        <script src="three.js"></script>
+        <script src="helvetiker_regular.typeface.js"></script>
+        <script src="game.js"></script>
+        <script src="../hub-bar.js" defer></script>
+    </body>
+</html>

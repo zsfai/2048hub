@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="it">
+    <head>
+        <link rel="alternate" hreflang="en" href="https://2048hub.com/pacman-3d/">
+        <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/pacman-3d/">
+        <link rel="alternate" hreflang="es" href="https://2048hub.com/es/pacman-3d/">
+        <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/pacman-3d/">
+        <link rel="alternate" hreflang="it" href="https://2048hub.com/it/pacman-3d/">
+        <link rel="alternate" hreflang="x-default" href="https://2048hub.com/pacman-3d/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Pacman 3D - Gioco Pac-Man 3D gratis online | 2048 Hub</title>
+        <meta name="description" content="Gioca a Pacman 3D gratis online. Esplora un labirinto 3D, mangia i puntini, evita i fantasmi nel browser. WASD o frecce. Nessun download.">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://2048hub.com/it/pacman-3d/">
+        <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+        <meta property="og:locale" content="it_IT">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://2048hub.com/it/pacman-3d/">
+        <meta property="og:title" content="Pacman 3D - Gioco Pac-Man 3D gratis online | 2048 Hub">
+        <meta property="og:description" content="Gioca a Pacman 3D gratis online. Arcade 3D con fantasmi, puntini e power pellet nel browser.">
+        <meta property="og:site_name" content="2048 Hub">
+        <meta property="og:image" content="https://2048hub.com/pacman-3d/pacman.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Pacman 3D - Gioco gratis online">
+        <meta name="twitter:description" content="Gioca a Pacman 3D nel browser. Mangia i puntini, evita i fantasmi e supera il labirinto.">
+        <meta name="twitter:image" content="https://2048hub.com/pacman-3d/pacman.png">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            "name": "Pacman 3D",
+            "alternateName": ["Pac-Man 3D", "3D Pacman"],
+            "description": "Gioco gratis nel browser: attraversa un labirinto Pac-Man 3D, raccogli puntini e power pellet e sfuggi ai fantasmi.",
+            "url": "https://2048hub.com/it/pacman-3d/",
+            "image": "https://2048hub.com/pacman-3d/pacman.png",
+            "genre": ["Arcade", "Action"],
+            "gamePlatform": "Web Browser",
+            "applicationCategory": "Game",
+            "inLanguage": "it",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "author": {
+                "@type": "Organization",
+                "name": "2048 Hub"
+            }
+        }
+        </script>
+        <base href="../../pacman-3d/">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="lives"></div>
+
+        <button id="help-button" onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'block';">AIUTO</button>
+
+        <div id="help-dialog" class="dialog">
+            <h2>COMANDI</h2>
+
+            <p>WASD o frecce: W/↑ avanti, S/↓ indietro, A/← gira a sinistra, D/→ gira a destra.</p>
+
+            <p>Dopo aver raccolto tutti i puntini, la partita ricomincia e Pac-Man e i fantasmi diventano un po' più veloci.</p>
+
+            <button onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'none';">Chiudi</button>
+        </div>
+
+        <script src="three.js"></script>
+        <script src="helvetiker_regular.typeface.js"></script>
+        <script src="game.js"></script>
+        <script src="/hub-bar.js" defer></script>
+    </body>
+</html>

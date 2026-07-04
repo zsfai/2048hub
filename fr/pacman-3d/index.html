@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <link rel="alternate" hreflang="en" href="https://2048hub.com/pacman-3d/">
+        <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/pacman-3d/">
+        <link rel="alternate" hreflang="es" href="https://2048hub.com/es/pacman-3d/">
+        <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/pacman-3d/">
+        <link rel="alternate" hreflang="it" href="https://2048hub.com/it/pacman-3d/">
+        <link rel="alternate" hreflang="x-default" href="https://2048hub.com/pacman-3d/">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Pacman 3D - Jeu Pac-Man 3D gratuit en ligne | 2048 Hub</title>
+        <meta name="description" content="Jouez à Pacman 3D gratuitement en ligne. Explorez un labyrinthe 3D, mangez les points, évitez les fantômes dans votre navigateur. WASD ou flèches. Sans téléchargement.">
+        <meta name="robots" content="index, follow">
+        <link rel="canonical" href="https://2048hub.com/fr/pacman-3d/">
+        <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+        <meta property="og:locale" content="fr_FR">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://2048hub.com/fr/pacman-3d/">
+        <meta property="og:title" content="Pacman 3D - Jeu Pac-Man 3D gratuit en ligne | 2048 Hub">
+        <meta property="og:description" content="Jouez à Pacman 3D gratuitement en ligne. Arcade 3D avec fantômes, points et power pellets dans le navigateur.">
+        <meta property="og:site_name" content="2048 Hub">
+        <meta property="og:image" content="https://2048hub.com/pacman-3d/pacman.png">
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Pacman 3D - Jeu gratuit en ligne">
+        <meta name="twitter:description" content="Jouez à Pacman 3D dans le navigateur. Mangez les points, évitez les fantômes et battez le labyrinthe.">
+        <meta name="twitter:image" content="https://2048hub.com/pacman-3d/pacman.png">
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "VideoGame",
+            "name": "Pacman 3D",
+            "alternateName": ["Pac-Man 3D", "3D Pacman"],
+            "description": "Jeu gratuit dans le navigateur : parcourez un labyrinthe Pac-Man 3D, collectez points et power pellets et fuyez les fantômes.",
+            "url": "https://2048hub.com/fr/pacman-3d/",
+            "image": "https://2048hub.com/pacman-3d/pacman.png",
+            "genre": ["Arcade", "Action"],
+            "gamePlatform": "Web Browser",
+            "applicationCategory": "Game",
+            "inLanguage": "fr",
+            "offers": {
+                "@type": "Offer",
+                "price": "0",
+                "priceCurrency": "USD"
+            },
+            "author": {
+                "@type": "Organization",
+                "name": "2048 Hub"
+            }
+        }
+        </script>
+        <base href="../../pacman-3d/">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="lives"></div>
+
+        <button id="help-button" onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'block';">AIDE</button>
+
+        <div id="help-dialog" class="dialog">
+            <h2>COMMANDES</h2>
+
+            <p>WASD ou flèches : W/↑ avancer, S/↓ reculer, A/← tourner à gauche, D/→ tourner à droite.</p>
+
+            <p>Une fois tous les points collectés, la partie recommence et Pac-Man et les fantômes accélèrent un peu.</p>
+
+            <button onclick="var dialog = document.getElementById('help-dialog'); dialog.style.display = 'none';">Fermer</button>
+        </div>
+
+        <script src="three.js"></script>
+        <script src="helvetiker_regular.typeface.js"></script>
+        <script src="game.js"></script>
+        <script src="/hub-bar.js" defer></script>
+    </body>
+</html>
