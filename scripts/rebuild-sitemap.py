@@ -14,6 +14,7 @@ EXTRA_EN_PAGES = [
     "out-of-control-ark",
     "volley-random-unblocked",
     "basket-random-unblocked",
+    "basketball-legends-unblocked",
 ]
 
 GUIDE_PAGES = [

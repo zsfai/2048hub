@@ -1,0 +1,10 @@
+{
+  "name": "Basketball Legends Unblocked",
+  "short_name": "Basketball Legends",
+  "description": "Arcade basketball with roster legends. Play dunks, dashes, and matches in your browser.",
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#000000",
+  "icons": []
+}

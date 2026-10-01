@@ -91,6 +91,7 @@
 | Geometry Dash | [英语版](https://2048hub.com/geometrydash/) · [日语版](https://2048hub.com/ja/geometrydash/) | `geometrydash/` | 节奏平台跳跃 |
 | Volley Random Unblocked | [英语版](https://2048hub.com/volley-random-unblocked/) | `volley-random-unblocked/` | 物理排球对战 |
 | Basket Random Unblocked | [英语版](https://2048hub.com/basket-random-unblocked/) | `basket-random-unblocked/` | 物理篮球对战 |
+| Basketball Legends Unblocked | [英语版](https://2048hub.com/basketball-legends-unblocked/) | `basketball-legends-unblocked/` | 街机篮球对战 |
 
 ### 教育
 
