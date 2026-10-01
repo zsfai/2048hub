@@ -1,0 +1,10 @@
+{
+	"name": "Volley Random Unblocked",
+	"short_name": "Volley Random",
+	"description": "Physics volleyball with random characters.",
+	"start_url": "index.html",
+	"display": "fullscreen",
+	"orientation": "any",
+	"background_color": "#ffffff",
+	"icons": []
+}

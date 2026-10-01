@@ -12,6 +12,7 @@ LASTMOD = "2026-07-04T00:00:00+00:00"
 # English-only pages (no ja/es/fr/it mirror yet)
 EXTRA_EN_PAGES = [
     "out-of-control-ark",
+    "volley-random-unblocked",
 ]
 
 GUIDE_PAGES = [
