@@ -13,6 +13,7 @@ LASTMOD = "2026-07-04T00:00:00+00:00"
 EXTRA_EN_PAGES = [
     "out-of-control-ark",
     "volley-random-unblocked",
+    "basket-random-unblocked",
 ]
 
 GUIDE_PAGES = [
