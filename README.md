@@ -92,6 +92,8 @@
 | Volley Random Unblocked | [英语版](https://2048hub.com/volley-random-unblocked/) | `volley-random-unblocked/` | 物理排球对战 |
 | Basket Random Unblocked | [英语版](https://2048hub.com/basket-random-unblocked/) | `basket-random-unblocked/` | 物理篮球对战 |
 | Basketball Legends Unblocked | [英语版](https://2048hub.com/basketball-legends-unblocked/) | `basketball-legends-unblocked/` | 街机篮球对战 |
+| Boxing Random Unblocked | [英语版](https://2048hub.com/boxing-random-unblocked/) | `boxing-random-unblocked/` | 物理拳击对战 |
+| Monkey Mart Unblocked | [英语版](https://2048hub.com/monkey-mart/) | `monkey-mart/` | 猴子超市模拟经营 |
 
 ### 教育
 

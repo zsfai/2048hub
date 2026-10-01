@@ -1,0 +1,10 @@
+{
+  "name": "Monkey Mart Unblocked",
+  "short_name": "Monkey Mart",
+  "description": "Run a busy monkey supermarket — grow crops, stock shelves, and serve customers in your browser.",
+  "start_url": "index.html",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#00BB61",
+  "icons": []
+}

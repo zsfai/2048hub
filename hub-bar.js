@@ -36,7 +36,11 @@
     function init() {
         if (document.getElementById('hub-bar')) return;
 
-        document.documentElement.classList.add('hub-bar-active');
+        /* Fullscreen canvas engines (Defold/Unity) break if html/body become scrollable. */
+        var layout = script.getAttribute('data-hub-layout') || '';
+        if (layout !== 'fixed') {
+            document.documentElement.classList.add('hub-bar-active');
+        }
 
         var bar = document.createElement('header');
         bar.id = 'hub-bar';

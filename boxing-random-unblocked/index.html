@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+<title>Boxing Random Unblocked | 2048 Hub</title>
+<meta name="description" content="Physics boxing with random characters. Play solo or local two-player in your browser.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://2048hub.com/boxing-random-unblocked/">
+
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://2048hub.com/boxing-random-unblocked/">
+<meta property="og:title" content="Boxing Random Unblocked | 2048 Hub">
+<meta property="og:description" content="Physics boxing with random characters. Play solo or local two-player in your browser.">
+<meta property="og:site_name" content="2048 Hub">
+<meta property="og:image" content="https://2048hub.com/favicon.svg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Boxing Random Unblocked",
+  "description": "Physics boxing with random characters for one or two players in the browser.",
+  "url": "https://2048hub.com/boxing-random-unblocked/",
+  "genre": "Sports",
+  "gamePlatform": "Web Browser",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  }
+}
+</script>
+
+<meta name="generator" content="Construct 3">
+<link rel="manifest" href="appmanifest.json">
+<link rel="stylesheet" href="style.css">
+<script>
+window.addEventListener("keydown", function(e) {
+	if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+		e.preventDefault();
+	}
+}, false);
+</script>
+</head>
+<body style="overflow:hidden;">
+	<main id="game-intro" class="game-intro">
+		<h1>Boxing Random Unblocked</h1>
+		<p>Physics boxing with random characters. Solo vs CPU or local 2P — punch, dodge, KO.</p>
+	</main>
+
+	<noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+	<script>
+	(function () {
+		if (location.protocol === "file:") {
+			document.body.style.cssText = "overflow:auto;padding:2rem;font-family:Segoe UI,sans-serif;background:#111;color:#eee;";
+			document.body.innerHTML =
+				"<h1>Boxing Random Unblocked</h1>" +
+				"<p>请勿直接双击打开本文件。浏览器的 <code>file://</code> 协议无法运行此游戏。</p>" +
+				"<p>在项目根目录启动本地服务后访问：</p>" +
+				"<pre style=\"background:#222;padding:1rem;border-radius:8px;\">python -m http.server 8765\n\n然后打开：\nhttp://127.0.0.1:8765/boxing-random-unblocked/</pre>";
+			return;
+		}
+
+		var intro = document.getElementById("game-intro");
+		document.addEventListener("pointerdown", function () {
+			if (intro) intro.classList.add("is-hidden");
+		}, { once: true, capture: true });
+
+		function loadScript(src, defer) {
+			return new Promise(function (resolve, reject) {
+				var s = document.createElement("script");
+				s.src = src;
+				if (defer) s.defer = true;
+				s.onload = resolve;
+				s.onerror = reject;
+				document.body.appendChild(s);
+			});
+		}
+		loadScript("box2d.wasm.js")
+			.then(function () { return loadScript("scripts/supportcheck.js"); })
+			.then(function () { return loadScript("scripts/offlineclient.js"); })
+			.then(function () { return loadScript("scripts/main.js"); })
+			.then(function () { return loadScript("scripts/register-sw.js"); })
+			.then(function () { return loadScript("../hub-bar.js", true); })
+			.catch(function (err) { console.error("Failed to load game scripts", err); });
+	})();
+	</script>
+</body>
+</html>
