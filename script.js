@@ -5,7 +5,7 @@ const games = [
         title: 'Classic 2048',
         description: 'Original 2048 game, simple and easy to learn for beginners',
         icon: '🔢',
-        url: 'https://2048hub.com/classic-2048/', // Replace with actual game URL
+        url: '/classic-2048/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -13,7 +13,7 @@ const games = [
         title: '2048 Flower Field',
         description: 'Merge seeds into blooms and collect gentle flower messages',
         icon: '🌼',
-        url: 'https://2048hub.com/flower-field/',
+        url: '/flower-field/',
         iframe: true,
         isNew: true
     },
@@ -22,7 +22,7 @@ const games = [
         title: 'Taylor Swift 2048',
         description: 'Taylor Swift 2048 game with Taylor Swift theme, perfect for all ages',
         icon: '🎤',
-        url: 'https://2048hub.com/taylor-swift-2048/', // Replace with actual game URL
+        url: '/taylor-swift-2048/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -30,7 +30,7 @@ const games = [
         title: '2048 Cupcakes',
         description: 'Classic 2048 game with adorable cupcake theme, perfect for all ages',
         icon: '🧁',
-        url: 'https://2048hub.com/2048-cupcakes/', // Replace with actual game URL
+        url: '/2048-cupcakes/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -38,7 +38,7 @@ const games = [
         title: '2048 Cupcakes Christmas',
         description: '2048 Cupcakes Christmas game with Christmas theme, perfect for all ages',
         icon: '🎄',
-        url: 'https://2048hub.com/2048cupcakes-christmas/', // Replace with actual game URL
+        url: '/2048cupcakes-christmas/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -46,7 +46,7 @@ const games = [
         title: '2048 Princess',
         description: 'Merge tiles to reveal Disney princesses in a rose pink theme',
         icon: '👸',
-        url: 'https://2048hub.com/2048-princess/',
+        url: '/2048-princess/',
         iframe: true,
         isNew: true
     },
@@ -55,7 +55,7 @@ const games = [
         title: '2048 Cats',
         description: 'Merge cats by nobility from alley kitten to Royal Cat',
         icon: '🐱',
-        url: 'https://2048hub.com/2048-cats/',
+        url: '/2048-cats/',
         iframe: true,
         isNew: true
     },
@@ -64,7 +64,7 @@ const games = [
         title: '2048 Minecraft',
         description: 'Combine Minecraft blocks in this themed 2048 game to reach 2048',
         icon: '🟩',
-        url: 'https://2048hub.com/2048-minecraft/',
+        url: '/2048-minecraft/',
         iframe: true,
         isNew: true
     },
@@ -73,7 +73,7 @@ const games = [
         title: 'Couch 2048',
         description: 'Couch 2048 game with couch theme, perfect for all ages',
         icon: '🛋️',
-        url: 'https://2048hub.com/couch-2048/', // Replace with actual game URL
+        url: '/couch-2048/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -81,7 +81,7 @@ const games = [
         title: 'Card 2048',
         description: 'Card 2048 game with card numbers, perfect for all ages',
         icon: '🃏',
-        url: 'https://2048hub.com/card-2048/', // Replace with actual game URL
+        url: '/card-2048/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -89,7 +89,7 @@ const games = [
         title: '2048 BYD Cars',
         description: '2048 Cars Game with BYD Cars theme, perfect for all ages',
         icon: '🚗',
-        url: 'https://2048hub.com/byd-cars/', // Replace with actual game URL
+        url: '/byd-cars/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -97,7 +97,7 @@ const games = [
         title: 'Flappy 2048',
         description: 'Flappy Bird meets 2048—fly through pipes while merging numbered tiles',
         icon: '🐦',
-        url: 'https://2048hub.com/flappy-2048/',
+        url: '/flappy-2048/',
         iframe: true,
         isNew: true
     },
@@ -106,7 +106,7 @@ const games = [
         title: 'Doge 2048',
         description: 'Doge 2048 game with Doge meme tiles, perfect for all ages',
         icon: '🐶',
-        url: 'https://2048hub.com/doge-2048/', // Replace with actual game URL
+        url: '/doge-2048/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -114,7 +114,7 @@ const games = [
         title: '2048 Remastered',
         description: '2048 Remastered game with 2048 theme, perfect for all ages',
         icon: '🎮',
-        url: 'https://2048hub.com/2048-remastered/', // Replace with actual game URL
+        url: '/2048-remastered/', // Replace with actual game URL
         iframe: true
     },
     {
@@ -122,13 +122,159 @@ const games = [
         title: 'Hex 2048',
         description: 'Hexagonal grid 2048 variant with more strategic gameplay',
         icon: '⬡',
-        url: 'https://2048hub.com/hex-2048/', // Replace with actual game URL
+        url: '/hex-2048/',
         iframe: true
+    },
+    {
+        id: 'schulte-grid',
+        title: 'Schulte Grid',
+        description: 'Focus training — tap numbers in order as fast as you can',
+        icon: '🧠',
+        url: '/schulte-grid/',
+        iframe: true
+    },
+    {
+        id: 'parity',
+        title: 'Parity',
+        description: 'Puzzle game of flipping tiles to match parity',
+        icon: '◐',
+        url: '/parity/',
+        iframe: true
+    },
+    {
+        id: '8-puzzle',
+        title: '8 Puzzle',
+        description: 'Classic sliding tile puzzle',
+        icon: '🧩',
+        url: '/8-puzzle/',
+        iframe: true
+    },
+    {
+        id: 'astro-math',
+        title: 'Astro Math',
+        description: 'Math & space shooting game',
+        icon: '🚀',
+        url: '/astro-math/',
+        iframe: true,
+        isNew: true
+    },
+    {
+        id: 'breakout',
+        title: 'Breakout',
+        description: 'Classic brick-breaker arcade',
+        icon: '🧱',
+        url: '/breakout/',
+        iframe: true
+    },
+    {
+        id: 'chromedino',
+        title: 'Chrome Dino',
+        description: 'Offline dinosaur runner',
+        icon: '🦖',
+        url: '/chromedino/',
+        iframe: true
+    },
+    {
+        id: 'geometrydash',
+        title: 'Geometry Dash',
+        description: 'Rhythm platform jumper',
+        icon: '📐',
+        url: '/geometrydash/',
+        iframe: true
+    },
+    {
+        id: 'captaincallisto',
+        title: 'Captain Callisto',
+        description: 'Space adventure platformer',
+        icon: '🚀',
+        url: '/captaincallisto/',
+        iframe: true
+    },
+    {
+        id: 'blackholesquare',
+        title: 'Black Hole Square',
+        description: 'Gravity puzzle with black holes',
+        icon: '🕳️',
+        url: '/blackholesquare/',
+        iframe: true
+    },
+    {
+        id: 'xx142-b2exe',
+        title: 'xx142-b2.exe',
+        description: 'Retro puzzle / adventure',
+        icon: '💾',
+        url: '/xx142-b2exe/',
+        iframe: true
+    },
+    {
+        id: 'out-of-control-ark',
+        title: 'Out of Control Ark',
+        description: 'Chaotic ark action game',
+        icon: '🚢',
+        url: '/out-of-control-ark/',
+        iframe: false,
+        isNew: true
+    },
+    {
+        id: 'pacman-3d',
+        title: 'Pac-Man 3D',
+        description: '3D Pac-Man arcade',
+        icon: '👻',
+        url: '/pacman-3d/',
+        iframe: false,
+        isNew: true
+    },
+    {
+        id: 'volley-random-unblocked',
+        title: 'Volley Random Unblocked',
+        description: 'Physics volleyball game',
+        icon: '🏐',
+        url: '/volley-random-unblocked/',
+        iframe: false,
+        isNew: true
+    },
+    {
+        id: 'basket-random-unblocked',
+        title: 'Basket Random Unblocked',
+        description: 'Physics basketball game',
+        icon: '🏀',
+        url: '/basket-random-unblocked/',
+        iframe: false,
+        isNew: true
+    },
+    {
+        id: 'basketball-legends-unblocked',
+        title: 'Basketball Legends Unblocked',
+        description: 'Arcade basketball legends',
+        icon: '🏀',
+        url: '/basketball-legends-unblocked/',
+        iframe: false,
+        isNew: true
+    },
+    {
+        id: 'boxing-random-unblocked',
+        title: 'Boxing Random Unblocked',
+        description: 'Physics boxing game',
+        icon: '🥊',
+        url: '/boxing-random-unblocked/',
+        iframe: false,
+        isNew: true
+    },
+    {
+        id: 'monkey-mart',
+        title: 'Monkey Mart Unblocked',
+        description: 'Supermarket tycoon — plant, stock, serve',
+        icon: '🐵',
+        url: '/monkey-mart/',
+        iframe: false,
+        isNew: true
     }
 ];
 
+var DEFAULT_GAME_ID = 'classic-2048';
+
 // DOM elements (will be initialized after DOM loads)
-let gameList, gameContainer, gameHeader, currentGameTitle, backBtn, gameFrameContainer, guideContent;
+let gameList, gameContainer, gameHeader, currentGameTitle, backBtn, gameFrameContainer;
 
 let currentGame = null;
 
@@ -141,19 +287,25 @@ document.addEventListener('DOMContentLoaded', function() {
     currentGameTitle = document.getElementById('currentGameTitle');
     backBtn = document.getElementById('backBtn');
     gameFrameContainer = document.getElementById('gameFrameContainer');
-    guideContent = document.getElementById('guideContent');
     
-    renderGameList();
-    renderHubGuides(document.getElementById('guideArticlesList'));
+    try {
+        renderGameList();
+    } catch (e) {
+        console.error('renderGameList failed', e);
+    }
+    try {
+        if (typeof renderHubGuides === 'function') {
+            renderHubGuides(document.getElementById('guideArticlesList'));
+        }
+    } catch (e) {
+        console.error('renderHubGuides failed', e);
+    }
     setupEventListeners();
     setupSidebarCollapse();
     setupKeyboardNavigation();
-    
-    // Check initial hash on page load (after DOM is ready)
-    // Use setTimeout to ensure all DOM elements are fully initialized
-    setTimeout(function() {
-        handleHashChange();
-    }, 100);
+
+    // Play immediately — do not wait on unrelated UI
+    handleHashChange();
 });
 
 // Render game list in sidebar
@@ -184,11 +336,10 @@ function renderGameList() {
 // Setup event listeners
 function setupEventListeners() {
     if (backBtn) {
-        backBtn.addEventListener('click', showWelcome);
+        backBtn.addEventListener('click', function() {
+            selectGame(DEFAULT_GAME_ID);
+        });
     }
-    
-    // Setup quick game links
-    setupQuickGameLinks();
 }
 
 function setupSidebarCollapse() {
@@ -219,27 +370,11 @@ function syncSidebarCollapseUI(btn, app) {
     btn.title = collapsed ? expandLabel : collapseLabel;
 }
 
-// Setup quick game links event listeners
-function setupQuickGameLinks() {
-    const gameLinkItems = document.querySelectorAll('.game-link-item');
-    gameLinkItems.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const gameId = this.dataset.gameId;
-            if (gameId) {
-                selectGame(gameId);
-            } else {
-                location.href = this.href;
-            }
-        });
-    });
-}
-
 // Setup keyboard navigation
 function setupKeyboardNavigation() {
     document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape' && currentGame) {
-            showWelcome();
+        if (e.key === 'Escape' && currentGame && currentGame.id !== DEFAULT_GAME_ID) {
+            selectGame(DEFAULT_GAME_ID);
         }
     });
 }
@@ -248,6 +383,12 @@ function setupKeyboardNavigation() {
 function selectGame(gameId) {
     const game = games.find(g => g.id === gameId);
     if (!game) return;
+
+    // Full-page games (Defold / fullscreen shells) leave the hub shell
+    if (game.iframe === false) {
+        window.location.href = game.url;
+        return;
+    }
     
     currentGame = game;
     
@@ -263,7 +404,9 @@ function selectGame(gameId) {
     // Show game
     showGame(game);
     
-    window.location.hash = gameId;
+    if (window.location.hash.substring(1) !== gameId) {
+        window.location.hash = gameId;
+    }
 }
 
 // Show game
@@ -273,222 +416,115 @@ function showGame(game) {
     currentGameTitle.textContent = game.title;
     gameHeader.style.display = 'flex';
     
-    // Hide welcome message and guide content
-    const welcomeMessage = document.querySelector('.welcome-message');
-    if (welcomeMessage) {
-        welcomeMessage.style.display = 'none';
-    }
-    if (guideContent) {
-        guideContent.style.display = 'none';
-    }
-    
-    // Clear any existing iframe content
-    const existingIframe = gameFrameContainer.querySelector('.game-iframe');
-    if (existingIframe) {
-        existingIframe.remove();
-    }
-    const existingLoading = gameFrameContainer.querySelector('.loading');
-    if (existingLoading) {
-        existingLoading.remove();
-    }
-    
-    if (game.iframe) {
-        var sidebar = document.querySelector('.sidebar');
-        var mainContent = document.querySelector('.main-content');
-        if (window.innerWidth <= 768) {
-            if (sidebar) {
-                sidebar.classList.add('sidebar-game-hidden');
-            }
-            if (mainContent) {
-                mainContent.style.paddingBottom = '0';
-            }
-        }
-        
-        // Show loading animation
-        const loading = document.createElement('div');
-        loading.className = 'loading';
-        loading.innerHTML = '<div class="spinner"></div>';
-        gameFrameContainer.appendChild(loading);
-        
-        // Create iframe
-        const iframe = document.createElement('iframe');
-        iframe.className = 'game-iframe';
-        iframe.title = game.title;
-        iframe.allow = 'fullscreen';
-        
-        // Function to hide loading
-        let loadingHidden = false;
-        let loadCheckInterval = null;
-        
-        function hideLoading() {
-            if (!loadingHidden && loading.parentNode) {
-                loadingHidden = true;
-                if (loadCheckInterval) {
-                    clearInterval(loadCheckInterval);
-                    loadCheckInterval = null;
-                }
-                loading.style.opacity = '0';
-                loading.style.transition = 'opacity 0.2s ease';
-                setTimeout(() => {
-                    if (loading.parentNode) {
-                        loading.remove();
-                    }
-                }, 200);
-            }
-        }
-        
-        // Set iframe src after setting up event handlers
-        // This ensures onload can fire properly
-        iframe.onload = function() {
-            // onload fires when iframe document is loaded
-            hideLoading();
-        };
-        
-        // Fallback: Check iframe periodically (for cases where onload might not fire immediately)
-        // This is especially useful for cross-origin iframes
-        let checkCount = 0;
-        const maxChecks = 30; // 3 seconds max wait
-        loadCheckInterval = setInterval(function() {
-            checkCount++;
-            
-            // Try to detect if iframe has loaded
-            try {
-                // For same-origin: check document readyState
-                if (iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
-                    hideLoading();
-                    return;
-                }
-            } catch (e) {
-                // Cross-origin: can't access, but onload should fire
-                // If onload hasn't fired after reasonable time, assume loaded
-                if (checkCount >= 15) { // 1.5 seconds
-                    hideLoading();
-                    return;
-                }
-            }
-            
-            // Safety timeout: hide loading after max time
-            if (checkCount >= maxChecks) {
-                hideLoading();
-            }
-        }, 100);
-        
-        // iframe error handling
-        iframe.onerror = function() {
-            if (loadCheckInterval) {
-                clearInterval(loadCheckInterval);
-                loadCheckInterval = null;
-            }
-            loading.innerHTML = `
-                <div style="text-align: center; color: #666; padding: 40px;">
-                    <div style="font-size: 3rem; margin-bottom: 20px;">⚠️</div>
-                    <h3 style="color: #2c3e50; margin-bottom: 15px;">Game Loading Failed</h3>
-                    <p style="margin-bottom: 25px; color: #7f8c8d;">Unable to connect to the game server. Please try again later.</p>
-                    <button onclick="window.open('${game.url}', '_blank')" 
-                            style="padding: 12px 24px; background: linear-gradient(135deg, #4ecdc4, #44a08d); color: white; border: none; border-radius: 25px; font-size: 1rem; cursor: pointer; transition: transform 0.3s ease;"
-                            onmouseover="this.style.transform='scale(1.05)'"
-                            onmouseout="this.style.transform='scale(1)'">
-                        Open in New Window
-                    </button>
-                </div>
-            `;
-        };
-        
-        // Set src after all handlers are set up
-        iframe.src = game.url;
-        gameFrameContainer.appendChild(iframe);
-    } else {
-        // External link mode
-        gameFrameContainer.innerHTML = `
-            <div style="text-align: center; padding: 60px 30px; color: #666;">
-                <div style="font-size: 4rem; margin-bottom: 20px;">${game.icon}</div>
-                <h3 style="color: #2c3e50; margin-bottom: 15px;">${game.title}</h3>
-                <p style="margin-bottom: 30px; color: #7f8c8d;">${game.description}</p>
-                <button onclick="window.open('${game.url}', '_blank')" 
-                        style="padding: 15px 30px; background: linear-gradient(135deg, #4ecdc4, #44a08d); color: white; border: none; border-radius: 25px; font-size: 1.1rem; cursor: pointer; transition: transform 0.3s ease;"
-                        onmouseover="this.style.transform='scale(1.05)'"
-                        onmouseout="this.style.transform='scale(1)'">
-                    Start Game →
-                </button>
-            </div>
-        `;
-    }
-}
+    // Reset frame (remove placeholder / previous iframe / spinner)
+    gameFrameContainer.innerHTML = '';
 
-// Show welcome message
-function showWelcome(clearHash = true) {
-    currentGame = null;
-    if (gameHeader) {
-        gameHeader.style.display = 'none';
-    }
-    
-    // Show welcome message and guide content
-    const welcomeMessage = document.querySelector('.welcome-message');
-    if (welcomeMessage) {
-        welcomeMessage.style.display = 'flex';
-    }
-    if (guideContent) {
-        guideContent.style.display = 'block';
-    }
-    
-    // Remove any existing iframe content
-    if (gameFrameContainer) {
-        const existingIframe = gameFrameContainer.querySelector('.game-iframe');
-        if (existingIframe) {
-            existingIframe.remove();
-        }
-        const existingLoading = gameFrameContainer.querySelector('.loading');
-        if (existingLoading) {
-            existingLoading.remove();
-        }
-    }
-    
-    // Remove active state from all game items
-    document.querySelectorAll('.game-item').forEach(item => {
-        item.classList.remove('active');
-    });
-    
-    // Show sidebar on mobile when returning to home
     var sidebar = document.querySelector('.sidebar');
     var mainContent = document.querySelector('.main-content');
     if (window.innerWidth <= 768) {
         if (sidebar) {
-            sidebar.classList.remove('sidebar-game-hidden');
+            sidebar.classList.add('sidebar-game-hidden');
         }
         if (mainContent) {
-            var app = document.querySelector('.app-container');
-            if (app && app.classList.contains('sidebar-collapsed')) {
-                mainContent.style.paddingBottom = '52px';
-            } else if (window.innerWidth <= 480) {
-                mainContent.style.paddingBottom = '85px';
-            } else {
-                mainContent.style.paddingBottom = '90px';
-            }
+            mainContent.style.paddingBottom = '0';
         }
     }
     
-    // Setup quick game links again (in case content was recreated)
-    setupQuickGameLinks();
+    // Show loading animation
+    const loading = document.createElement('div');
+    loading.className = 'loading';
+    loading.innerHTML = '<div class="spinner"></div>';
+    gameFrameContainer.appendChild(loading);
     
-    // Clear URL hash only if explicitly requested (e.g., when user clicks Home button)
-    if (clearHash) {
-        window.history.replaceState(null, null, window.location.pathname);
+    // Create iframe
+    const iframe = document.createElement('iframe');
+    iframe.className = 'game-iframe';
+    iframe.title = game.title;
+    iframe.allow = 'fullscreen';
+    
+    let loadingHidden = false;
+    let loadCheckInterval = null;
+    
+    function hideLoading() {
+        if (!loadingHidden && loading.parentNode) {
+            loadingHidden = true;
+            if (loadCheckInterval) {
+                clearInterval(loadCheckInterval);
+                loadCheckInterval = null;
+            }
+            loading.style.opacity = '0';
+            loading.style.transition = 'opacity 0.2s ease';
+            setTimeout(() => {
+                if (loading.parentNode) {
+                    loading.remove();
+                }
+            }, 200);
+        }
     }
+    
+    iframe.onload = function() {
+        hideLoading();
+    };
+    
+    let checkCount = 0;
+    const maxChecks = 30;
+    loadCheckInterval = setInterval(function() {
+        checkCount++;
+        try {
+            if (iframe.contentDocument && iframe.contentDocument.readyState === 'complete') {
+                hideLoading();
+                return;
+            }
+        } catch (e) {
+            if (checkCount >= 15) {
+                hideLoading();
+                return;
+            }
+        }
+        if (checkCount >= maxChecks) {
+            hideLoading();
+        }
+    }, 100);
+    
+    iframe.onerror = function() {
+        if (loadCheckInterval) {
+            clearInterval(loadCheckInterval);
+            loadCheckInterval = null;
+        }
+        loading.innerHTML = `
+            <div style="text-align: center; color: #666; padding: 40px;">
+                <div style="font-size: 3rem; margin-bottom: 20px;">⚠️</div>
+                <h3 style="color: #2c3e50; margin-bottom: 15px;">Game Loading Failed</h3>
+                <p style="margin-bottom: 25px; color: #7f8c8d;">Unable to connect to the game server. Please try again later.</p>
+                <button onclick="window.open('${game.url}', '_blank')" 
+                        style="padding: 12px 24px; background: linear-gradient(135deg, #4ecdc4, #44a08d); color: white; border: none; border-radius: 25px; font-size: 1rem; cursor: pointer; transition: transform 0.3s ease;"
+                        onmouseover="this.style.transform='scale(1.05)'"
+                        onmouseout="this.style.transform='scale(1)'">
+                    Open in New Window
+                </button>
+            </div>
+        `;
+    };
+    
+    iframe.src = game.url;
+    gameFrameContainer.appendChild(iframe);
+}
+
+// Home / fallback: always play the default game
+function showWelcome() {
+    selectGame(DEFAULT_GAME_ID);
 }
 
 // Handle URL hash changes for direct game access
 function handleHashChange() {
     const hash = window.location.hash.substring(1);
-    if (hash && games.find(g => g.id === hash)) {
-        // Game found, select it
+    if (hash && games.find(g => g.id === hash && g.iframe !== false)) {
         selectGame(hash);
-    } else if (hash) {
-        // If hash exists but game not found, show welcome without clearing hash
-        console.warn('Game not found for hash:', hash);
-        showWelcome(false);
+    } else if (hash && games.find(g => g.id === hash && g.iframe === false)) {
+        // Full-page game deep link: go straight to its page
+        window.location.href = games.find(g => g.id === hash).url;
     } else {
-        // No hash, show welcome and clear any existing hash
-        showWelcome(true);
+        selectGame(DEFAULT_GAME_ID);
     }
 }
 

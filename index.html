@@ -73,7 +73,7 @@
             </div>
             
             <nav class="game-menu">
-                <h3 class="menu-title">Choose Game</h3>
+                <h3 class="menu-title">All Games</h3>
                 <ul class="game-list" id="gameList">
                 </ul>
             </nav>
@@ -87,334 +87,35 @@
                 </div>
                 
                 <div class="game-frame-container" id="gameFrameContainer">
-                    <div class="welcome-message">
-                        <div class="welcome-icon">🎯</div>
-                        <h2>2048 Game Collection</h2>
-                        <p>Select your favorite 2048 variant and start playing instantly</p>
-                        <div class="features">
-                            <div class="feature">
-                                <span class="feature-icon">🎮</span>
-                                <span>Instant Play</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">🔥</span>
-                                <span>Multiple Variants</span>
-                            </div>
-                            <div class="feature">
-                                <span class="feature-icon">📱</span>
-                                <span>Cross Platform</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="guide-content" id="guideContent">
-                        <div class="guide-header">
-                            <h2>2048 Game Guide & Tips</h2>
-                            <p>Everything you need to know about 2048 games</p>
-                        </div>
-                        
-                        <div class="faq-section">
-                            <div class="faq-item">
-                                <h3 class="faq-question">How to Win in 2048 Game?</h3>
-                                <div class="faq-answer">
-                                    <p>Winning 2048 requires both strategy and practice. Here are the essential tips:</p>
-                                    <ul>
-                                        <li><strong>Master the corner strategy:</strong> Keep your highest value tile in one corner and build around it.</li>
-                                        <li><strong>Build in one direction:</strong> Choose left, right, or down as your primary direction and stick to it.</li>
-                                        <li><strong>Create cascading merges:</strong> Plan moves that will create multiple merges in sequence.</li>
-                                        <li><strong>Control the board:</strong> Don't let tiles scatter randomly - maintain organized rows and columns.</li>
-                                        <li><strong>Practice regularly:</strong> The more you play, the better you'll understand tile movement patterns.</li>
-                                    </ul>
-                                    <p>With these techniques, you'll improve your chances of achieving the coveted 2048 tile!</p>
-                                </div>
-                            </div>
-                            
-                            <div class="faq-item">
-                                <h3 class="faq-question">What is the Origin of 2048 Game?</h3>
-                                <div class="faq-answer">
-                                    <p>The 2048 game has an interesting history that traces back to earlier puzzle games:</p>
-                                    <ul>
-                                        <li><strong>Created by Gabriele Cirulli:</strong> The original 2048 was developed by Italian web developer Gabriele Cirulli in March 2014.</li>
-                                        <li><strong>Inspired by Threes!:</strong> The game was inspired by the mobile game "Threes!" developed by Asher Vollmer.</li>
-                                        <li><strong>Open source project:</strong> Cirulli made 2048 as an open-source project, allowing others to create variations.</li>
-                                        <li><strong>Viral success:</strong> The game became a viral sensation within days of its release, with millions of players worldwide.</li>
-                                        <li><strong>Educational value:</strong> Many teachers use 2048 to teach mathematical concepts and logical thinking.</li>
-                                    </ul>
-                                    <p>Today, 2048 has spawned countless variations and remains one of the most popular number puzzle games on the web!</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="quick-game-links">
-                            <h3 class="quick-links-title">🎯 Quick Game Access</h3>
-                            <div class="game-links-grid">
-                                <a href="https://2048hub.com/classic-2048/" class="game-link-item" data-game-id="classic-2048">
-                                    <span class="game-link-icon">🔢</span>
-                                    <div class="game-link-info">
-                                        <h4>Classic 2048</h4>
-                                        <p>Original Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/flower-field/" class="game-link-item" data-game-id="flower-field">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🌼</span>
-                                    <div class="game-link-info">
-                                        <h4>2048 Flower Field</h4>
-                                        <p>Grow blooms &amp; gentle notes</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/byd-cars/" class="game-link-item" data-game-id="2048-byd-cars">
-                                    <span class="game-link-icon">🚗</span>
-                                    <div class="game-link-info">
-                                        <h4>2048 BYD Cars</h4>
-                                        <p>2048 Cars Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/2048-cupcakes/" class="game-link-item" data-game-id="2048-cupcakes">
-                                    <span class="game-link-icon">🧁</span>
-                                    <div class="game-link-info">
-                                        <h4>2048 Cupcakes</h4>
-                                        <p>Sweet & Delicious</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/taylor-swift-2048/" class="game-link-item" data-game-id="taylor-swift-2048">
-                                    <span class="game-link-icon">🎤</span>
-                                    <div class="game-link-info">
-                                        <h4>Taylor Swift 2048</h4>
-                                        <p>Taylor Swift Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/2048-princess/" class="game-link-item" data-game-id="2048-princess">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">👸</span>
-                                    <div class="game-link-info">
-                                        <h4>2048 Princess</h4>
-                                        <p>Disney Princess Theme</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/2048-cats/" class="game-link-item" data-game-id="2048-cats">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🐱</span>
-                                    <div class="game-link-info">
-                                        <h4>2048 Cats</h4>
-                                        <p>Merge Cats by Nobility</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/2048-minecraft/" class="game-link-item" data-game-id="2048-minecraft">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🟩</span>
-                                    <div class="game-link-info">
-                                        <h4>2048 Minecraft</h4>
-                                        <p>Minecraft Block Theme</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/2048cupcakes-christmas/" class="game-link-item" data-game-id="2048-cupcakes-christmas">
-                                    <span class="game-link-icon">🎄</span>
-                                    <div class="game-link-info">
-                                        <h4>2048 Cupcakes Christmas</h4>
-                                        <p>Christmas Theme</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/out-of-control-ark/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🚢</span>
-                                    <div class="game-link-info">
-                                        <h4>2048 Out of Control Ark</h4>
-                                        <p>Build, defuse &amp; survive</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/doge-2048/" class="game-link-item" data-game-id="doge-2048">
-                                    <span class="game-link-icon">🐶</span>
-                                    <div class="game-link-info">
-                                        <h4>Doge 2048</h4>
-                                        <p>Doge Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/card-2048/" class="game-link-item" data-game-id="card-2048">  
-                                    <span class="game-link-icon">🃏</span>
-                                    <div class="game-link-info">
-                                        <h4>Card 2048</h4>
-                                        <p>Card Puzzle Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/2048-remastered/" class="game-link-item" data-game-id="2048-remastered">
-                                    <span class="game-link-icon">🎮</span>
-                                    <div class="game-link-info">
-                                        <h4>2048 Remastered</h4>
-                                        <p>2048 Game Unblocked</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/couch-2048/" class="game-link-item" data-game-id="couch-2048">
-                                    <span class="game-link-icon">🛋️</span>
-                                    <div class="game-link-info">
-                                        <h4>Couch 2048</h4>
-                                        <p>Relaxing Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/hex-2048/" class="game-link-item" data-game-id="hex-2048">
-                                    <span class="game-link-icon">⬡</span>
-                                    <div class="game-link-info">
-                                        <h4>Hex 2048</h4>
-                                        <p>Hexagonal Grid</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/flappy-2048/" class="game-link-item" data-game-id="flappy-2048">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🐦</span>
-                                    <div class="game-link-info">
-                                        <h4>Flappy 2048</h4>
-                                        <p>Flappy Bird Meets 2048</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/schulte-grid/" class="game-link-item">
-                                    <span class="game-link-icon">🧠</span>
-                                    <div class="game-link-info">
-                                        <h4>Schulte Grid</h4>
-                                        <p>Mental Training Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/parity/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🔲</span>
-                                    <div class="game-link-info">
-                                        <h4>Parity</h4>
-                                        <p>Black & White Number Puzzle</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/xx142-b2exe/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">💻</span>
-                                    <div class="game-link-info">
-                                        <h4>xx142-b2.exe</h4>
-                                        <p>Hacking Puzzle Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/blackholesquare/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🕳️</span>
-                                    <div class="game-link-info">
-                                        <h4>Black Hole Square</h4>
-                                        <p>Space Puzzle Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/breakout/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🧱</span>
-                                    <div class="game-link-info">
-                                        <h4>Breakout</h4>
-                                        <p>Classic Brick Breaker</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/captaincallisto/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🚀</span>
-                                    <div class="game-link-info">
-                                        <h4>Captain Callisto</h4>
-                                        <p>Space Adventure Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/chromedino/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🦖</span>
-                                    <div class="game-link-info">
-                                        <h4>Chrome Dino</h4>
-                                        <p>Endless Runner Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/geometrydash/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🔺</span>
-                                    <div class="game-link-info">
-                                        <h4>Geometry Dash</h4>
-                                        <p>Rhythm Platform Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/pacman-3d/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🟡</span>
-                                    <div class="game-link-info">
-                                        <h4>Pacman 3D</h4>
-                                        <p>3D Maze Arcade Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/volley-random-unblocked/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🏐</span>
-                                    <div class="game-link-info">
-                                        <h4>Volley Random Unblocked</h4>
-                                        <p>Physics Volleyball Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/basket-random-unblocked/" class="game-link-item">
-                                  <span class="new-badge">NEW</span>
-                                  <span class="game-link-icon">🏀</span>
-                                  <div class="game-link-info">
-                                    <h4>Basket Random Unblocked</h4>
-                                    <p>Physics Basketball Game</p>
-                                  </div>
-                                </a>
-                                <a href="https://2048hub.com/basketball-legends-unblocked/" class="game-link-item">
-                                  <span class="new-badge">NEW</span>
-                                  <span class="game-link-icon">🏀</span>
-                                  <div class="game-link-info">
-                                    <h4>Basketball Legends Unblocked</h4>
-                                    <p>Arcade Basketball Legends</p>
-                                  </div>
-                                </a>
-                                <a href="https://2048hub.com/boxing-random-unblocked/" class="game-link-item">
-                                  <span class="new-badge">NEW</span>
-                                  <span class="game-link-icon">🥊</span>
-                                  <div class="game-link-info">
-                                    <h4>Boxing Random Unblocked</h4>
-                                    <p>Physics Boxing Game</p>
-                                  </div>
-                                </a>
-                                <a href="https://2048hub.com/monkey-mart/" class="game-link-item">
-                                  <span class="new-badge">NEW</span>
-                                  <span class="game-link-icon">🐵</span>
-                                  <div class="game-link-info">
-                                    <h4>Monkey Mart Unblocked</h4>
-                                    <p>Supermarket Tycoon Game</p>
-                                  </div>
-                                </a>
-                                <a href="https://2048hub.com/astro-math/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🚀</span>
-                                    <div class="game-link-info">
-                                        <h4>Astro Math</h4>
-                                        <p>Math & Space Game</p>
-                                    </div>
-                                </a>
-                                <a href="https://2048hub.com/8-puzzle/" class="game-link-item">
-                                    <span class="new-badge">NEW</span>
-                                    <span class="game-link-icon">🧩</span>
-                                    <div class="game-link-info">
-                                        <h4>8 Puzzle</h4>
-                                        <p>Classic Sliding Tile Game</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        
-                        <div class="guide-footer">
-                            <p>Ready to put these tips into practice? <strong>Choose a game from the menu above and start playing!</strong></p>
-                        </div>
-
-                        <footer class="site-footer">
-                            <div class="footer-content">
-                                <div class="footer-info">
-                                    <p>&copy; 2048 Hub - All rights reserved.</p>
-                                    <p>Play the best puzzle games online for free!</p>
-                                </div>
-                                <nav class="hub-guides" aria-label="Guides">
-                                    <span class="hub-guides-label">Guides:</span>
-                                    <span class="hub-guides-links" id="guideArticlesList"></span>
-                                </nav>
-                                <nav class="footer-lang" aria-label="Language"><div class="lang-switch lang-switch--multi"><a href="https://2048hub.com/" class="lang-switch__option is-active" hreflang="en" lang="en" aria-current="page"><span class="lang-switch__flag" aria-hidden="true">🇺🇸</span><span>EN</span></a><a href="https://2048hub.com/ja/" class="lang-switch__option" hreflang="ja" lang="ja"><span class="lang-switch__flag" aria-hidden="true">🇯🇵</span><span>JA</span></a><a href="https://2048hub.com/es/" class="lang-switch__option" hreflang="es" lang="es"><span class="lang-switch__flag" aria-hidden="true">🇪🇸</span><span>ES</span></a><a href="https://2048hub.com/fr/" class="lang-switch__option" hreflang="fr" lang="fr"><span class="lang-switch__flag" aria-hidden="true">🇫🇷</span><span>FR</span></a><a href="https://2048hub.com/it/" class="lang-switch__option" hreflang="it" lang="it"><span class="lang-switch__flag" aria-hidden="true">🇮🇹</span><span>IT</span></a></div></nav>
-                            </div>
-                        </footer>
-                    </div>
+                    <div class="game-frame-placeholder">Loading Classic 2048…</div>
                 </div>
             </div>
+
+            <footer class="site-footer">
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <span class="footer-brand-name">2048 Hub</span>
+                        <span class="footer-brand-copy">&copy; All rights reserved</span>
+                    </div>
+                    <nav class="footer-nav" aria-label="Site links">
+                        <a href="/about/">About</a>
+                        <span id="guideArticlesList" class="footer-guides"></span>
+                    </nav>
+                    <nav class="footer-friends" aria-label="Friend links">
+                        <span class="footer-friends-label">Friends</span>
+                        <a href="https://schultetable.pro/" target="_blank" rel="noopener">Schulte Table</a>
+                    </nav>
+                    <nav class="footer-lang" aria-label="Language">
+                        <div class="lang-switch lang-switch--multi lang-switch--footer">
+                            <a href="https://2048hub.com/" class="lang-switch__option is-active" hreflang="en" lang="en" aria-current="page"><span class="lang-switch__flag" aria-hidden="true">🇺🇸</span><span>EN</span></a>
+                            <a href="https://2048hub.com/ja/" class="lang-switch__option" hreflang="ja" lang="ja"><span class="lang-switch__flag" aria-hidden="true">🇯🇵</span><span>JA</span></a>
+                            <a href="https://2048hub.com/es/" class="lang-switch__option" hreflang="es" lang="es"><span class="lang-switch__flag" aria-hidden="true">🇪🇸</span><span>ES</span></a>
+                            <a href="https://2048hub.com/fr/" class="lang-switch__option" hreflang="fr" lang="fr"><span class="lang-switch__flag" aria-hidden="true">🇫🇷</span><span>FR</span></a>
+                            <a href="https://2048hub.com/it/" class="lang-switch__option" hreflang="it" lang="it"><span class="lang-switch__flag" aria-hidden="true">🇮🇹</span><span>IT</span></a>
+                        </div>
+                    </nav>
+                </div>
+            </footer>
         </main>
     </div>
 

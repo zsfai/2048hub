@@ -17,6 +17,7 @@ EXTRA_EN_PAGES = [
     "basketball-legends-unblocked",
     "boxing-random-unblocked",
     "monkey-mart",
+    "about",
 ]
 
 GUIDE_PAGES = [
