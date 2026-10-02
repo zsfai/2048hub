@@ -287,7 +287,15 @@ document.addEventListener('DOMContentLoaded', function() {
     currentGameTitle = document.getElementById('currentGameTitle');
     backBtn = document.getElementById('backBtn');
     gameFrameContainer = document.getElementById('gameFrameContainer');
-    
+
+    // Start the default game first — do not wait on sidebar / guides / storage
+    try {
+        handleHashChange();
+    } catch (e) {
+        console.error('handleHashChange failed', e);
+        try { selectGame(DEFAULT_GAME_ID); } catch (e2) { console.error(e2); }
+    }
+
     try {
         renderGameList();
     } catch (e) {
@@ -300,12 +308,9 @@ document.addEventListener('DOMContentLoaded', function() {
     } catch (e) {
         console.error('renderHubGuides failed', e);
     }
-    setupEventListeners();
-    setupSidebarCollapse();
-    setupKeyboardNavigation();
-
-    // Play immediately — do not wait on unrelated UI
-    handleHashChange();
+    try { setupEventListeners(); } catch (e) { console.error(e); }
+    try { setupSidebarCollapse(); } catch (e) { console.error(e); }
+    try { setupKeyboardNavigation(); } catch (e) { console.error(e); }
 });
 
 // Render game list in sidebar
@@ -347,15 +352,19 @@ function setupSidebarCollapse() {
     var app = document.querySelector('.app-container');
     if (!btn || !app) return;
 
-    if (localStorage.getItem('hubSidebarCollapsed') === '1') {
-        app.classList.add('sidebar-collapsed');
-    }
+    try {
+        if (localStorage.getItem('hubSidebarCollapsed') === '1') {
+            app.classList.add('sidebar-collapsed');
+        }
+    } catch (e) { /* private mode / blocked storage */ }
     syncSidebarCollapseUI(btn, app);
 
     btn.addEventListener('click', function(e) {
         e.preventDefault();
         app.classList.toggle('sidebar-collapsed');
-        localStorage.setItem('hubSidebarCollapsed', app.classList.contains('sidebar-collapsed') ? '1' : '0');
+        try {
+            localStorage.setItem('hubSidebarCollapsed', app.classList.contains('sidebar-collapsed') ? '1' : '0');
+        } catch (err) { /* ignore */ }
         syncSidebarCollapseUI(btn, app);
     });
 }
@@ -411,13 +420,17 @@ function selectGame(gameId) {
 
 // Show game
 function showGame(game) {
-    if (!currentGameTitle || !gameHeader || !gameFrameContainer) return;
-    
-    currentGameTitle.textContent = game.title;
-    gameHeader.style.display = 'flex';
-    
-    // Reset frame (remove placeholder / previous iframe / spinner)
-    gameFrameContainer.innerHTML = '';
+    if (!gameFrameContainer) {
+        gameFrameContainer = document.getElementById('gameFrameContainer');
+    }
+    if (!gameFrameContainer) return;
+
+    if (currentGameTitle) {
+        currentGameTitle.textContent = game.title;
+    }
+    if (gameHeader) {
+        gameHeader.style.display = 'flex';
+    }
 
     var sidebar = document.querySelector('.sidebar');
     var mainContent = document.querySelector('.main-content');
@@ -429,6 +442,19 @@ function showGame(game) {
             mainContent.style.paddingBottom = '0';
         }
     }
+
+    // Reuse static/default iframe when it already points at this game
+    var desiredSrc = new URL(game.url, window.location.origin).href;
+    var existing = gameFrameContainer.querySelector('iframe.game-iframe');
+    if (existing && existing.src === desiredSrc) {
+        existing.title = game.title;
+        var leftover = gameFrameContainer.querySelector('.loading, .game-frame-placeholder');
+        if (leftover) leftover.remove();
+        return;
+    }
+    
+    // Reset frame (remove placeholder / previous iframe / spinner)
+    gameFrameContainer.innerHTML = '';
     
     // Show loading animation
     const loading = document.createElement('div');
@@ -439,6 +465,7 @@ function showGame(game) {
     // Create iframe
     const iframe = document.createElement('iframe');
     iframe.className = 'game-iframe';
+    iframe.id = 'gameFrame';
     iframe.title = game.title;
     iframe.allow = 'fullscreen';
     
