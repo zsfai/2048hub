@@ -87,7 +87,7 @@ const games = [
     {
         id: '2048-byd-cars',
         title: '2048 BYD Cars',
-        description: '2048 Cars Game with BYD Cars theme, perfect for all ages',
+        description: 'Merge BYD cars to Yangwang U9X — the 503 km/h record hypercar tile',
         icon: '🚗',
         url: 'https://2048hub.com/byd-cars/', // Replace with actual game URL
         iframe: true

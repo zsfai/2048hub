@@ -26,7 +26,7 @@ String.toLocaleString({
     '%1024'                 : '仰望U8',
     '%2048'                 : '仰望U8L',
     '%4096'                 : '仰望U9',
-    '%8192'                 : '仰望U9 X',
+    '%8192'                 : '仰望U9X',
     '%p0'                   : '海鸥',
     '%p4'                   : '海豚',
     '%p8'                   : '元',
@@ -39,7 +39,7 @@ String.toLocaleString({
     '%p1024'                : '仰望U8',
     '%p2048'                : '仰望U8L',
     '%p4096'                : '仰望U9',
-    '%p8192'                : '仰望U9 X'	},
+    '%p8192'                : '仰望U9X'	},
 	"en": {
     "%game-intro"           : "Merge BYD cars and create your <strong>Dream Car!</strong>",
     "%restart-button"       : "Play Again",
@@ -64,7 +64,7 @@ String.toLocaleString({
     '%1024'                 : 'BYD Yangwang U8',
     '%2048'                 : 'BYD Yangwang U8L',
     '%4096'                 : 'BYD Yangwang U9',
-    '%8192'                 : 'BYD Yangwang U9 Xtreme',
+    '%8192'                 : 'Yangwang U9X',
     '%p0'                   : 'BYD Seagull',
     '%p4'                   : 'BYD Dolphin',
     '%p8'                   : 'BYD Yuan',
@@ -77,7 +77,7 @@ String.toLocaleString({
     '%p1024'                : 'BYD Yangwang U8',
     '%p2048'                : 'BYD Yangwang U8L',
     '%p4096'                : 'BYD Yangwang U9',
-    '%p8192'                : 'BYD Yangwang U9 Xtreme'  
+    '%p8192'                : 'Yangwang U9X'  
   },
 "ja": {
     "%game-intro"           : "BYDの車を合体させて<strong>夢の一台</strong>を目指そう！",
@@ -103,7 +103,7 @@ String.toLocaleString({
     '%1024'                 : 'BYD Yangwang U8',
     '%2048'                 : 'BYD Yangwang U8L',
     '%4096'                 : 'BYD Yangwang U9',
-    '%8192'                 : 'BYD Yangwang U9 Xtreme',
+    '%8192'                 : 'Yangwang U9X',
     '%p0'                   : 'BYD Seagull',
     '%p4'                   : 'BYD Dolphin',
     '%p8'                   : 'BYD Yuan',
@@ -116,6 +116,6 @@ String.toLocaleString({
     '%p1024'                : 'BYD Yangwang U8',
     '%p2048'                : 'BYD Yangwang U8L',
     '%p4096'                : 'BYD Yangwang U9',
-    '%p8192'                : 'BYD Yangwang U9 Xtreme'  
+    '%p8192'                : 'Yangwang U9X'  
   }
 });

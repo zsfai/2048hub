@@ -2,13 +2,13 @@ String.defaultLocale = "en";
 String.locale = "en";
 String.toLocaleString({
 	"zh": {
-    "%game-intro"           : "合并BYD汽车，合成你的 <strong>梦想车!</strong>",
+    "%game-intro"           : "合并BYD汽车，解锁 <strong>仰望U9X</strong> — 地表最快量产车方块!",
     "%restart-button"       : "重新开始",
     "%keep-playing-button"  : "继续游戏",
     "%retry-button"         : "重试",
     "%game-won"             : "你赢了!",
     "%game-over"            : "游戏结束!",
-    "%game-explanation"     : "<strong class=\"important\">游戏规则:</strong> 使用你的 <strong>方向键</strong> 移动方块。当两个相同符号的方块接触时，它们会 <strong>合并升级!</strong> 合并BYD汽车，解锁你的梦想车！",
+    "%game-explanation"     : "<strong class=\"important\">游戏规则:</strong> 使用你的 <strong>方向键</strong> 移动方块。当两个相同符号的方块接触时，它们会 <strong>合并升级!</strong> 从日常车型一路合并到 <strong>仰望U9X</strong>！",
     "%disclaimer"           : "<strong class=\"important\">注意:</strong> 这个网站 <a href=\"http://git.io/cupcakes\">git.io/cupcakes</a> 是官方版本 <a href=\"http://git.io/2048\">2048</a> 的衍生版本，原作者是 <a href=\"http://gabrielecirulli.com\" target=\"_blank\">Gabriele Cirulli</a>。",
     "%credits"              : "BYD汽车图片",
     "%tweet1"               : "我在2048BYD汽车游戏中得分 \"",
@@ -26,7 +26,7 @@ String.toLocaleString({
     '%1024'                 : '仰望U8',
     '%2048'                 : '仰望U8L',
     '%4096'                 : '仰望U9',
-    '%8192'                 : '仰望U9 X',
+    '%8192'                 : '仰望U9X',
     '%p0'                   : '海鸥',
     '%p4'                   : '海豚',
     '%p8'                   : '元',
@@ -39,15 +39,15 @@ String.toLocaleString({
     '%p1024'                : '仰望U8',
     '%p2048'                : '仰望U8L',
     '%p4096'                : '仰望U9',
-    '%p8192'                : '仰望U9 X'	},
+    '%p8192'                : '仰望U9X'	},
 	"en": {
-    "%game-intro"           : "Merge BYD cars and create your <strong>Dream Car!</strong>",
+    "%game-intro"           : "Merge BYD cars and unlock <strong>Yangwang U9X</strong> — the fastest production-car tile!",
     "%restart-button"       : "Play Again",
     "%keep-playing-button"  : "Keep going",
     "%retry-button"         : "Retry",
     "%game-won"             : "You win!",
     "%game-over"            : "Game over!",
-    "%game-explanation"     : "<strong class=\"important\">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same symbol touch, they <strong>get promoted!</strong> Merge BYD cars to unlock your dream car!",
+    "%game-explanation"     : "<strong class=\"important\">How to play:</strong> Use your <strong>arrow keys</strong> to move the tiles. When two tiles with the same symbol touch, they <strong>get promoted!</strong> Climb from everyday BYD models to <strong>Yangwang U9X</strong>.",
     "%disclaimer"           : "<strong class=\"important\">Note:</strong> This site <a href=\"http://git.io/cupcakes\">git.io/cupcakes</a> is a spin-off of the official version of <a href=\"http://git.io/2048\">2048</a> created by <a href=\"http://gabrielecirulli.com\" target=\"_blank\">Gabriele Cirulli</a>.",
     "%credits"              : "BYD Car Images",
     "%tweet1"               : "I scored \" at 2048-BYD-CARS #2048game",
@@ -64,7 +64,7 @@ String.toLocaleString({
     '%1024'                 : 'BYD Yangwang U8',
     '%2048'                 : 'BYD Yangwang U8L',
     '%4096'                 : 'BYD Yangwang U9',
-    '%8192'                 : 'BYD Yangwang U9 Xtreme',
+    '%8192'                 : 'Yangwang U9X',
     '%p0'                   : 'BYD Seagull',
     '%p4'                   : 'BYD Dolphin',
     '%p8'                   : 'BYD Yuan',
@@ -77,6 +77,6 @@ String.toLocaleString({
     '%p1024'                : 'BYD Yangwang U8',
     '%p2048'                : 'BYD Yangwang U8L',
     '%p4096'                : 'BYD Yangwang U9',
-    '%p8192'                : 'BYD Yangwang U9 Xtreme'  
+    '%p8192'                : 'Yangwang U9X'
   }
 });
