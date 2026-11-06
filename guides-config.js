@@ -12,6 +12,7 @@ window.hubGuides = [
 
 window.renderHubGuides = function(container) {
     if (!container || !window.hubGuides || !window.hubGuides.length) return;
+    if (container.querySelector('a')) return;
 
     container.innerHTML = window.hubGuides.map(function(guide, index) {
         var sep = index > 0 ? '<span class="hub-guides-sep" aria-hidden="true"> · </span>' : '';

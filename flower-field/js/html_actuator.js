@@ -294,7 +294,7 @@ HTMLActuator.prototype.drawShareCard = function (data) {
 
   ctx.fillStyle = "#7a8f6a";
   ctx.font = "16px Georgia, serif";
-  ctx.fillText("I grew a little garden on 2048Hub.", 24, 72);
+  ctx.fillText("I grew a little garden on 2048 Hub.", 24, 72);
 
   ctx.fillStyle = "#4a5a3a";
   ctx.font = "bold 20px Georgia, serif";
@@ -328,7 +328,7 @@ function wrapText(ctx, text, x, y, maxWidth, lineHeight) {
 HTMLActuator.prototype.shareResult = function () {
   var data = this.lastShareData || { highest: "Seed", message: "Keep tending your field.", blooms: [] };
   var text =
-    "I grew a flower field on 2048Hub. My highest bloom is \"" + data.highest +
+    "I grew a flower field on 2048 Hub. My highest bloom is \"" + data.highest +
     "\", and it told me — \"" + data.message +
     "\". Come see what you can grow?\n" + this.shareUrl;
 

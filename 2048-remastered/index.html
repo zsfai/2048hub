@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta property="og:url" content="https://2048hub.com/2048-remastered/">
+  <link rel="canonical" href="https://2048hub.com/2048-remastered/">
   <link rel="alternate" hreflang="en" href="https://2048hub.com/2048-remastered/">
   <link rel="alternate" hreflang="ja" href="https://2048hub.com/ja/2048-remastered/">
   <link rel="alternate" hreflang="es" href="https://2048hub.com/es/2048-remastered/">
   <link rel="alternate" hreflang="fr" href="https://2048hub.com/fr/2048-remastered/">
   <link rel="alternate" hreflang="it" href="https://2048hub.com/it/2048-remastered/">
   <link rel="alternate" hreflang="x-default" href="https://2048hub.com/2048-remastered/">
+
 
 
 
@@ -23,12 +26,12 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="2048 Remastered - Play Free Online">
-<meta property="og:description" content="Play 2048 Remastered - classic number puzzle game. Combine tiles to reach 2048. Free to play, no download needed.">
+<meta property="og:description" content="Play 2048 Remastered - the classic number puzzle game. Combine tiles to reach 2048 and beyond. Free to play online, no download required.">
 <meta property="og:image" content="icons/icon-512.png">
-<meta property="og:site_name" content="2048 Remastered">
+<meta property="og:site_name" content="2048 Hub">
 
 <!-- Twitter -->
-<meta name="twitter:card" content="summary">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="2048 Remastered - Play Free">
 <meta name="twitter:description" content="2048 Remastered - classic puzzle game. Combine tiles to reach 2048. Free to play online.">
 <meta name="twitter:image" content="icons/icon-512.png">
@@ -41,22 +44,78 @@
 
 <link rel="stylesheet" href="style.css">
 
-<script type="application/ld+json">
+  <script type="application/ld+json">
 {
-	"@context": "https://schema.org",
-	"@type": "WebApplication",
-	"name": "2048 Remastered",
-	"description": "Play 2048 Remastered, the classic number puzzle game. Combine tiles to reach 2048 and beyond.",
-	"applicationCategory": "Game",
-	"operatingSystem": "Web Browser",
-	"offers": {
-		"@type": "Offer",
-		"price": "0",
-		"priceCurrency": "USD"
-	}
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "2048 Remastered",
+  "description": "2048 Remastered is Classic 2048 with polish and undo-friendly practice. Free online, no download.",
+  "url": "https://2048hub.com/2048-remastered/",
+  "applicationCategory": "Game",
+  "operatingSystem": "Web Browser",
+  "isAccessibleForFree": true,
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "2048 Hub",
+    "url": "https://2048hub.com/"
+  },
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "2048 Hub",
+    "url": "https://2048hub.com/"
+  },
+  "image": "https://2048hub.com/og-image.png"
 }
-</script>
-
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is 2048 Remastered?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A remastered Classic 2048 build for browser play on 2048 Hub."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is it free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Instant play with no install."
+      }
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://2048hub.com/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "2048 Remastered",
+      "item": "https://2048hub.com/2048-remastered/"
+    }
+  ]
+}
+  </script>
 </head>
 <body>
 
@@ -77,6 +136,20 @@ if (location.protocol.substr(0, 4) === "file")
 	<script src="scripts/offlineclient.js" type="module"></script>
 	<script src="scripts/main.js" type="module"></script>
 	<script src="scripts/register-sw.js" type="module"></script>
+
+
+<section class="geo-seo" style="max-width:720px;margin:24px auto;padding:16px;font-family:system-ui,sans-serif;line-height:1.5;color:#333;">
+  <h2 style="font-size:1.15rem;margin:0 0 8px;">2048 Remastered on 2048 Hub</h2>
+  <p>2048 Remastered is Classic 2048 with polish and undo-friendly practice. Free online, no download.</p>
+  <h3 style="font-size:1rem;margin:16px 0 8px;">FAQ</h3>
+  <div>
+    <h4 style="font-size:0.95rem;margin:12px 0 4px;">What is 2048 Remastered?</h4>
+    <p style="margin:0 0 8px;">A remastered Classic 2048 build for browser play on 2048 Hub.</p>
+    <h4 style="font-size:0.95rem;margin:12px 0 4px;">Is it free?</h4>
+    <p style="margin:0 0 8px;">Yes. Instant play with no install.</p>
+  </div>
+  <p style="margin-top:12px;font-size:0.9rem;"><a href="https://2048hub.com/">← Home · 2048 Hub</a></p>
+</section>
 
 </body>
 </html>

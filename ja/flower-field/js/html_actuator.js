@@ -297,7 +297,7 @@ HTMLActuator.prototype.drawShareCard = function (data) {
 
   ctx.fillStyle = "#7a8f6a";
   ctx.font = "16px " + fontJa;
-  ctx.fillText("2048Hubで、小さな花畑を育てました。", 24, 72);
+  ctx.fillText("2048 Hubで、小さな花畑を育てました。", 24, 72);
 
   ctx.fillStyle = "#4a5a3a";
   ctx.font = "bold 20px " + fontJa;
@@ -334,7 +334,7 @@ HTMLActuator.prototype.shareResult = function () {
     blooms: []
   };
   var text =
-    "2048Hubの「花野」で花畑を育てました。最高の花は「" + data.highest +
+    "2048 Hubの「花野」で花畑を育てました。最高の花は「" + data.highest +
     "」。花はこう言いました — 「" + data.message +
     "」。あなたも、どんな花が咲くか試してみませんか？\n" + this.shareUrl;
 

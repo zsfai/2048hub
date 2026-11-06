@@ -24,7 +24,7 @@
 
     var title = script.getAttribute('data-hub-title') || '';
     if (!title) {
-        title = document.title.replace(/\s*\|\s*2048Hub\s*$/i, '').trim();
+        title = document.title.replace(/\s*\|\s*2048\s*Hub\s*$/i, '').trim();
     }
 
     function escapeHtml(text) {

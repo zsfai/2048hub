@@ -1,0 +1,54 @@
+# 2048 Hub
+
+> 2048 Hub is a free browser collection of 2048 variants, number puzzles, and arcade games. No download or account required.
+
+## Home
+- [2048 Hub (EN)](https://2048hub.com/): English hub home
+- [2048 Hub (JA)](https://2048hub.com/ja/): Japanese hub home
+- [2048 Hub (ES)](https://2048hub.com/es/): Spanish hub home
+- [2048 Hub (FR)](https://2048hub.com/fr/): French hub home
+- [2048 Hub (IT)](https://2048hub.com/it/): Italian hub home
+
+## About & guides
+- [About 2048 Hub](https://2048hub.com/about/): What the site is and how to start
+- [How to Beat 2048](https://2048hub.com/guides/how-to-beat-2048/): Corner strategy and tips
+- [10 Best 2048 Variants in 2026](https://2048hub.com/guides/10-2048-variants-2026/): Mechanics vs reskins
+
+## Games
+- [2048 Cats](https://2048hub.com/2048-cats/): 2048 Cats is a free browser puzzle: merge cats by nobility from alley kitten up to the Royal Cat.
+- [2048 Cupcakes](https://2048hub.com/2048-cupcakes/): 2048 Cupcakes is an ad-free cupcake-themed 2048: merge sweets until you reach 2048.
+- [2048 Minecraft](https://2048hub.com/2048-minecraft/): 2048 Minecraft swaps numbers for Minecraft blocks on a Classic 2048 grid. Free in the browser.
+- [2048 Princess](https://2048hub.com/2048-princess/): 2048 Princess is a rose-pink themed 2048: merge tiles and unlock princess characters online for free.
+- [2048 Remastered](https://2048hub.com/2048-remastered/): 2048 Remastered is Classic 2048 with polish and undo-friendly practice. Free online, no download.
+- [2048 Cupcakes Christmas](https://2048hub.com/2048cupcakes-christmas/): Holiday cupcake 2048: merge festive sweets to 2048 free in your browser.
+- [8 Puzzle](https://2048hub.com/8-puzzle/): Classic 3×3 sliding puzzle: arrange tiles 1–8 in order with shuffle, reset, and a timer.
+- [Astro Math](https://2048hub.com/astro-math/): Astro Math is a free space-themed math game: practice arithmetic and mental math in the browser.
+- [Astro Math modes](https://2048hub.com/astro-math/howto.html): How to play, levels, survival, and bonus mode pages
+- [Basket Random Unblocked](https://2048hub.com/basket-random-unblocked/): Physics basketball with random characters. Solo or local two-player, free online.
+- [Basketball Legends Unblocked](https://2048hub.com/basketball-legends-unblocked/): Arcade basketball with roster legends: dunks, dashes, and matches free in the browser.
+- [Black Hole Square](https://2048hub.com/blackholesquare/): Black Hole Square is a free space puzzle: clear the board and clean the universe in your browser.
+- [Boxing Random Unblocked](https://2048hub.com/boxing-random-unblocked/): Physics boxing with random characters. Solo or local two-player, free online.
+- [Breakout](https://2048hub.com/breakout/): Classic Breakout brick breaker: bounce the ball, clear bricks, play free in the browser.
+- [2048 BYD Cars](https://2048hub.com/byd-cars/): 2048 BYD Cars merges BYD model tiles from Seagull toward Yangwang U9X. Free, ad-free puzzle inspired by the 503.17 km/h record run.
+- [Captain Callisto](https://2048hub.com/captaincallisto/): Captain Callisto is a free space arcade: dodge obstacles and survive as long as you can.
+- [Cards 2048](https://2048hub.com/card-2048/): Cards 2048 merges numbered cards to reach 2048. Free card-themed puzzle in the browser.
+- [Chrome Dino](https://2048hub.com/chromedino/): Chrome Dino endless runner: jump cacti in the classic offline dinosaur game, free online.
+- [Classic 2048](https://2048hub.com/classic-2048/): Ad-free Classic 2048: swipe tiles, merge equal numbers, and reach the 2048 tile in your browser.
+- [Couch 2048](https://2048hub.com/couch-2048/): Couch 2048 is a relaxed numbered-piece puzzle: stack and merge toward 2048 free online.
+- [Doge 2048](https://2048hub.com/doge-2048/): Doge 2048 merges meme Doge tiles to 2048. Free browser puzzle with multiple Doge characters.
+- [Flappy 2048](https://2048hub.com/flappy-2048/): Flappy 2048 mixes Flappy Bird flight with 2048 merges. Free hybrid puzzle in the browser.
+- [2048 Flower Field](https://2048hub.com/flower-field/): 2048 Flower Field grows a calming garden: merge seeds into blooms and collect flower messages.
+- [Geometry Dash](https://2048hub.com/geometrydash/): Geometry Dash rhythm platformer: jump and fly through obstacle courses free in the browser.
+- [Hex 2048](https://2048hub.com/hex-2048/): Hex 2048 merges numbers on a hexagonal grid. Free strategy twist on Classic 2048.
+- [Monkey Mart Unblocked](https://2048hub.com/monkey-mart/): Monkey Mart supermarket tycoon: grow crops, stock shelves, serve customers free in the browser.
+- [2048 Out of Control Ark](https://2048hub.com/out-of-control-ark/): Out of Control Ark merges tiles while defusing bombs and surviving chapter missions. Free 2048 variant.
+- [Pacman 3D](https://2048hub.com/pacman-3d/): Pacman 3D: eat dots in a 3D maze, dodge ghosts, clear levels free in the browser.
+- [Parity](https://2048hub.com/parity/): Parity is a black-and-white number puzzle: flip tiles to hit each level target. Free online.
+- [Schulte Grid](https://2048hub.com/schulte-grid/): Schulte Grid trains focus: tap numbers in order on grids from 3×3 to 7×7. Free mental training.
+- [Taylor Swift 2048](https://2048hub.com/taylor-swift-2048/): Taylor Swift 2048 merges era-themed tiles in a Classic 2048 layout. Free online puzzle.
+- [Volley Random Unblocked](https://2048hub.com/volley-random-unblocked/): Physics volleyball with random characters. Solo or local two-player, free in the browser.
+- [xx142-b2.exe](https://2048hub.com/xx142-b2exe/): xx142-b2.exe is a hacking puzzle: infiltrate as an AI virus and reach the memory core before time runs out.
+
+## Optional
+- [Sitemap](https://2048hub.com/sitemap.xml)
+- [Robots](https://2048hub.com/robots.txt)

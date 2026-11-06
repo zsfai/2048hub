@@ -1,5 +1,7 @@
 User-agent: *
 Allow: /
 
+# Machine-readable site guide for AI crawlers: https://2048hub.com/llms.txt
+
 # Sitemap
 Sitemap: https://2048hub.com/sitemap.xml
